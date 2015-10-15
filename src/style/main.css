@@ -1,0 +1,24 @@
+/*
+* Third Party
+*/
+@import "../../bower_components/normalize-css/normalize.css";
+@import "../../bower_components/magnific-popup/dist/magnific-popup.css";
+@import "../../bower_components/Swiper/dist/css/swiper.min.css";
+
+
+/*
+* Variables
+*/
+@import "partials/variable";
+@import "partials/my_reset";
+@import "partials/fonts";
+@import "partials/grid";
+@import "partials/extends";
+
+
+
+/*
+* Blocks
+*/
+@import "blocks/section_actions";
+@import "blocks/object_tizers_small";

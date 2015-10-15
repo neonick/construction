@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'etelka';
+    src: url('../fonts/etelkalight-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'etelka';
+    src: url('../fonts/etelkamedium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+@font-face {
+    font-family: 'etelka';
+    src: url('../fonts/etelkatextbold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
