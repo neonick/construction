@@ -42,7 +42,8 @@
 		border: 20px solid #e8e8e8;
 		box-sizing: content-box;
 		transition: all 0.3s;
-		margin: 60px auto;		
+		margin: 60px auto;
+		backface-visibility: hidden;
 	}
 
 	&:hover &__block{
@@ -53,6 +54,7 @@
 		transform: skewY(20deg);
 		margin-top: -45px;
 		display: block;	
+		backface-visibility: hidden;
 	}
 
 	&__heading {

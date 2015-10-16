@@ -1,0 +1,57 @@
+/*
+*	company_people
+*/
+.company_people {
+	padding: 50px 0;
+
+}
+
+.one_company_people {
+	lost-center: 645px;
+	lost-utility: clearfix;
+	lost-utility: edit;
+	margin-bottom: 80px;
+	
+	&__photo {
+		lost-column: 3/8 2 20px no-flex;
+	}
+
+	&__info {
+		lost-column: 3/8 2 20px no-flex;
+
+		.name {
+			font-family: $custom;
+			font-weight: bold;
+			text-transform: uppercase;
+			font-size: 24px;
+			line-height: 24px;
+			margin-top: 70px;
+
+			span {
+				display: block;
+			}
+		}
+	}
+
+	&__block {
+		width: 180px;
+		height: 300px;
+		transform: skewY(-20deg);
+		display: block;
+		overflow: hidden;	
+		box-sizing: content-box;
+		transition: all 0.3s;
+		margin: 35px auto;
+		backface-visibility: hidden;
+	}
+
+	&__pic {
+		transform: skewY(20deg);
+		margin-top: -60px;
+		display: block;	
+		backface-visibility: hidden;
+	}
+
+
+
+}
