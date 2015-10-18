@@ -10,16 +10,46 @@ section.company_people
                 p.name
                     span Фамилия 
                     | Имя Отчество
-                .btn Написать сообщение
+                span.icon_text.post генеральный деректор
+                span.icon_text.phone телефон 8 (861) 777-77-77
+                span.icon_text.mail email: 
+                    a(href="mailto:mail@neometria.ru") mail@neometria.ru
+                .btn.arrow Написать сообщение
 
-        .one_company_people
-            .one_company_people__photo
-                .one_company_people__block
-                    img.one_company_people__pic(src="i/company_people.jpg", alt="")
-            .one_company_people__info
-                p.name
-                    span Фамилия 
-                    | Имя Отчество
-                    
+        hr.line
+
+        .company_address
+            .company_address__pic
+                img(src="i/main_logo.png", alt="", width="182", height="202")
+            .company_address__info
+                p.company_name Неометрия
+                span.company_name_label Строительная компания 
+                span.icon_text.address г. Краснодар, ул. Комсомольская, 15, 4-й этаж
+                span.icon_text.phone телефон 8 (861) 777-77-77
+                span.icon_text.worktime с 9:00 до 18:00 
+                span.icon_text.mail email
+                    a(href="mailto:mail@neometria.ru") mail@neometria.ru
+        
+                include block_social.jade
 
 
+        .company_offices 
+            .company_office
+                p.office_name Офис продаж жк «ЁЖИ»
+                span.office_label Строительная компания 
+                span.icon_text.address г. Краснодар, ул. Комсомольская, 15, 4-й этаж
+                span.icon_text.phone телефон 8 (861) 777-77-77
+                span.icon_text.worktime с 9:00 до 18:00 
+                span.icon_text.mail email
+                    a(href="mailto:mail@neometria.ru") mail@neometria.ru
+            
+            .company_office
+                p.office_name Офис продаж жк «синема»
+                span.office_label Строительная компания 
+                span.icon_text.address г. Краснодар, ул. Комсомольская, 15, 4-й этаж
+                span.icon_text.phone телефон 8 (861) 777-77-77
+                span.icon_text.worktime с 9:00 до 18:00 
+                span.icon_text.mail email
+                    a(href="mailto:mail@neometria.ru") mail@neometria.ru
+        
+    div#offices_map

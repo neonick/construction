@@ -14,12 +14,14 @@
 @import "partials/fonts";
 @import "partials/grid";
 @import "partials/extends";
-
+@import "partials/common";
 
 
 /*
 * Blocks
 */
+@import "blocks/section_header";
 @import "blocks/section_actions";
 @import "blocks/object_tizers_small";
 @import "blocks/section_company_people";
+@import "blocks/section_managers";

@@ -1,0 +1,44 @@
+/*
+*   all buttons
+*/
+
+.btn {
+    @extend btn;
+
+    &.arrow {
+        padding-left: 40px;
+        background: url(../i/green_arr.png) left 14px center no-repeat;
+    }
+}
+
+
+
+/*
+*   soc block
+*/
+.soc_block {
+
+    a {
+        width: 45px;
+        height: 45px;
+        display: inline-block; 
+        margin-right: 1px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+        
+        &.fb {
+            background: #3b5998 url(../i/icon_fb.png) center center no-repeat;
+        }
+        &.tw {
+            background: #29c5f6 url(../i/icon_tw.png) center center no-repeat;
+        }
+        &.ig {
+            background: #ca0707 url(../i/icon_ig.png) center center no-repeat;
+        }
+        &.vk {
+            background: #006dc0 url(../i/icon_fb.png) center center no-repeat;
+        }
+    }
+}
