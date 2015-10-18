@@ -3,6 +3,11 @@
 */
 .header {
     height: 118px;
+
+    .backcall_block {
+        float: right;
+        margin-top: 15px;
+    }
 }
 
 /*
@@ -46,31 +51,6 @@
         a {
             color: #fff;
         }
-    }
-}
-
-.backcall_block {
-    background-color: #f0e50d;
-    width: 194px;
-    height: 53px;
-    padding: 10px 15px;
-    text-align: center;
-    cursor: pointer;
-    float: right;
-    margin-top: 15px;
-
-    .phone {
-        font-weight: bold;
-        font-size: 15px;
-        line-height: 15px;
-        margin: 8px 0 0;
-        font-family: $custom;
-        color: #26221f;
-    }
-
-    span {
-        font-size: 11px;
-        color: #b6ad16;
     }
 }
 

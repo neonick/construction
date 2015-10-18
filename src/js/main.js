@@ -7,11 +7,23 @@
 
 $(document).ready(function () {
 
-    // do something
     
+    
+    if ($(".managers").width != 0) {
+	    var swiper = new Swiper('.swiper-managers', {
+	            slidesPerView: 5,
+	            paginationClickable: true,
+	            spaceBetween: 0,
+	            paginationClickable: true
+	        });
+
+	   	$('.swiper-slide').click(function(e) {
+		    $(".swiper-slide").removeClass('swiper-slide-active');
+		    $(this).addClass('swiper-slide-active');
+		});
+    }
+   
 
     //= parts/_init_gmaps.js
-
-    //= parts/_init_swiper.js
 
 })

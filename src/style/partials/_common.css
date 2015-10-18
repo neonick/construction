@@ -42,3 +42,31 @@
         }
     }
 }
+
+/*
+*   backcall block
+*/
+.backcall_block {
+    background-color: #f0e50d;
+    width: 194px;
+    height: 53px;
+    padding: 10px 15px;
+    text-align: center;
+    cursor: pointer;
+    
+    &__phone {
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 15px;
+        margin: 5px 0 0;
+        font-family: $custom;
+        color: #26221f;
+        display: block;
+    }
+
+    &__text {
+        font-size: 11px;
+        color: #b6ad16;
+        display: block;
+    }
+}
