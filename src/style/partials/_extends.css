@@ -19,4 +19,18 @@
 	line-height: 14px;
 	cursor: pointer;
 	margin: 20px 0;
+	display: inline-block;
+}
+
+
+@define-extend skew_block {
+	width: 143px;
+	height: 240px;
+	background-color: #fff;
+	transform: skewY(-20deg);
+	content: '';
+	position: absolute;
+	top: 25px;
+	left: 0;
+	z-index: -1;
 }

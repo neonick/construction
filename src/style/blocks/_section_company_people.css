@@ -10,49 +10,6 @@
 		margin: 50px 0;
 	}
 
-	.icon_text {
-		display: block;
-		color: #333;
-		font-size: 14px;
-		line-height: 21px;
-		font-weight: 300;
-		font-family: $custom;
-		padding-left: 20px;
-		position: relative;
-		
-		&:before {
-			content: "";
-			width: 14px;
-			height: 21px;
-			position: relative;
-			display: inline-block;
-			vertical-align: middle;
-			position: absolute;
-			top: 0;
-			left: 0px;	
-		}
-
-		&.post:before {
-			background: url(../i/contact_icon1.png) left center no-repeat;
-		}
-
-		&.phone:before {
-			background: url(../i/contact_icon2.png) left center no-repeat;
-		}
-
-		&.mail:before {
-			background: url(../i/contact_icon3.png) left center no-repeat;
-		}
-
-		&.address:before {
-			background: url(../i/contact_icon4.png) left center no-repeat;
-		}
-
-		&.worktime:before {
-			background: url(../i/contact_icon5.png) left center no-repeat;
-		}
-	}
-
 	.mail {
 		a {
 			color: #003da7;

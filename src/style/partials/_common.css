@@ -8,6 +8,24 @@
     &.arrow {
         padding-left: 40px;
         background: url(../i/green_arr.png) left 14px center no-repeat;
+        transition: all 0.3s;
+
+        &:hover {
+            background-color: #fff30e;
+            border-color: #fff30e;
+            box-shadow: 10px 10px 14px rgba(0, 0, 0, 0.1)
+        }
+    }
+
+    &.green {
+        background-color: #7e943b;
+        border: 0;
+        color: #fff;
+        font-size: 12px;
+        padding-left: 25px;
+        padding-right: 25px;
+        text-shadow: 0px 1px 12px rgba(0, 0, 0, 0.75);
+        box-shadow: 10px 10px 14px rgba(0, 0, 0, 0.1)
     }
 }
 
@@ -70,3 +88,62 @@
         display: block;
     }
 }
+
+
+/*
+*   icon_text
+*/
+.icon_text {
+        display: block;
+        color: #333;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 300;
+        font-family: $custom;
+        padding-left: 25px;
+        position: relative;
+        
+        &:before {
+            content: "";
+            width: 14px;
+            height: 21px;
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            position: absolute;
+            top: 0;
+            left: 0px;  
+        }
+
+        &.post:before {
+            background: url(../i/contact_icon1.png) left center no-repeat;
+        }
+
+        &.phone:before {
+            background: url(../i/contact_icon2.png) left center no-repeat;
+        }
+
+        &.mail:before {
+            background: url(../i/contact_icon3.png) left center no-repeat;
+        }
+
+        &.address:before {
+            background: url(../i/contact_icon4.png) left center no-repeat;
+        }
+
+        &.worktime:before {
+            background: url(../i/contact_icon5.png) left center no-repeat;
+        }
+
+        &.where:before {
+            background: url(../i/contact_icon6.png) left center no-repeat;
+        }
+
+        &.when:before {
+            background: url(../i/contact_icon7.png) left center no-repeat;
+        }
+
+        &.num:before {
+            background: url(../i/contact_icon8.png) left center no-repeat;
+        }
+    }
