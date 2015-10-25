@@ -47,16 +47,16 @@
         }
         
         &.fb {
-            background: #3b5998 url(../i/icon_fb.png) center center no-repeat;
+            background: #3b5998 url(../i/fb.svg) center center no-repeat;
         }
         &.tw {
-            background: #29c5f6 url(../i/icon_tw.png) center center no-repeat;
+            background: #29c5f6 url(../i/tw.svg) center center no-repeat;
         }
         &.ig {
-            background: #ca0707 url(../i/icon_ig.png) center center no-repeat;
+            background: #ca0707 url(../i/ig.svg) center center no-repeat;
         }
         &.vk {
-            background: #006dc0 url(../i/icon_fb.png) center center no-repeat;
+            background: #006dc0 url(../i/vk.svg) center center no-repeat;
         }
     }
 }
@@ -147,3 +147,69 @@
             background: url(../i/contact_icon8.png) left center no-repeat;
         }
     }
+
+
+.alone_text {
+    padding: 50px 0;
+
+    .container {
+        lost-center: 750px;
+        lost-utility: clearfix;
+    }
+
+    &_block {
+        lost-column: 2/3;
+        lost-move: 1/3;
+
+        h3 {
+            @extend section_h3;
+            text-align: left;
+        }
+
+        p {
+            color: #7f7f7f;
+            font-size: 15px;
+            line-height: 24px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+
+
+/*
+*   text_block
+*/
+.text_block {
+    max-width: 750px;
+    padding-left: 100px;
+    margin: 0 auto 60px;
+
+    @media (--w768) {
+    
+    }
+
+    &__header {
+        font-family: $custom;
+        color: #202628;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    &__text {
+        color: #343434;
+        font-size: 16px;
+        line-height: 24px;
+        max-width: 500px;
+    }
+}
+
+
+.content_single_pic {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto 60px;
+}

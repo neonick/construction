@@ -15,7 +15,11 @@
 }
 
 .one_obj_tizers_s {
-	lost-column: 1/4;
+	lost-column: 1/2;
+
+	@media 	(--w980) {
+		lost-column: 1/4;
+	}
 	
 	&__block {
 		width: 180px;

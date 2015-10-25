@@ -3,12 +3,14 @@
 */
 .object_tizers_medium {
 	padding: 50px 0;
+}
 
-	h2 {
+h2.number_header {
 		@extend section_h2;
 		font-size: 32px;
 		line-height: 32px;
 		position: relative;
+		margin-bottom: 40px;
 
 		span {
 			position: relative;
@@ -29,7 +31,6 @@
 			z-index: -1;
 		}
 	}
-}
 
 .obj_tizers_m__grid {
 	lost-center: 100%;

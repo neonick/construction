@@ -1,0 +1,60 @@
+doctype html
+html(lang='ru')
+    head
+        include parts/_meta.jade
+
+    body
+
+        include parts/_header.jade
+
+        include blocks/section_object_tizers_medium.jade
+
+        // object_tizers_small
+        section.object_tizers_small
+            .container
+
+                h2.number_header
+                    span Распроданы
+                        i 04
+                
+                .obj_tizers_s__grid
+
+                    .one_obj_tizers_s
+                        .one_obj_tizers_s__block.is_not_availible
+                            a(href="#")
+                                span.one_obj_tizers_s__heading ЖК «Фаворит»
+                            a(href="#")
+                                img.one_obj_tizers_s__pic(src="i/object_tizer_small.png", alt="")
+                            span.one_obj_tizers_s__status распродан
+
+                    .one_obj_tizers_s
+                        .one_obj_tizers_s__block.is_not_availible
+                            a(href="#")
+                                span.one_obj_tizers_s__heading ЖК «Фаворит»
+                            a(href="#")
+                                img.one_obj_tizers_s__pic(src="i/object_tizer_small.png", alt="")
+                            span.one_obj_tizers_s__status распродан
+
+
+                    .one_obj_tizers_s
+                        .one_obj_tizers_s__block.is_not_availible
+                            a(href="#")
+                                span.one_obj_tizers_s__heading ЖК «Фаворит»
+                            a(href="#")
+                                img.one_obj_tizers_s__pic(src="i/object_tizer_small.png", alt="")
+                            span.one_obj_tizers_s__status распродан
+
+                    .one_obj_tizers_s
+                        .one_obj_tizers_s__block.is_not_availible
+                            a(href="#")
+                                span.one_obj_tizers_s__heading ЖК «Зелёный квартал»
+                            a(href="#")
+                                img.one_obj_tizers_s__pic(src="i/object_tizer_small.png", alt="")
+                            span.one_obj_tizers_s__status распродан
+                            
+
+        include blocks/block_alone_text.jade
+       
+        include parts/_footer_default.jade
+
+        include parts/_scripts.jade

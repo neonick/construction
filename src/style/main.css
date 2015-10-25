@@ -21,10 +21,15 @@
 * Blocks
 */
 @import "blocks/section_header";
+@import "blocks/section_object_menu";
 @import "blocks/section_actions";
 @import "blocks/object_tizers_small";
 @import "blocks/object_tizers_medium";
 @import "blocks/object_tizers_large";
 @import "blocks/section_company_people";
+@import "blocks/section_documents";
+@import "blocks/section_advantages";
+@import "blocks/section_partners";
+@import "blocks/section_conditions";
 @import "blocks/section_managers";
 @import "blocks/section_footer";

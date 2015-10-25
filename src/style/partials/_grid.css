@@ -12,6 +12,10 @@
 	  width: 100%;
 	}
 
+	@media (--w600) {
+	  width: 560px;
+	}
+
 	@media (--w768) {
 	  width: 768px;
 	}

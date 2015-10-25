@@ -3,6 +3,8 @@
 */
 .header {
     height: 118px;
+    position: relative;
+    z-index: 1000;
 
     .backcall_block {
         float: right;
@@ -57,7 +59,7 @@
 .header_corner_logo {
     width: 332px;
     height: 118px;
-    background: url(../i/header_logo.png)  no-repeat;
+    background: url(../i/header_corner_logo.png)  no-repeat;
     float: left;
     margin-right: -60px;
 }

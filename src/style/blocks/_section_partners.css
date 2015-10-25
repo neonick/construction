@@ -1,0 +1,57 @@
+/*
+*   partners
+*/
+.partners {
+    padding: 50px 0;
+
+    h3 {
+        font-family: $custom;
+        color: #202628;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+    }
+}
+
+
+
+.partners_grid {
+    lost-center: 100%;
+    padding: 110px 0;
+}
+
+.partner {
+    lost-column: 1/2;
+    margin-bottom: 60px;
+    position: relative;
+
+    &:before {
+        @extend skew_block;
+        top: -30px
+    }
+
+    @media (--w768) {
+        lost-column: 1/4;
+        margin-bottom: 0;
+    }
+
+    &__pic {
+        display: block;
+        margin-top: 40px;
+        margin-left: 25px;
+    }
+
+    span {
+        color: #272727;
+        font-size: 18px;
+        line-height: 18px;
+        text-transform: uppercase;
+        font-family: $custom;
+        display: block;
+        margin-left: 20px;
+        margin-top: 60px;
+    }
+}
