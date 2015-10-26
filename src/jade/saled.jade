@@ -9,37 +9,29 @@ html(lang='ru')
 
         include blocks/section_object_menu.jade
 
-        // conditions
-        section.conditions
+        include blocks/section_object_tizers_large.jade
+
+        // advantags
+        section.advantags
             .container
 
                 .text_block    
-                    h3.text_block__header Ипотека на покупку квартиры в жилом КОМПЛЕКСе «ЕЖИ»
+                    h3.text_block__header ЖИЛОЙ КОМПЛЕКС «Зеленый квартал»
                     p.text_block__text Думать о покупке новой квартиры — это всегда волнующий, но приятный процесс. Чтобы перестать волноваться, а получать от выбора только удовольствие, надо быть уверенным, где купить квартиру в Краснодаре. Такую уверенность даёт жилой экокомплекс «Ежи».
 
-                include blocks/block_partners.jade
-
-                hr
-
-                include blocks/section_object_tizers_large.jade
-
-                hr
+                img(src="i/content_single_pic.jpg", class="content_single_pic")
 
                 .text_block    
-                    h3.text_block__header Рассрочка
+                    h3.text_block__header ЭКОЛОГИЯ
                     p.text_block__text Живя буквально на природе, вы не останетесь вдали от цивилизации. Рядом с жилым экокомплексом «Ежи» у вас есть выбор во всём. Две заправки — Лукойл и Газпром, два крупных банка — Кубань Кредит и Сбербанк, россыпь продуктовых магазинов, четыре кафе и даже продуктовый рынок. Выбор есть и у ваших детей — два детских сада и две школы. Только гостиница поблизости одна. Но зачем она вам, когда вы живёте в ЖК «Ежи».
 
-                include blocks/section_action.jade
+                img(src="i/content_single_pic.jpg", class="content_single_pic")
 
-                hr            
+                .text_block    
+                    h3.text_block__header ИНФРАСТРУКТУРА
+                    p.text_block__text Живя буквально на природе, вы не останетесь вдали от цивилизации. Рядом с жилым экокомплексом «Ежи» у вас есть выбор во всём. Две заправки — Лукойл и Газпром, два крупных банка — Кубань Кредит и Сбербанк, россыпь продуктовых магазинов, четыре кафе и даже продуктовый рынок. Выбор есть и у ваших детей — два детских сада и две школы. Только гостиница поблизости одна. Но зачем она вам, когда вы живёте в ЖК «Ежи». 
 
-                .pink_round_block  
-                    h3 подобрать квартиру в жк «ЕЖИ»
-
-                    a(href="#") 
-                        span(class="pink_icon search")
-                        span(class="pink_icon__link") Выбор квартиры
-
+        include blocks/section_object_tizers_small.jade               
 
         include blocks/section_managers.jade
 

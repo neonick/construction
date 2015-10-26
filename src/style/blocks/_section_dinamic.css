@@ -1,0 +1,49 @@
+/*
+*   dinamic
+*/
+.dinamic {
+    padding: 50px 0;
+
+    .container {
+        max-width: 800px;
+    }
+
+    h2 {
+        font-family: $custom;
+        color: #202628;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    h3 {
+        font-family: $custom;
+        color: #02263d;
+        text-transform: uppercase;
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 400;
+        margin-bottom: 5px;
+    }
+}
+
+.dinamic__grid {
+    lost-center: 800px;
+    lost-utility: clearfix;
+    margin-bottom: 65px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.dinamic__item {
+    lost-column: 1/5 5 1px no-flex;
+    margin-bottom: 1px;
+
+    img {
+        max-width: 100%;
+    }
+}

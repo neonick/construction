@@ -2,7 +2,7 @@
 *	object_tizers_large
 */
 .object_tizers_large {
-	padding: 50px 0 100px;
+	padding: 50px 0;
 
 }
 
@@ -77,14 +77,14 @@
 		margin-bottom: 70px;
 	}
 
-	.ask_manager {
-		display: block;
-		color: #0679c1;
-		text-transform: uppercase;
-		font-size: 12px;
-		line-height: 12px;
-		font-family: $custom;
-		text-decoration: underline;
-	}
-	
+}
+
+.ask_manager {
+	display: block;
+	color: #0679c1;
+	text-transform: uppercase;
+	font-size: 12px;
+	line-height: 12px;
+	font-family: $custom;
+	text-decoration: underline;
 }
