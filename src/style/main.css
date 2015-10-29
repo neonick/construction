@@ -21,8 +21,9 @@
 * Blocks
 */
 @import "blocks/section_header";
-@import "blocks/section_object_menu";
+@import "blocks/menu_object";
 @import "blocks/section_actions";
+@import "blocks/section_main";
 @import "blocks/object_tizers_small";
 @import "blocks/object_tizers_medium";
 @import "blocks/object_tizers_large";

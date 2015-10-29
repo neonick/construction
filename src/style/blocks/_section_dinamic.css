@@ -25,7 +25,34 @@
         font-size: 18px;
         line-height: 20px;
         font-weight: 400;
-        margin-bottom: 5px;
+        transform: translateY(-10px);
+        position: relative;
+
+        &:before {
+            width: 30px;
+            height: 1px;
+            background-color: #d0d0d0;
+            display: block;
+            content: "";
+            position: absolute;
+            left: -40px;
+            top: 10px;
+        }
+    }
+}
+
+.dinamic__line {
+    position: relative;
+
+    &:before {
+        width: 1px;
+        height: 100%;
+        background-color: #d0d0d0;
+        display: block;
+        content: "";
+        position: absolute;
+        left: -40px;
+        top: 0;
     }
 }
 

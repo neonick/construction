@@ -7,22 +7,21 @@ html(lang='ru')
 
         include parts/_header.jade
 
-        include blocks/menu_object.jade
+        section.full_block.full_block--mainpage
+            .container
 
-        // контакты
-        include blocks/section_company_people.jade
+                
 
-        // тизеры объектов
-        include blocks/section_object_tizers_small.jade
-        include blocks/section_object_tizers_medium.jade
-        include blocks/section_object_tizers_large.jade
 
         // главная
         include blocks/section_action.jade
 
+        // тизеры объектов
+        include blocks/section_object_tizers_small.jade
+
+        
         // выберите менеджера
         include blocks/section_managers.jade
-
 
         include parts/_footer_default.jade
 
