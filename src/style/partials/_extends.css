@@ -31,6 +31,7 @@
 	cursor: pointer;
 	margin: 20px 0;
 	display: inline-block;
+	transition: all 0.3s;
 }
 
 
@@ -45,3 +46,4 @@
 	left: 0;
 	z-index: -1;
 }
+

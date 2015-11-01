@@ -16,11 +16,14 @@ var gulp = require('gulp'),
     precss = require('precss'),
     postcssscss = require('postcss-scss'),
     lost = require('lost'),
+    postcssSVG = require('postcss-svg'),
+    postcssCenter = require('postcss-center'),
     cssnano = require('gulp-cssnano'),
     autoprefixer = require('autoprefixer'),
     postcssfocus = require('postcss-focus'),
     fontmagician = require('postcss-font-magician'),
     pkg = require('./package.json'),
+
     reload = browserSync.reload;
 
 var path = {
@@ -98,6 +101,10 @@ gulp.task('style:build', function () {
         .pipe( postcss([
             precss,
             lost,
+            postcssSVG({
+                paths: ['src/i/'],
+            }),
+            postcssCenter,
             fontmagician,
             postcssfocus,
             autoprefixer({ browsers: ['last 2 versions'] })

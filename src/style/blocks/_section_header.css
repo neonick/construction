@@ -3,11 +3,14 @@
 */
 .header {
     height: 118px;
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     z-index: 1000;
+
+    &.is-fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
 
     .backcall_block {
         float: right;
@@ -32,6 +35,10 @@
         padding: 20px 15px;
         transition: all 0.3s;
 
+        .header--mainpage & {
+            color: #fff;
+        }
+
         @media (--w1200) {
             margin-right: 50px;
         }
@@ -44,9 +51,18 @@
             color: #1d1d1b;
         }
 
+        .header--mainpage &:hover {
+            color: #fff;
+        }
+
         &.active {
             color: #1d1d1b;
             border-bottom: 1px solid #1d1d1b;
+        }
+
+        .header--mainpage &.active {
+            color: #fff;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
         }
     }
 

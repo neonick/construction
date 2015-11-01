@@ -5,10 +5,321 @@ html(lang='ru')
 
     body
 
-        include parts/_header.jade
+        // header
+        section.header.header--mainpage.is-fixed
+
+            a(href="/")
+                .header_corner_logo
+
+            include blocks/block_back_call.jade
+
+            nav.main_menu
+                a(href="#").active Обьекты
+                a(href="#") О компании
+                a(href="#") События
+                a(href="#") Контакты
 
         section.full_block.full_block--mainpage
             .container
+
+                .search_form__grid
+
+                    .search_form__item
+                        .search_form__logo.eji_logo
+                        .search_form__block
+                            h2 Цена
+                            .range-slider
+                                input(type="text" class="js-price-slider" value="")
+                            h2 Площадь
+                            .range-slider
+                                input(type="text" class="js-square-slider" value="")
+                            h2 Комнат
+                            .range-slider.floor
+                                input(type="text" class="js-floor-slider" value="")
+
+                        a(href="#").btn.white Подобрать
+                        a(href="#").location_link местоположение
+
+                    .search_form__item
+                        .search_form__logo.cinema_logo
+                        .search_form__block
+                            h2 Цена
+                            .range-slider
+                                input(type="text" class="js-price-slider" value="")
+                            h2 Площадь
+                            .range-slider
+                                input(type="text" class="js-square-slider" value="")
+                            h2 Комнат
+                            .range-slider.floor
+                                input(type="text" class="js-floor-slider" value="")
+
+                        a(href="#").btn.white Подобрать
+                        a(href="#").location_link местоположение
+
+                    .search_form__item
+                        .search_form__logo.cinema_logo
+                        .search_form__block
+                            h2 Цена
+                            .range-slider
+                                input(type="text" class="js-price-slider" value="")
+                            h2 Площадь
+                            .range-slider
+                                input(type="text" class="js-square-slider" value="")
+                            h2 Комнат
+                            .range-slider.floor
+                                input(type="text" class="js-floor-slider" value="")
+
+                        a(href="#").btn.white Подобрать
+                        a(href="#").location_link местоположение
+
+
+            
+        section.setka
+            
+
+            .setka__grid
+
+                .setka__row.row_type0
+
+                    .setka__col.col1
+
+                        h2 Удобное месторасположение
+
+                        p 
+                            strong СИНЕМА 
+                            | РАСПОЛОЖЕН в благоустроеном районе с развитой инфраструктурой.
+
+                        p В минутной доступности:
+                            br
+                            | – Больница и поликлиникка
+                            br
+                            | – Магазины
+                            br
+                            | – Садики и школы
+                            br 
+                            | – Культовый кинотеатр
+                            br
+                            |– Кубанский Гос. Университет
+
+
+                        a(href="#").arr_link.white Место и окружение
+
+                    .setka__col.col2
+
+                        #object_map
+
+
+                .setka__row.row_type1
+
+                    .setka__col.col1
+
+                        h2 Информация
+
+                        span.icon_text.address Краснодар, ул. Айвазовского, 116
+                        span.icon_text.when Сдача: IV квартал 2016
+                        span.icon_text.num 2 литера
+
+                        a(href="#").arr_link.white Подробнее о проекте
+
+
+
+                    .setka__col.col2
+
+                        h2 Нам 5 и вам 5!
+                        p 
+                            strong ВЫГОДНЫЕ 
+                            | ПРЕДЛОЖЕНИЯ 
+                            br
+                            | на покупку жилья в самом благополучном жилом комплексе Краснодара “СИНЕМА”
+                        a(href="#").arr_link.white Подробнее
+
+                    .setka__col.col3
+
+                        .panel
+
+                            h2 Кирпичные стены
+                             a(href="#").arr_link.white Преимущества
+
+
+                    .setka__col.col4
+
+                        .panel
+
+                            h2 Удобные планировки
+                             a(href="#").arr_link.white Посмотреть
+
+                        
+                    .setka__col.col5
+
+                        
+
+                        .panel.dark
+
+                            h2 Виртуальный тур
+                            a(href="#").arr_link.white Смотреть
+
+
+
+
+                .setka__row.row_type2
+
+                    .setka__col.col1
+
+                        .panel
+
+                            h2 Квартира за 100 рублей!
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet excepturi
+                             a(href="#").arr_link.white Подробнее
+
+                    .setka__col.col2
+
+                        h2 Квартира за 100 рублей в 
+                            strong «Синема»!
+                        p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia maxime aperiam facere. Molestias velit eius sequi, possimus accusantium totam laudantium quia placeat quibusdam reprehenderit, eveniet quaerat fuga saepe non adipisci!
+                        p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia maxime aperiam facere. Molestias velit eius sequi, possimus accusantium totam laudantium quia placeat quibusdam reprehenderit, eveniet quaerat fuga saepe non adipisci!
+                        a(href="#").arr_link.white Подробнее
+
+
+                .setka__row.row_type3
+
+                    .setka__col.col1
+
+                        .panel
+                            h2 Свободные планировки
+                            a(href="#").arr_link.white Преимущества
+
+                    .setka__col.col2
+
+                        h2 Акция
+                        p 
+                            strong ВЫГОДНЫЕ 
+                            | ПРЕДЛОЖЕНИЯ 
+                            br
+                            | на покупку жилья в самом благополучном жилом комплексе Краснодара “СИНЕМА”
+                        a(href="#").arr_link.white Подробнее
+
+                    .setka__col.col3
+
+                        h2 Вид из окна
+                        p 
+                            strong ВЫГОДНЫЕ 
+                            | ПРЕДЛОЖЕНИЯ 
+                            br
+                            | на покупку жилья в самом благополучном жилом комплексе Краснодара “СИНЕМА”
+                        a(href="#").arr_link.white Галерея
+
+                    .setka__col.col4
+
+                        h2 Квартира за 100 рублей в 
+                            strong «Синема»!
+                        p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia maxime aperiam facere. Molestias velit eius sequi, possimus accusantium totam laudantium quia placeat quibusdam reprehenderit, eveniet quaerat fuga saepe non adipisci!
+                        p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia maxime aperiam facere. Molestias velit eius sequi, possimus accusantium totam laudantium quia placeat quibusdam reprehenderit, eveniet quaerat fuga saepe non adipisci!
+                        a(href="#").arr_link.white Подробнее
+
+
+
+
+                .setka__row.row_type4
+
+
+                    .setka__col.col1
+
+                        h2 Информация
+
+                        span.icon_text.address Краснодар, ул. Айвазовского, 116
+                        span.icon_text.when Сдача: IV квартал 2016
+                        span.icon_text.num 2 литера
+
+                        a(href="#").arr_link.white Подробнее о проекте                      
+
+
+                    .setka__col.col2
+
+                        h2 Акция
+                        p 
+                            strong ВЫГОДНЫЕ 
+                            | ПРЕДЛОЖЕНИЯ 
+                            br
+                            | на покупку жилья в самом благополучном жилом комплексе Краснодара “СИНЕМА”
+                        a(href="#").arr_link.white Подробнее
+
+                    .setka__col.col3
+
+                        .panel.dark
+                            h2 Зона отдыха
+                            a(href="#").arr_link.white Смотреть
+
+                    .setka__col.col4
+
+                        .panel 
+                            h2 Охраняемая территория
+                            a(href="#").arr_link.white Преимущества
+
+                    .setka__col.col5
+                        .panel 
+                            h2 Документы на строительство
+                            a(href="#").arr_link.white Смотреть
+
+
+
+                .setka__row.row_type5
+
+
+                    .setka__col.col1
+
+                        .panel
+
+                            h2 Квартира за 100 рублей!
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet excepturi
+                             a(href="#").arr_link.white Подробнее
+
+                    .setka__col.col2
+
+                        h2 Квартира за 100 рублей в 
+                            strong «Синема»!
+                        p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia maxime aperiam facere. Molestias velit eius sequi, possimus accusantium totam laudantium quia placeat quibusdam reprehenderit, eveniet quaerat fuga saepe non adipisci!
+                        p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia maxime aperiam facere. Molestias velit eius sequi, possimus accusantium totam laudantium quia placeat quibusdam reprehenderit, eveniet quaerat fuga saepe non adipisci!
+                        a(href="#").arr_link.white Подробнее
+
+
+                    .setka__col.col3
+
+
+
+                    .setka__col.col4
+
+                        .panel
+                            h2 Свободные планировки
+                            a(href="#").arr_link.white Преимущества
+
+
+
+                    .setka__col.col5
+
+                        h2 Акция
+                        p 
+                            strong ВЫГОДНЫЕ 
+                            | ПРЕДЛОЖЕНИЯ 
+                            br
+                            | на покупку жилья в самом благополучном жилом комплексе Краснодара “СИНЕМА”
+                        a(href="#").arr_link.white Подробнее
+
+                    .setka__col.col6
+
+                        h2 Акция
+                        p 
+                            strong ВЫГОДНЫЕ 
+                            | ПРЕДЛОЖЕНИЯ 
+                            br
+                            | на покупку жилья в самом благополучном жилом комплексе Краснодара “СИНЕМА”
+                        a(href="#").arr_link.white Подробнее
+
+
+
+
+
+
+
 
                 
 
