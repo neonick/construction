@@ -1,0 +1,86 @@
+doctype html
+html(lang='ru')
+    head
+        include parts/_meta.jade
+
+    body
+
+        // header
+        section.header.header--mainpage.is-fixed
+
+            a(href="/")
+                .header_corner_logo
+
+            include blocks/block_back_call.jade
+
+            nav.main_menu
+                a(href="#").active Обьекты
+                a(href="#") О компании
+                a(href="#") События
+                a(href="#") Контакты
+
+        section.full_block.full_block--mainpage
+            .container
+
+                .search_form__grid
+
+                    .search_form__item
+                        .search_form__logo.eji_logo
+                        .search_form__block
+                            h2 Цена
+                            .range-slider
+                                input(type="text" class="js-price-slider" value="")
+                            h2 Площадь
+                            .range-slider
+                                input(type="text" class="js-square-slider" value="")
+                            h2 Комнат
+                            .range-slider.floor
+                                input(type="text" class="js-floor-slider" value="")
+
+                        a(href="#").btn.white Подобрать
+                        a(href="#").location_link местоположение
+
+                    .search_form__item
+                        .search_form__logo.cinema_logo
+                        .search_form__block
+                            h2 Цена
+                            .range-slider
+                                input(type="text" class="js-price-slider" value="")
+                            h2 Площадь
+                            .range-slider
+                                input(type="text" class="js-square-slider" value="")
+                            h2 Комнат
+                            .range-slider.floor
+                                input(type="text" class="js-floor-slider" value="")
+
+                        a(href="#").btn.white Подобрать
+                        a(href="#").location_link местоположение
+
+                    .search_form__item
+                        .search_form__logo.cinema_logo
+                        .search_form__block
+                            h2 Цена
+                            .range-slider
+                                input(type="text" class="js-price-slider" value="")
+                            h2 Площадь
+                            .range-slider
+                                input(type="text" class="js-square-slider" value="")
+                            h2 Комнат
+                            .range-slider.floor
+                                input(type="text" class="js-floor-slider" value="")
+
+                        a(href="#").btn.white Подобрать
+                        a(href="#").location_link местоположение                
+
+
+        include blocks/section_action.jade
+
+        include blocks/section_object_tizers_small.jade
+
+        include blocks/section_managers.jade
+
+        include parts/_footer_default.jade
+
+        include parts/_scripts.jade
+
+
