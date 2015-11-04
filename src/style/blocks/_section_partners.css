@@ -21,24 +21,31 @@
 
 .partners_grid {
     lost-center: 100%;
-    padding: 110px 0;
+    padding: 70px 0;
 }
 
-.partner {
+.partners_col {
     lost-column: 1/2;
     margin-bottom: 60px;
-    position: relative;
-
-    &:before {
-        @extend skew_block;
-        top: -30px
-    }
 
     @media (--w768) {
         lost-column: 1/4;
         margin-bottom: 0;
     }
+}
 
+.partner {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 180px;
+    padding-top: 1px;
+
+    &:before {
+        @extend skew_block;
+        top: -30px
+    }
+    
     &__pic {
         display: block;
         margin-top: 40px;

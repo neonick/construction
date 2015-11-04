@@ -5,79 +5,69 @@ html(lang='ru')
 
     body
 
-        // header
-        section.header.header--mainpage.is-fixed
+        include parts/_header.jade
 
-            a(href="/")
-                .header_corner_logo
+        nav.secondary_menu
+            a(href="#") «Неометрия»
+            a(href="#") «Неометрия»
+            a(href="#").active «Неометрия»
+            a(href="#") «Неометрия»
+            a(href="#") «Неометрия»
+            a(href="#") «Неометрия»
 
-            include blocks/block_back_call.jade
 
-            nav.main_menu
-                a(href="#").active Обьекты
-                a(href="#") О компании
-                a(href="#") События
-                a(href="#") Контакты
+        include blocks/block_alone_text.jade
 
-        section.full_block.full_block--mainpage
+        section.big_yelow_nums
             .container
 
-                .search_form__grid
+                .one_byn
+                    span 01
+                    h2 Технологии
+                    p В объектах «Неометрии» всегда присутствуют конструктивные особенности, о которых можно с гордостью говорить.
 
-                    .search_form__item
-                        .search_form__logo.eji_logo
-                        .search_form__block
-                            h2 Цена
-                            .range-slider
-                                input(type="text" class="js-price-slider" value="")
-                            h2 Площадь
-                            .range-slider
-                                input(type="text" class="js-square-slider" value="")
-                            h2 Комнат
-                            .range-slider.floor
-                                input(type="text" class="js-floor-slider" value="")
+                .one_byn
+                    span 02
+                    h2 Технологии
+                    p В объектах «Неометрии» всегда присутствуют конструктивные особенности, о которых можно с гордостью говорить.
 
-                        a(href="#").btn.white Подобрать
-                        a(href="#").location_link местоположение
-
-                    .search_form__item
-                        .search_form__logo.cinema_logo
-                        .search_form__block
-                            h2 Цена
-                            .range-slider
-                                input(type="text" class="js-price-slider" value="")
-                            h2 Площадь
-                            .range-slider
-                                input(type="text" class="js-square-slider" value="")
-                            h2 Комнат
-                            .range-slider.floor
-                                input(type="text" class="js-floor-slider" value="")
-
-                        a(href="#").btn.white Подобрать
-                        a(href="#").location_link местоположение
-
-                    .search_form__item
-                        .search_form__logo.cinema_logo
-                        .search_form__block
-                            h2 Цена
-                            .range-slider
-                                input(type="text" class="js-price-slider" value="")
-                            h2 Площадь
-                            .range-slider
-                                input(type="text" class="js-square-slider" value="")
-                            h2 Комнат
-                            .range-slider.floor
-                                input(type="text" class="js-floor-slider" value="")
-
-                        a(href="#").btn.white Подобрать
-                        a(href="#").location_link местоположение                
+                .one_byn
+                    span 03
+                    h2 Технологии
+                    p В объектах «Неометрии» всегда присутствуют конструктивные особенности, о которых можно с гордостью говорить.
 
 
-        include blocks/section_action.jade
 
+        include blocks/block_alone_text.jade
+                
         include blocks/section_object_tizers_small.jade
 
-        include blocks/section_managers.jade
+        include blocks/block_alone_text.jade
+
+        .container
+            .partners       
+                .partners_grid
+                    .partners_col
+                        .partner
+                            img(src="i/parnter_sber.png", class="partner__pic")
+                            span Сбербанк
+
+                    .partners_col
+                        .partner
+                            img(src="i/parnter_sber.png", class="partner__pic")
+                            span Сбербанк
+
+                    .partners_col
+                        .partner
+                            img(src="i/parnter_sber.png", class="partner__pic")
+                            span Сбербанк
+                            
+                    .partners_col
+                        .partner
+                            img(src="i/parnter_sber.png", class="partner__pic")
+                            span Сбербанк
+
+        include blocks/block_alone_text.jade
 
         include parts/_footer_default.jade
 

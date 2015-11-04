@@ -1,72 +1,52 @@
 /*
 *   advantages
 */
-.advantages {
+.about {
     padding: 50px 0 100px;
 }
 
-.advantages_icons {
-    padding-top: 80px;
-    margin-bottom: 80px;
-    border-top: 1px solid #d0d0d0;
-    border-bottom: 1px solid #d0d0d0;
-
-    h3 {
-        font-family: $custom;
-        color: #202628;
-        text-transform: uppercase;
-        margin-bottom: 15px;
-        font-weight: 300;
-        font-size: 32px;
-        line-height: 40px;
-        text-align: center;
-    }
-
-    
+.big_yelow_nums {
+    margin: 80px 0;
 }
 
-.advantages_icons__grid {
-    lost-center: 750px;
-    padding: 110px 0;
-}
+.one_byn {
+    position: relative;
+    height: 200px;
+    z-index: 1;
+    width: 600px;
+    margin: 0 auto 150px;
+    padding: 30px 100px 0 50px;
 
-.advantages_icon {
-    lost-column: 1/2;
-    text-align: center;
-    margin-bottom: 60px;
-
-    @media (--w768) {
-        lost-column: 1/4;
+    &:last-child {
         margin-bottom: 0;
     }
 
-    &__pic {
-        width: 92px;
-        height: 91px;
-        display: inline-block;
-        margin-bottom: 20px;
-        border-radius: 50%;
-
-        &.type1 {
-            background: #fff30e url(../i/advantages_icon1.png) 0 0 no-repeat;
-        }
-        &.type2 {
-            background: #fff30e url(../i/advantages_icon1.png) 0 0 no-repeat;
-        }
-        &.type3 {
-            background: #fff30e url(../i/advantages_icon1.png) 0 0 no-repeat;
-        }
-        &.type4 {
-            background: #fff30e url(../i/advantages_icon1.png) 0 0 no-repeat;
-        }
+    span {
+        font-size: 285px;
+        line-height: 240px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-weight: bold;
+        font-family: $custom;
+        color: $yellow;
+        letter-spacing: -20px;
+        z-index: -1;
     }
 
-    span {
-        color: rgba(39, 39, 39, 0.6);
-        font-size: 18px;
-        line-height: 25px;
+    h2 {
+        font-size: 32px;
+        height: 32px;
+        margin-bottom: 30px;
         text-transform: uppercase;
+        color: #202628;
+    }
+
+    p {
+        font-size: 21px;
+        height: 37px;
+        color: #767c7e;
         font-family: $custom;
-        display: block;
+        font-weight: 300;
     }
 }

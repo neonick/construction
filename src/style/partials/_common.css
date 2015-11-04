@@ -404,3 +404,33 @@
         top: -10px;
     }
 }
+
+
+
+
+.secondary_menu {
+    position: fixed;
+    top: 200px;
+    left: 30px;
+    z-index: 10;
+    width: 180px;
+
+    a {
+        color: rgba(39, 39, 39, 0.6);
+        font-size: 14px;
+        line-height: 40px;
+        padding-left: 20px;
+        display: block;
+        text-transform: uppercase;
+        transition: all 0.2s;
+
+        &:hover {
+            color: #272727;
+        } 
+
+        &.active {
+            border: 1px solid #272727;
+            color: #272727;
+        }
+    }
+}
