@@ -434,3 +434,24 @@
         }
     }
 }
+
+
+
+.round_arr_link {
+    background: url(../i/arr_link.png) 0 0 no-repeat;
+    height: 30px;
+    height: 30px;
+    padding-left: 40px;
+    margin-left: -40px;
+    font-size: 14px;
+    line-height: 30px;
+    font-family: $mainfont;
+    color: #0679c1;
+    display: block;
+    font-weight: 300;
+    text-decoration: underline;
+
+    &:hover {
+        text-decoration: none;
+    }
+}

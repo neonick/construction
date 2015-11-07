@@ -5,6 +5,7 @@
 //= ../../bower_components/magnific-popup/dist/jquery.magnific-popup.min.js
 //= ../../bower_components/Swiper/dist/js/swiper.jquery.min.js
 //= ../../bower_components/ion.rangeslider/js/ion.rangeSlider.min.js
+//= ../../bower_components/fotorama/fotorama.js
 //= modernizr-custom.js
 
 $(document).ready(function () {
@@ -56,6 +57,14 @@ $(document).ready(function () {
 		    $(this).addClass('swiper-slide-active');
 		});
     }
+
+    // big_slider_object
+    var swiper = new Swiper('.big_slider_object', {
+        pagination: '.big_slider_object__pagination',
+        paginationClickable: true,
+        prevButton: '.big_slider_object__prev',
+        nextButton: '.big_slider_object__next'
+    });
    
 
     //= parts/_init_gmaps.js

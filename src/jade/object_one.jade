@@ -19,59 +19,36 @@ html(lang='ru')
                 a(href="#") События
                 a(href="#") Контакты
 
-        section.full_block.full_block--mainpage
-            .container
+        section.full_block.full_block--object
+            
+            .swiper-container.big_slider_object
 
-                .search_form__grid
+                h1 
+                    span жилой комплекс
+                    | Точка опоры
+                .swiper-wrapper
+                    .swiper-slide(style="background-image: url(../i/object_slide.jpg)")
+                    .swiper-slide(style="background-image: url(../i/object_slide.jpg)")
+                    .swiper-slide(style="background-image: url(../i/object_slide.jpg)")
+                .swiper-pagination.swiper-pagination-white.big_slider_object__pagination
+                .swiper-button-prev.swiper-button-white.big_slider_object__prev
+                .swiper-button-next.swiper-button-white.big_slider_object__next
 
-                    .search_form__item
-                        .search_form__logo.eji_logo
-                        .search_form__block
-                            h2 Цена
-                            .range-slider
-                                input(type="text" class="js-price-slider" value="")
-                            h2 Площадь
-                            .range-slider
-                                input(type="text" class="js-square-slider" value="")
-                            h2 Комнат
-                            .range-slider.floor
-                                input(type="text" class="js-floor-slider" value="")
+            .search_form__grid
+                .search_form__item.active
+                    .search_form__logo.cinema_logo
+                    .search_form__block
+                        h2 Цена
+                        .range-slider
+                            input(type="text" class="js-price-slider" value="")
+                        h2 Площадь
+                        .range-slider
+                            input(type="text" class="js-square-slider" value="")
+                        h2 Комнат
+                        .range-slider.floor
+                            input(type="text" class="js-floor-slider" value="")
 
-                        a(href="#").btn.white Подобрать
-                        a(href="#").location_link местоположение
-
-                    .search_form__item
-                        .search_form__logo.cinema_logo
-                        .search_form__block
-                            h2 Цена
-                            .range-slider
-                                input(type="text" class="js-price-slider" value="")
-                            h2 Площадь
-                            .range-slider
-                                input(type="text" class="js-square-slider" value="")
-                            h2 Комнат
-                            .range-slider.floor
-                                input(type="text" class="js-floor-slider" value="")
-
-                        a(href="#").btn.white Подобрать
-                        a(href="#").location_link местоположение
-
-                    .search_form__item
-                        .search_form__logo.cinema_logo
-                        .search_form__block
-                            h2 Цена
-                            .range-slider
-                                input(type="text" class="js-price-slider" value="")
-                            h2 Площадь
-                            .range-slider
-                                input(type="text" class="js-square-slider" value="")
-                            h2 Комнат
-                            .range-slider.floor
-                                input(type="text" class="js-floor-slider" value="")
-
-                        a(href="#").btn.white Подобрать
-                        a(href="#").location_link местоположение
-
+                    a(href="#").btn.white Подобрать
 
         // setka
         section.setka
