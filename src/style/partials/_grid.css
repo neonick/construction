@@ -4,12 +4,12 @@
 @lost gutter 30px;
 
 .container {
-	width: 100%;
+	width: 280px;
 	margin: 0 auto;
 	position: relative;
 
 	@media (--w480) {
-	  width: 100%;
+	  width: 440px;
 	}
 
 	@media (--w600) {
@@ -17,7 +17,7 @@
 	}
 
 	@media (--w768) {
-	  width: 768px;
+	  width: 708px;
 	}
 
 	@media (--w980) {

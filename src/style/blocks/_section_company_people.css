@@ -28,11 +28,21 @@
 
 
 	&__photo {
-		lost-column: 3/8 2 20px no-flex;
+		lost-column: 8/8 1 20px no-flex;
+		margin-bottom: -40px;
+
+		@media (--w768) {
+			lost-column: 3/8 2 20px no-flex;
+			margin-bottom: 0;
+		}
 	}
 
 	&__info {
-		lost-column: 3/8 2 20px no-flex;
+		lost-column: 8/8 1 20px no-flex;
+
+		@media (--w768) {
+			lost-column: 3/8 2 20px no-flex;
+		}
 
 		.name {
 			font-family: $custom;
@@ -57,8 +67,12 @@
 		overflow: hidden;	
 		box-sizing: content-box;
 		transition: all 0.3s;
-		margin: 35px auto;
+		margin: 20px 0;
 		backface-visibility: hidden;
+
+		@media (--w768) {
+			margin: 35px auto;
+		}
 	}
 
 	&__pic {
@@ -73,15 +87,33 @@
 .company_address {
 	lost-center: 645px;
 	lost-utility: clearfix;
-	margin-bottom: 80px;
+	margin-bottom: 30px;
 
+	@media (--w768) {
+		margin-bottom: 60px;
+	}
+
+	@media (--w980) {
+		margin-bottom: 80px;
+	}
 
 	&__pic {
-		lost-column: 3/8 2 20px no-flex;
+		lost-column: 8/8 1 20px no-flex;
+		margin-bottom: 30px;
+
+		@media (--w768) {
+			lost-column: 3/8 2 20px no-flex;
+			margin-bottom: 0;
+		}
 	}
 
 	&__info {
-		lost-column: 5/8 2 20px no-flex;
+		lost-column: 8/8 1 20px no-flex;
+		
+		@media (--w768) {
+			lost-column: 5/8 2 20px no-flex;
+
+		}
 
 		.company_name {
 			font-family: $custom;
@@ -112,10 +144,28 @@
 .company_offices {
 	lost-center: 830px;
 	lost-utility: clearfix;
-	margin-bottom: 80px;
+	margin-bottom: 30px;
+
+	@media (--w768) {
+		margin-bottom: 60px;
+	}
+
+	@media (--w980) {
+		margin-bottom: 80px;
+	}
 
 	.company_office  {
-		lost-column: 5/10 2 20px no-flex;
+		lost-column: 10/10 1 20px no-flex;
+		margin-bottom: 40px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		@media (--w768) {
+			lost-column: 5/10 2 20px no-flex;
+			margin-bottom: 0;
+		}
 
 		.office_name {
 			font-family: $custom;
@@ -145,5 +195,13 @@
 
 #offices_map {
 	width: 100%;
-	height: 700px;
+	height: 300px;
+
+	@media (--w768) {
+		height: 500px;
+	}
+
+	@media (--w980) {
+		height: 700px;
+	}
 }
