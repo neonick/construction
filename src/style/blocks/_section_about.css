@@ -6,23 +6,33 @@
 }
 
 .big_yelow_nums {
-    margin: 80px 0;
+    margin: 30px 0 80px;
+
+    @media (--w768) {
+        margin: 80px 0;
+    }
 }
 
 .one_byn {
     position: relative;
-    height: 200px;
     z-index: 1;
-    width: 600px;
+    width: 100%;
     margin: 0 auto 150px;
-    padding: 30px 100px 0 50px;
+    padding: 30px 0 0 50px;
+    height: 200px;
+
+    @media (--w768) {
+        width: 600px;
+        margin: 0 auto 150px;
+        padding: 30px 100px 0 50px;
+    }
 
     &:last-child {
         margin-bottom: 0;
     }
 
     span {
-        font-size: 285px;
+        font-size: 235px;
         line-height: 240px;
         position: absolute;
         top: 0;
@@ -32,6 +42,10 @@
         color: $yellow;
         letter-spacing: -20px;
         z-index: -1;
+
+         @media (--w768) {
+            font-size: 285px;
+         }
     }
 
     h2 {

@@ -46,3 +46,20 @@
         margin: 50px 0;
     }
 }
+
+.copyrights {
+    float: right;
+    color: #888;
+    font-size: 11px;
+    line-height: 11px;
+    font-style: italic;
+    font-family: $custom;
+
+    a {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #888;
+        font-style: normal;
+        text-decoration: underline;
+    }
+}

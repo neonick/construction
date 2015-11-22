@@ -21,7 +21,7 @@
 	}
 
 	@media (--w980) {
-	  width: 980px;
+	  width: 960px;
 	}
 
 	@media (--w1200) {

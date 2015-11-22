@@ -25,8 +25,8 @@
 }
 
 .partners_col {
-    lost-column: 1/2;
-    margin-bottom: 60px;
+    lost-column: 1/1;
+    margin-bottom: 80px;
 
     @media (--w768) {
         lost-column: 1/4;

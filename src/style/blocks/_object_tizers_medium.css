@@ -2,7 +2,11 @@
 *	object_tizers_medium
 */
 .object_tizers_medium {
-	padding: 50px 0;
+	padding: 30px 0;
+
+	@media (--w768) {
+		padding: 50px 0;
+	}
 }
 
 h2.number_header {
@@ -39,19 +43,28 @@ h2.number_header {
 
 .one_obj_tizers_m {
 	lost-column: 1/1;
+	padding-left: 40px;
 
-	@media 	(--w980) {
+	@media (--w600) {
+		padding-left: 0;
+	}
+
+	@media (--w980) {
 		lost-column: 1/2;
 	}
 	
 	&__block {
-		width: 480px;
-		height: 300px;
+		
 		display: block;
 		position: relative;
 		margin: 40px auto;
 		z-index: 1;
 		padding-top: 1px;
+
+		@media (--w600) {
+			width: 480px;
+			height: 300px;
+		}
 
 		&:before {
 			@extend skew_block;
@@ -92,9 +105,14 @@ h2.number_header {
 
 	&__pic {
 		display: block;
-		position: absolute;
-		left: 0;
-		top: 70px;
+		margin-top: 70px;
+
+		@media (--w600) {
+			position: absolute;
+			left: 0;
+			top: 70px;
+			margin-top: 0;
+		}
 	}
 
 	&__status {
@@ -106,12 +124,18 @@ h2.number_header {
 		color: #ea6b61;
 		font-size: 15px;
 		line-height: 15px;
+
+
 	}
 
 	&__info {
-		position: absolute;
-		left: 220px;
-		top: 0;
+		
+
+		@media (--w600) {
+			position: absolute;
+			left: 220px;
+			top: 0;
+		}
 	}
 	
 }

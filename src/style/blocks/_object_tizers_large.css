@@ -11,12 +11,27 @@
 	lost-utility: clearfix;
 
 	&__pic {
-		lost-column: 5/8;
+		lost-column: 8/8;
+		margin-bottom: 50px;
+
+		@media (--w768) {
+			lost-column: 5/8;
+			margin-bottom: 0;
+		}
+
+		img {
+			max-width: 100%;
+		}
+
 	}
 
 	&__info {
-		lost-column: 3/8;
+		lost-column: 8/8;
 		position: relative;
+
+		@media (--w768) {
+			lost-column: 3/8;
+		}
 
 		&:before {
 			@extend skew_block;

@@ -57,18 +57,30 @@
 }
 
 .dinamic__grid {
-    lost-center: 800px;
+    lost-center: 100%;
     lost-utility: clearfix;
     margin-bottom: 65px;
 
     &:last-child {
         margin-bottom: 0;
     }
+
+    @media (--w768) {
+        lost-center: 800px;
+    }
 }
 
 .dinamic__item {
-    lost-column: 1/5 5 1px no-flex;
+    lost-column: 1/2 2 1px no-flex;
     margin-bottom: 1px;
+
+    @media (--w768) {
+        lost-column: 1/4 4 1px no-flex;
+    }
+
+    @media (--w980) {
+        lost-column: 1/5 5 1px no-flex;
+    }
 
     img {
         max-width: 100%;

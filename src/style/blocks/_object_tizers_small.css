@@ -2,7 +2,11 @@
 *	object_tizers_small
 */
 .object_tizers_small {
-	padding: 50px 0;
+	padding: 30px 0;
+
+	@media (--w768) {
+		padding: 50px 0;
+	}
 
 	h2 {
 		@extend section_h2;
@@ -15,9 +19,13 @@
 }
 
 .one_obj_tizers_s {
-	lost-column: 1/2;
+	lost-column: 1/1;
 
-	@media 	(--w980) {
+	@media (--w480) {
+		lost-column: 1/2;
+	}
+
+	@media (--w980) {
 		lost-column: 1/4;
 	}
 	

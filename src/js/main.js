@@ -45,11 +45,29 @@ $(document).ready(function () {
     
     // slider for managers
     if ($(".managers").width != 0) {
+
+    	$nSlides = 1;
+
+    	if ($(window).width() >= 450) {
+    		$nSlides = 2;
+    	}
+
+    	if ($(window).width() >= 768) {
+    		$nSlides = 3;
+    	}
+
+    	if ($(window).width() >= 980) {
+    		$nSlides = 4;
+    	}
+
+    	if ($(window).width() >= 1200) {
+    		$nSlides = 5;
+    	}
+
 	    var swiper = new Swiper('.swiper-managers', {
-	            slidesPerView: 5,
 	            paginationClickable: true,
+	            slidesPerView: $nSlides,
 	            spaceBetween: 0,
-	            paginationClickable: true
 	        });
 
 	   	$('.swiper-slide').click(function(e) {

@@ -2,16 +2,24 @@
 *   news
 */
 .news {
-    margin: 80px 0;
+    margin: 30px 0;
+
+    @media (--w768) {
+    	margin: 50px 0;
+    }
 }
 
 .news_tizer {
-	width: 570px;
+	width: 100%;
 	margin: 20px auto;
 	position: relative;
-	padding-left: 40px;
-	padding-top: 140px;
 	min-height: 290px;
+
+	@media (--w768) {
+		width: 570px;
+		padding-left: 40px;
+		padding-top: 140px;
+	}
 
 	&:before {
 		@extend skew_block;
@@ -28,20 +36,33 @@
 		color: #202628;
 		font-family: $custom;
 		text-transform: uppercase;
+		padding-left: 20px;
+
+		@media (--w768) {
+			padding-left: 0;
+		}
 	}
 
 	&__date {
 		color: #dce1e0;
-		font-size: 45px;
-		line-height: 45px;
+		font-size: 32px;
+		line-height: 32px;
 		font-family: $custom;
 		font-weight: bold;
-		height: 95px;
-		position: absolute;
-		top: 90px;
-		left: 10px;
+		padding-top: 90px;
+		padding-left: 10px;
 		z-index: -1;
 
+		@media (--w768) {
+			height: 95px;
+			position: absolute;
+			top: 90px;
+			left: 10px;
+			padding-top: 0;
+			padding-left: 0;
+			font-size: 45px;
+			line-height: 45px;
+		}
 
 		span {
 			color: #fff;
@@ -59,6 +80,11 @@
 		line-height: 20px;
 		color: #343434;
 		font-family: $custom;
+		padding-left: 20px;
+
+		@media (--w768) {
+			padding-left: 0;
+		}
 	}
 
 	a {
@@ -69,12 +95,17 @@
 }
 
 .action_tizer {
-	width: 570px;
+	width: 100%;
 	min-height: 290px;
 	margin: 0 auto 20px;
 	position: relative;
-	padding-top: 80px;
-	padding-left: 165px;
+	padding-top: 30px;
+	
+	@media (--w768) {
+		width: 570px;
+		padding-left: 165px;
+		padding-top: 80px;
+	}
 
 	&__block {
 		width: 143px;
@@ -85,9 +116,14 @@
 		box-sizing: content-box;
 		transition: all 0.3s;
 		backface-visibility: hidden;
-		position: absolute;
-		top: 25px;
-		left: 0;
+		margin-bottom: 50px;
+
+		@media (--w768) {
+			position: absolute;
+			top: 25px;
+			left: 0;
+			margin-bottom: 0;
+		}
 	}
 
 	&__pic {
@@ -95,6 +131,7 @@
 		margin-top: -60px;
 		display: block;	
 		backface-visibility: hidden;
+		
 	}
 
 	h2 {
@@ -163,18 +200,26 @@
 }
 
 .one_news_photogallery {
-	lost-column: 10/12 2 20px no-flex;
-	lost-move: 1/12;
+	lost-column: 12/12 2 20px no-flex;
+
+	@media (--w768) {
+		lost-column: 10/12 2 20px no-flex;
+		lost-move: 1/12;
+	}
 }
 
 
 
 .one_news_content {
-	lost-column: 7/12 2 20px no-flex;
-	lost-move: 3/12;
+	lost-column: 12/12 2 20px no-flex;
 	min-height: 290px;
 	margin: 0 auto 20px;
 	position: relative;
+
+	@media (--w768) {
+		lost-column: 7/12 2 20px no-flex;
+		lost-move: 3/12;
+	}
 
 	&:first-child:before {
 		@extend skew_block;
