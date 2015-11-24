@@ -83,6 +83,25 @@ $(document).ready(function () {
         prevButton: '.big_slider_object__prev',
         nextButton: '.big_slider_object__next'
     });
+
+
+    // fix header
+    function sticky_relocate() {
+		var window_top = $(window).scrollTop();
+		var winHeight = $(window).height();
+
+		if (window_top > 0)
+			$('.js-sticky-header').addClass('is-fixed')
+		else
+			$('.js-sticky-header').removeClass('is-fixed')
+    	};
+
+    $(function() {
+        if ($(window).width() > 700) {
+            $(window).scroll(sticky_relocate);
+            sticky_relocate();
+        }
+    });
    
 
     //= parts/_init_gmaps.js

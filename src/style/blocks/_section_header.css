@@ -4,18 +4,47 @@
 .header {
     height: 118px;
     width: 100%;
-    z-index: 1000;
+    z-index: 10000000 !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 0.4s;
+
+    &:before {
+        display: block;
+        content: "";
+        position: fixed;
+        top: -108px;
+        left: -50px;
+        background-color: #272727;
+        width: 350px;
+        height: 150px;
+        z-index: -1;
+        transform: rotate(-20deg);
+        box-shadow: 0px 0px 30px rgba(0,0,0, 0.5);
+        opacity: 1;
+        transition: all 0.4s;
+    }
+
+    &.is-fixed:before {
+        opacity: 0;
+    }
 
     &.is-fixed {
-        position: fixed;
-        top: 0;
-        left: 0;
+        background-color: rgba(99, 99, 99, 0.75);
+        height: 53px;
     }
 
     .backcall_block {
         float: right;
         margin-top: 15px;
+        transition: all 0.4s;
     }
+    
+    &.is-fixed .backcall_block  {
+        margin-top: 0;
+    }
+
 }
 
 /*
@@ -34,6 +63,11 @@
         margin-right: 30px;
         padding: 20px 15px;
         transition: all 0.3s;
+
+        .is-fixed & {
+            margin-top: 5px;
+            padding: 10px 15px;
+        }
 
         .header--mainpage & {
             color: #fff;
@@ -76,9 +110,16 @@
 }
 
 .header_corner_logo {
-    width: 332px;
-    height: 118px;
+    width: 185px;
+    height: 108px;
     background: url(../i/header_corner_logo.png)  no-repeat;
     float: left;
-    margin-right: -60px;
+    margin-left: 25px;
+    margin-right: 40px;
+    background-size: 100%;
+    transition: all 0.4s;
+
+    .is-fixed & {
+        background-size: 80%;
+    }
 }

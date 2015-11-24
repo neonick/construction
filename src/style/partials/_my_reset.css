@@ -29,6 +29,10 @@ html, body {
   transform-style: preserve-3d;
 }
 
+body {
+  padding-top: 110px;
+}
+
 hr {
     border:0;
     border-top: 1px solid #d0d0d0;
