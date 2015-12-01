@@ -2,7 +2,8 @@
 *   full_block
 */
 .full_block {
-    height: 100vh;
+    min-height: 700px;
+    padding-bottom: 30px;	
     width: 100%;
     padding-top: 1px;
     position: relative;
@@ -29,11 +30,13 @@
 .search_form__grid {
 	lost-center: 960px;
 	lost-utility: clearfix;
-	margin-top: 150px;
+	margin-top: 120px;
 }
 
 .search_form__item {
 	lost-column: 1/1 1 0px no-flex;	
+	max-width: 300px;
+	margin: 0 auto 40px;	
 	opacity: 0.7;
 	transition: all 0.3s;
 

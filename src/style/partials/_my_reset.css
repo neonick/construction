@@ -27,11 +27,7 @@ html, body {
   background: #f6f6f6 url(../i/bg_pattern.jpg) 0 0 repeat;
   -webkit-font-smoothing: antialiased;
   transform-style: preserve-3d;
-}
-
-body {
-  padding-top: 110px;
-}
+} 
 
 hr {
     border:0;
