@@ -1,0 +1,37 @@
+doctype html
+html(lang='ru')
+    head
+        include parts/_meta.jade
+
+    body
+
+        // header
+        section.header.js-sticky-header.header--mainpage
+
+            a(href="/")
+                .header_corner_logo
+
+            include blocks/block_back_call.jade
+
+            nav.main_menu
+                a(href="#").active Обьекты
+                a(href="#") О компании
+                a(href="#") События
+                a(href="#") Контакты
+
+            a(href="#" class="mobile_menu js-open-mobile-menu") Меню
+
+        section.full_block.full_block--liter
+            
+            img(src="i/liter_1.jpg", alt="")
+
+            
+
+            
+
+
+        include blocks/section_managers.jade
+
+        include parts/_footer_default.jade
+
+        include parts/_scripts.jade

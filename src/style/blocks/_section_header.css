@@ -11,7 +11,6 @@
     transition: all 0.4s;
 
     &:before {
-        display: block;
         content: "";
         position: fixed;
         top: -108px;
@@ -24,6 +23,11 @@
         box-shadow: 0px 0px 30px rgba(0,0,0, 0.5);
         opacity: 1;
         transition: all 0.4s;
+        display: none;
+
+        @media (--w768) {
+            display: block;
+        }
     }
 
     &.is-fixed:before {
@@ -51,6 +55,25 @@
 *   main menu
 */
 .main_menu {
+    display: none;
+
+    @media (--w768) {
+        display: block;
+    }
+
+    &.is-opened {
+        display: block;
+        
+
+        a {
+            width: 100%;
+            border-bottom: 1px solid rgba(0,0,0,0.2);
+
+            &:last-child {
+                border-bottom: 0;
+            }
+        }
+    }
 
     a {
         text-transform: uppercase;
@@ -110,16 +133,38 @@
 }
 
 .header_corner_logo {
-    width: 185px;
+    width: 160px;
     height: 108px;
     background: url(../i/header_corner_logo.png)  no-repeat;
     float: left;
-    margin-left: 25px;
-    margin-right: 40px;
     background-size: 100%;
     transition: all 0.4s;
+    margin-left: 10px;
+
+    @media (--w768) {
+        margin-left: 25px;
+        margin-right: 40px;
+        width: 185px;
+        height: 108px;
+    }
 
     .is-fixed & {
         background-size: 80%;
+    }
+}
+
+.mobile_menu {
+    display: block;
+    float: right;
+    margin: 10px 10px 0 0;
+    border: 1px solid #fff;
+    padding: 15px 23px;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #fff;
+
+    @media (--w768) {
+        display: none;
     }
 }

@@ -97,10 +97,23 @@ $(document).ready(function () {
     	};
 
     $(function() {
-        if ($(window).width() > 700) {
+        if ($(window).width() > 768) {
             $(window).scroll(sticky_relocate);
             sticky_relocate();
         }
+    });
+
+
+    // mobile menu
+    $(document).on("click", ".js-open-mobile-menu", function() {
+     	if ($(this).hasClass("is-opened")) {
+     		$(".main_menu").removeClass("is-opened");
+     		$(this).removeClass("is-opened");
+     	}
+     	else {
+     		$(".main_menu").addClass("is-opened");
+     		$(this).addClass("is-opened"); 
+     	}
     });
    
 

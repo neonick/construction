@@ -2,7 +2,7 @@
 *   full_block
 */
 .full_block {
-    min-height: 700px;
+    min-height: 800px;
     padding-bottom: 30px;	
     width: 100%;
     padding-top: 1px;
@@ -45,7 +45,13 @@
 	}
 
 	.full_block--object & {
-		lost-move: 1/3;
+		float: none;
+		margin: 0 auto;
+
+		@media (--w768) {
+			lost-move: 1/3;
+		}
+		
 	}
 
 	.touchevents &, 
