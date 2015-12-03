@@ -2,7 +2,15 @@
 *   object_menu
 */
 .object_menu {
-    width: 160px;
+    width: 25px;
+    transition: all 0.4s;
+
+    &__content {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateX(-10px);
+        transition: all .5s;
+    }
 
     &.sidebar {
         position: fixed;
@@ -22,16 +30,11 @@
         }
     }
 
-    
-
     &__logo {
         margin-left: 40px;
         margin-bottom: 20px;
         display: block;
     }
-
-
-
 
     &__list {
         margin-right: -50px;
@@ -39,11 +42,11 @@
         li {
             display: block;
             margin: 10px 0;
-            padding-left: 40px;
+            padding-left: 30px;
             transition: padding 0.3s;
 
             &:hover {
-                padding-left: 50px;  
+                padding-left: 35px;  
             }
 
 
@@ -71,6 +74,17 @@
             display: inline-block;
 
 
+        }
+    }
+
+    &:hover {
+        width: 160px;
+
+        .object_menu__content {
+            visibility: visible;
+            display: block;
+            opacity: 1;
+            transform: translateX(0);
         }
     }
 }

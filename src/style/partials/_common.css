@@ -472,23 +472,66 @@
     }
 }
 
-.full_block.full_block--liter {
-    min-height: 700 !important;
-}
+.liter_plan {
 
-.full_block--liter {
-    overflow: hidden;   
+    position: relative;
 
     @media (--w980) {
-        height: 700px;
+        height: 933px;
     }
 
     @media (--w1200) {
-        height: 867px;
+        height: 933px;
     }
 
     @media (--w1400) {
-        height: 1000px;
+        height: 1067px;
+    }
+
+    @media (--w1600) {
+        height: 1280px;
+    }
+}
+
+.liter_plan__shadow {
+    box-shadow: inset 0px 0px 250px rgba(0,0,0,0.8);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    @media (--w980) {
+        height: 800px;
+    }
+
+    @media (--w1200) {
+        height: 933px;
+    }
+
+    @media (--w1400) {
+        height: 1067px;
+    }
+
+    @media (--w1600) {
+        height: 1280px;
+    }
+}
+
+.full_block--liter {
+    overflow: hidden;  
+
+    @media (--w980) {
+        height: 800px;
+    }
+
+    @media (--w1200) {
+        height: 933px;
+    }
+
+    @media (--w1400) {
+        height: 1067px;
     }
 
     @media (--w1600) {
@@ -503,15 +546,15 @@
         transform: translateX(-50%);
 
         @media (--w980) {
-            width: 1050px;
+            width: 1200px;
         }
 
         @media (--w1200) {
-            width: 1300px;
+            width: 1400px;
         }
 
         @media (--w1400) {
-            width: 1500px;
+            width: 1600px;
         }
 
         @media (--w1600) {
@@ -527,15 +570,15 @@
         transform: translateX(-50%);
         
         @media (--w980) {
-            width: 1050px;
+            width: 1200px;
         }
 
         @media (--w1200) {
-            width: 1300px;
+            width: 1400px;
         }
 
         @media (--w1400) {
-            width: 1500px;
+            width: 1600px;
         }
 
         @media (--w1600) {
@@ -552,4 +595,19 @@
             opacity: 0.7;
         }
     }
+}
+
+.podbor_btn {
+    position: fixed;
+    bottom: 10px;
+    right: 30px;
+    z-index: 100;
+}
+
+.tour_btn {
+    position: fixed;
+    bottom: 10px;
+    left: 30px;
+    z-index: 100;
+    background-color: rgba(215, 234, 59, 0.12);
 }

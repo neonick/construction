@@ -21,17 +21,15 @@ html(lang='ru')
 
             a(href="#" class="mobile_menu js-open-mobile-menu") Меню
 
+        include blocks/menu_object.jade
+
         section.full_block.full_block--liter
             
-            img(src="i/liter_1.jpg", alt="")
+            .liter_plan
+                img(src="i/liter_1.jpg", alt="")
+                .liter_plan__shadow
+                a(href="#").btn.white.tour_btn Виртуальный тур
+                a(href="#").btn.white.podbor_btn Подобрать по параметрам
 
-            
-
-            
-
-
-        include blocks/section_managers.jade
-
-        include parts/_footer_default.jade
 
         include parts/_scripts.jade
