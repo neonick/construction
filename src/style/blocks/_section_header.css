@@ -35,8 +35,9 @@
     }
 
     &.is-fixed {
-        background-color: rgba(99, 99, 99, 0.75);
+        background-color: rgba(0, 0, 0, 0.5);
         height: 53px;
+        z-index: 1000;
     }
 
     .backcall_block {
