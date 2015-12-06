@@ -7,6 +7,13 @@
 //= ../../bower_components/ion.rangeslider/js/ion.rangeSlider.min.js
 //= ../../bower_components/fotorama/fotorama.js
 //= modernizr-custom.js
+//= desvg.js
+
+
+window.addEventListener('load', function(){
+	deSVG('.js-replace-svg', true);
+});
+   
 
 $(document).ready(function () {
 
@@ -115,7 +122,8 @@ $(document).ready(function () {
      		$(this).addClass("is-opened"); 
      	}
     });
-   
+
+
 
     //= parts/_init_gmaps.js
 

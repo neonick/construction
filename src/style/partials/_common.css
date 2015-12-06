@@ -9,6 +9,7 @@
         padding-left: 40px;
         background: url(../i/green_arr.png) left 14px center no-repeat;
         transition: all 0.3s;
+        color: #333;
 
         &:hover {
             background-color: #fff30e;
