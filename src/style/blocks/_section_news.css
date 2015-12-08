@@ -2,10 +2,10 @@
 *   news
 */
 .news {
-    margin: 30px 0;
+    padding: 30px 0;
 
     @media (--w768) {
-    	margin: 50px 0;
+    	padding: 170px 0 50px;
     }
 }
 

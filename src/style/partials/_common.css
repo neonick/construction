@@ -177,7 +177,7 @@
     padding: 30px 0;
 
     @media (--w768) {
-        padding: 50px 0;
+        padding: 120px 0 50px;
     }
 
     .container {
@@ -608,7 +608,7 @@
 .tour_btn {
     position: fixed;
     bottom: 10px;
-    left: 30px;
+    left: 210px;
     z-index: 100;
     background-color: rgba(215, 234, 59, 0.12);
 }

@@ -2,15 +2,27 @@
 *   object_menu
 */
 .object_menu {
-    width: 25px;
+    width: 180px;
     transition: all 0.4s;
 
-    &__content {
-        visibility: hidden;
-        opacity: 0;
-        transform: translateX(-10px);
-        transition: all .5s;
+    &.is-hidden {
+        width: 25px;
+
+        .object_menu__content {
+            visibility: hidden;
+            opacity: 0;
+            transform: translateX(-10px);
+            transition: all .5s;
+        }
     }
+
+
+    &__content {
+        visibility: visible;
+        display: block;
+        opacity: 1;
+        transform: translateX(0);
+    }   
 
     &.sidebar {
         position: fixed;
@@ -77,14 +89,5 @@
         }
     }
 
-    &:hover {
-        width: 160px;
-
-        .object_menu__content {
-            visibility: visible;
-            display: block;
-            opacity: 1;
-            transform: translateX(0);
-        }
-    }
+    
 }

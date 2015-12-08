@@ -23,6 +23,18 @@
 	display: inline-block;
 	padding: 15px;
 
+	&.pl40 {
+		@media (--w768) {
+			padding-left: 40px;
+		}
+		@media (--w768) {
+			.panel {
+				padding-left: 40px;
+			}
+			
+		}
+	}
+
 	h2 {
 		position: relative;
 		font-size: 24px;

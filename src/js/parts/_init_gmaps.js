@@ -1,6 +1,4 @@
 
-
-
 // initialize object map
 function initialize() {
     var pos = new google.maps.LatLng(45.049200, 38.944139);

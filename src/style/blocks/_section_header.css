@@ -38,6 +38,8 @@
         background-color: rgba(0, 0, 0, 0.5);
         height: 53px;
         z-index: 1000;
+
+
     }
 
     .backcall_block {
@@ -133,6 +135,17 @@
 
             &:last-child {
                 border-bottom: 0;
+            }
+        }
+    }
+
+    .is-fixed & {
+        a {
+            color: #fff;
+
+            &.active {
+                color: #fff;
+                border-bottom: 1px solid rgba(255,255,255,0.6);
             }
         }
     }
