@@ -2,7 +2,7 @@
 *   object_menu
 */
 .object_menu {
-    width: 180px;
+    width: 173px;
     transition: all 0.4s;
 
     &.is-hidden {

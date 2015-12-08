@@ -540,6 +540,7 @@
 	font-family: $custom;
 	font-weight: bold;
 	text-transform: uppercase;
+	padding-left: 170px;	
 
 	span {
 		font-size: 20px;

@@ -107,7 +107,7 @@ $(document).ready(function () {
     function hide_menu() {
 		var window_top = $(window).scrollTop();
 
-    	if (window_top > 800) {
+    	if (window_top > 100) {
     		$('.object_menu').addClass('is-hidden')
     	}
     	else {
@@ -128,6 +128,9 @@ $(document).ready(function () {
             hide_menu();
         }
     });
+
+
+
 
 
 

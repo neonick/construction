@@ -372,7 +372,7 @@
 
 .irs-min, .irs-max {
     color: #272727;
-    font-size: 10px; line-height: 1.333;
+    font-size: 12px; line-height: 1.333;
     text-shadow: none;
     top: 0; padding: 1px 3px;
     -moz-border-radius: 3px;
@@ -384,10 +384,10 @@
 
 .irs-from, .irs-to, .irs-single {
     color: #fff;
-    font-size: 10px; line-height: 1.333;
+    font-size: 12px; line-height: 1.333;
     text-shadow: none;
     padding: 1px 5px;
-    background: rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.5);
     -moz-border-radius: 3px;
     border-radius: 3px;
 }
@@ -396,10 +396,13 @@
 }
 
 .irs-grid-pol {
-    background: #99a4ac;
+    background: #DDD;
 }
 .irs-grid-text {
-    color: #99a4ac;
+    color: #272727;
+    font-size: 14px;
+    line-height: 4px;
+    padding: 0px 1px;
 }
 
 .irs-disabled {

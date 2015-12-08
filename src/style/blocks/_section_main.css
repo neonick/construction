@@ -39,7 +39,7 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: url("../i/pattern.png") top left repeat;
+	background: rgba(0,0,0,0.4) url("../i/pattern.png") top left repeat;
 	z-index: 1;
 }
 
@@ -64,7 +64,7 @@
 	lost-column: 1/1 1 0px no-flex;	
 	max-width: 300px;
 	margin: 0 auto 40px;	
-	opacity: 0.9;
+	opacity: 0.8;
 	transition: all 0.3s;
 
 	@media (--w768) {
@@ -83,11 +83,11 @@
 
 	.touchevents &, 
 	&.active {
-		opacity: 1;
+		opacity: 0.95;
 	}
 
 	&:hover {
-		opacity: 1;
+		opacity: 0.95;
 	}
 
 	.btn {
@@ -98,7 +98,7 @@
 }
 
 .search_form__block {
-	background-color: rgba(255, 255, 255, 0.8);
+	background-color: #fff;
 	padding: 15px;
 	font-family: $custom;
 	font-weight: 300;
