@@ -6,17 +6,17 @@
 //= ../../bower_components/Swiper/dist/js/swiper.jquery.min.js
 //= ../../bower_components/ion.rangeslider/js/ion.rangeSlider.min.js
 //= ../../bower_components/fotorama/fotorama.js
+//= ../../bower_components/skrollr/dist/skrollr.min.js
 //= modernizr-custom.js
-//= desvg.js
-
-
-window.addEventListener('load', function(){
-	deSVG('.js-replace-svg', true);
-});
-
 
 
 $(document).ready(function () {
+
+
+	skrollr.init({
+		smoothScrolling: false,
+		mobileDeceleration: 0.004
+	});
 
 	// range sliders
 	$(".js-price-slider").ionRangeSlider({

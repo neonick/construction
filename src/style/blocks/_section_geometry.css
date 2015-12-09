@@ -145,22 +145,26 @@
 
 .geo_top1 {
     width: 120%;
-    height: 500px;
+    height: 640px;
     background-color: #272727;
+    -webkit-transform: rotate(20deg);
     transform: rotate(20deg);
     position: absolute;
-    top: -17%;
+    top: -27%;
     left: -5%;
+    z-index: 5;
 }
 
 .geo_top2 {
     width: 120%;
-    height: 280px;
     background-color: #272727;
     transform: rotate(-20deg);
     position: absolute;
-    top: -19%;
+    height: 410px;
+    background-color: #272727;
+    top: -30%;
     left: -9%;
+    z-index: 7;
 }
 
 .geo_bottom2 {
@@ -171,6 +175,7 @@
     position: absolute;
     bottom: -30%;
     left: -5%;
+    z-index: 7;
 }
 
 .geo_bottom1 {
@@ -181,4 +186,120 @@
     position: absolute;
     bottom: -30%;
     left: -9%;
+    z-index: 7;
+}
+
+.parallax_dummy {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.dummy1 {
+    width: 50%;
+    height: 800px;
+    position: absolute;
+    background-color: #dadada;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    transform: skewY(-20deg);
+    z-index: -1;
+}
+
+.dummy2 {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    background-color: #fff;
+    left: 10%;
+    top: 0;
+    transform: skewY(20deg);
+}
+
+.dummy3 {
+    width: 40%;
+    height: 1200px;
+    position: absolute;
+    background-color: #272727;
+    right: 0;
+    top: -40%;
+    transform: skewY(-20deg);
+}
+
+.dummy4 {
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    background-color: #dadada;
+    left: 50%;
+    top: 90%;
+    transform: skewY(-20deg);
+}
+
+.dummy5 {
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    background-color: #272727;
+    left: 30%;
+    top: 40%;
+    transform: skewY(20deg);
+}
+
+.dummy6 {
+    width: 30%;
+    height: 20%;
+    position: absolute;
+    background-color: #fff;
+    left: 35%;
+    top: 40%;
+    transform: skewY(-20deg);
+    z-index: -1;
+}
+
+.dummy7 {
+    width: 20%;
+    height: 40%;
+    position: absolute;
+    background-color: #fff;
+    right:10%;
+    top: 60%;
+    transform: skewY(-20deg);
+    z-index: -1;
+}
+
+
+.dummy8 {
+    width: 20%;
+    height: 40%;
+    position: absolute;
+    background-color: #dadada;
+    left:20%;
+    top: 100%;
+    transform: skewY(20deg);
+    z-index: -1;
+}
+
+.dummy9 {
+    width: 10%;
+    height: 30%;
+    position: absolute;
+    background-color: #272727;
+    left:5%;
+    top: 100%;
+    transform: skewY(-20deg);
+    z-index: -1;
+}
+
+.dummy10 {
+    width: 10%;
+    height: 30%;
+    position: absolute;
+    background-color: #272727;
+    right:5%;
+    top: 90%;
+    transform: skewY(20deg);
+    z-index: -1;
 }
