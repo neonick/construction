@@ -55,6 +55,7 @@
             display: block;
             margin: 10px 0;
             padding-left: 30px;
+            width: 200px;
             transition: padding 0.3s;
 
             &:hover {

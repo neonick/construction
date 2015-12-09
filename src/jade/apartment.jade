@@ -1,0 +1,159 @@
+doctype html
+html(lang='ru')
+    head
+        include parts/_meta.jade
+
+    body
+
+        include parts/_header.jade
+
+        include blocks/menu_object.jade
+
+        // apartment
+        section.apartment
+            .container
+
+                ul.breadcrumbs
+                    li
+                        a(href="#") жк ежи
+                    li
+                        a(href="#") планировки
+                    li 
+                        span подбор по параметрам
+
+                .apt
+
+                    .apt__grid
+
+                        .apt_pic
+
+                            img(src="i/apt_plan.png", alt="")    
+
+                        .apt_info
+
+
+                            p(class="apt_info__heading") 
+                                | трёх комнатная 
+                                br
+                                | квартира №26 
+                                br
+                                span 101,64 м²
+
+                            ul.apt_info__params
+                                li Спальня    
+                                    span 13,60 м²
+                                li холл   
+                                    span 12,35 м²
+                                li Гостиная-кухня  
+                                    span 36,00 м2²
+                                li лоджия
+                                    span  2,32 м²
+                                li балкон
+                                    span  2,16 м²
+
+                            
+
+
+
+                            a(href="#").btn.green Рассчитать ипотеку
+                            a(href="#").ask_manager Задать вопрос менеджеру 
+
+
+                  
+
+                hr
+
+                .useful_square
+
+                    h3 Расширьте своё пространство дополнительной полезной площадью:
+
+
+                    .useful_square__grid
+
+                        .useful_square__left
+                            .pink_round_block  
+                                h3 Собственное 
+                                    br
+                                    | кладовое помещение
+
+                                a(href="#") 
+                                    span(class="pink_icon i-plan")
+                                    span(class="pink_icon__link") Посмотреть план
+
+                        .useful_square__right
+                            .pink_round_block  
+                                h3 Место 
+                                    br
+                                    | на подземной парковке
+
+                                a(href="#") 
+                                    span(class="pink_icon i-parking")
+                                    span(class="pink_icon__link") Посмотреть план
+
+
+
+
+                hr    
+
+                .design_projects
+
+                    h2 3 дизайн проекта в подарок:
+
+                    h3
+                        a(href="#") Премиум 
+
+                    a(href="#")
+                        <img src="i/content_single_pic.jpg" class="content_single_pic">
+
+                    h3
+                        a(href="#") Бизнес 
+
+                    a(href="#")
+                        <img src="i/content_single_pic.jpg" class="content_single_pic">
+
+                    h3
+                        a(href="#") Эконом 
+
+                    a(href="#")
+                        <img src="i/content_single_pic.jpg" class="content_single_pic">
+
+
+
+                hr
+
+                .download_plan
+
+                    h3 Подробный план этажа с размерами
+
+                    .one_document
+                        a(href="#").one_document__icon
+                            span .pdf
+                        a(href="#").one_document__caption Скачать plan15.pdf
+                        span.one_document__size (4 Mb)
+
+
+                hr       
+
+                .centered_block
+
+                    a(href="#").btn.green Рассчитать ипотеку
+                    a(href="#").ask_manager Задать вопрос менеджеру 
+
+                    .pink_round_block  
+                        h3 Посмотреть другие 3х комнатные квартиры
+
+                        a(href="#") 
+                            span(class="pink_icon search")
+                            span(class="pink_icon__link") Поиск
+                                br
+                                | по параметрам
+
+                hr 
+
+                    
+
+
+        include parts/_footer_default.jade
+
+        include parts/_scripts.jade
+

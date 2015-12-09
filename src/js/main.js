@@ -75,6 +75,8 @@ $(document).ready(function () {
 	            paginationClickable: true,
 	            slidesPerView: $nSlides,
 	            spaceBetween: 0,
+	            centeredSlides: true,
+	            loop: true
 	        });
 
 	   	$('.swiper-slide').click(function(e) {

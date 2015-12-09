@@ -39,4 +39,6 @@
 @import "blocks/section_about";
 @import "blocks/section_dinamic";
 @import "blocks/section_geometry";
+@import "blocks/section_search_resuts";
+@import "blocks/section_apartment";
 @import "blocks/section_footer";

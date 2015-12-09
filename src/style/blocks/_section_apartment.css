@@ -1,0 +1,99 @@
+/*
+*   apartment
+*/
+.apartment {
+    padding: 170px 0 30px;
+
+    .container {
+        max-width: 790px
+    }
+}
+
+
+.design_projects {
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 24px;
+        line-height: 24px;
+        margin-bottom: 40px;
+        color: #02263d;
+        font-family: $custom;
+        font-weight: 400;
+    }
+
+    h3 {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 18px;
+        line-height: 18px;
+        margin-bottom: 30px;
+        color: #02263d;
+        font-family: $custom;
+        font-weight: 400;
+
+        a {
+            color: inherit;
+        }
+    }
+}
+
+.centered_block {
+    text-align: center;
+}
+
+.download_plan {
+    text-align: center;
+   
+
+    h3 {
+        text-align: center;
+        font-family: $custom;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-shadow: 5px 12px 10px rgba(0,0,0,.15);
+        font-size: 18px;
+        line-height: 18px;
+         margin-bottom: 40px;
+        font-weight: 400;
+    }
+}
+
+.useful_square {
+
+    h3 {
+        text-align: center;
+        font-family: $custom;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-shadow: 5px 12px 10px rgba(0,0,0,.15);
+        font-size: 18px;
+        line-height: 18px;
+         margin-bottom: 40px;
+        font-weight: 400;
+    }
+
+    .useful_square__grid > div {
+        width: 49%;
+        display: inline-block;
+        text-align: center;
+        margin: 30px 0;
+    }
+}
+
+
+.apt__grid {
+    lost-center: 100%;
+}
+.apt_pic {
+    lost-column: 2/3;
+    padding-right: 40px;
+
+    img {
+        float: right;
+    }
+}
+
+.apt_info {
+    lost-column: 1/3;
+}

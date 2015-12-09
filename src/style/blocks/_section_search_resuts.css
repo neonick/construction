@@ -1,0 +1,104 @@
+/*
+*   search_results
+*/
+.search_results {
+    padding: 170px 0 0;
+
+    .container {
+            max-width: 790px;
+    }
+}
+
+.search_list__container {
+    display: table-cell;
+    vertical-align: middle;
+    height: inherit;
+}
+
+.search_list__item {
+    height: 225px;
+    width: 500px;
+    margin: 0 auto 50px;
+
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+        float: none;
+    }
+
+    .search_list__pic {
+        display: inline-block;
+        vertical-align: middle;
+        width: 150px;
+    }
+
+    .search_list__content {
+        display: inline-block;
+        vertical-align: middle;
+        padding-left: 30px;
+        
+
+        h3 {
+            text-transform: uppercase;
+            color: #202628;
+            font-size: 18px;
+            line-height: 18px;
+            margin-bottom: 10px;
+            font-family: $custom;
+        }
+
+        p {
+            text-transform: uppercase;
+            color: #202628;
+            font-size: 18px;
+            line-height: 18px;
+            margin-bottom: 3px;
+            font-family: $custom;
+            font-weight: 300;
+
+            span {
+                font-weight: bold;
+            }
+        }
+
+        p.search_list__liter {
+            font-family: $mainfont;
+            font-size: 12px;
+            line-height: 18px;
+            text-transform: none;
+            margin-top: 10px;
+        }
+
+        .btn {
+            margin-bottom: 0;
+            margin-top: 10px;
+        }
+    }
+
+}
+
+.search_num {
+    height: 50px;
+    margin-bottom: 30px;
+
+    p {
+        float: right;
+        color: #270000;
+        font-size: 12px;
+        text-transform: uppercase;
+        padding: 5px 0 0 55px;
+        position: relative;
+        font-weight: bold;
+        font-family: $custom;
+        
+        span {
+            font-size: 36px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-weight: bold;
+            font-family: $custom;
+        }
+    }
+}

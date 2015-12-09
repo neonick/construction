@@ -1,0 +1,137 @@
+doctype html
+html(lang='ru')
+    head
+        include parts/_meta.jade
+
+    body
+
+        include parts/_header.jade
+
+        include blocks/menu_object.jade
+
+        // conditions
+        section.search_results
+            .container
+
+                ul.breadcrumbs
+                    li
+                        a(href="#") жк ежи
+                    li
+                        a(href="#") планировки
+                    li 
+                        span подбор по параметрам
+
+                .search_form__item.wide
+
+                    .search_form__block
+                        
+                        .range-slider
+                            h2 Цена
+                            input(type="text" class="js-price-slider" value="")
+                        
+                        .range-slider
+                            h2 Площадь
+                            input(type="text" class="js-square-slider" value="")
+                        
+                        .range-slider.floor
+                            h2 Комнат
+                            input(type="text" class="js-floor-slider" value="")
+
+                    a(href="#").btn.active Подобрать
+
+
+                .search_num
+                    p 
+                        span 10
+                        | квартир 
+                        br
+                        | доступно
+
+
+                .search_list
+
+                    .search_list__item
+
+                        .search_list__container
+                            .search_list__pic
+                                img(src="i/plan_tall.png", alt="")
+                            .search_list__content
+                                h3 3х комнатная квартира №46 
+                                p общая площадь: 
+                                    span 80м² 
+                                p жилая площадь: 
+                                    span 36м²
+                                p стоимость: 
+                                    span 4 500 000 руб.
+                                p.search_list__liter 
+                                    | Литер: 
+                                    span.lit А 
+                                    |Этаж: 
+                                    span.num 14 
+                                a(href="#").btn.arrow Подробнее
+
+                    .search_list__item
+                        .search_list__container
+                            .search_list__pic
+                                img(src="i/plan_untall.png", alt="")
+                            .search_list__content
+                                h3 3х комнатная квартира №46 
+                                p общая площадь: 
+                                    span 80м² 
+                                p жилая площадь: 
+                                    span 36м²
+                                p стоимость: 
+                                    span 4 500 000 руб.
+                                p.search_list__liter 
+                                    | Литер: 
+                                    span.lit А 
+                                    |Этаж: 
+                                    span.num 14 
+
+                                a(href="#").btn.arrow Подробнее
+
+                    .search_list__item
+
+                        .search_list__container
+                            .search_list__pic
+                                img(src="i/plan_tall.png", alt="")
+                            .search_list__content
+                                h3 3х комнатная квартира №46 
+                                p общая площадь: 
+                                    span 80м² 
+                                p жилая площадь: 
+                                    span 36м²
+                                p стоимость: 
+                                    span 4 500 000 руб.
+                                p.search_list__liter 
+                                    | Литер: 
+                                    span.lit А 
+                                    |Этаж: 
+                                    span.num 14 
+                                a(href="#").btn.arrow Подробнее
+
+                    .search_list__item
+                        .search_list__container
+                            .search_list__pic
+                                img(src="i/plan_untall.png", alt="")
+                            .search_list__content
+                                h3 3х комнатная квартира №46 
+                                p общая площадь: 
+                                    span 80м² 
+                                p жилая площадь: 
+                                    span 36м²
+                                p стоимость: 
+                                    span 4 500 000 руб.
+                                p.search_list__liter 
+                                    | Литер: 
+                                    span.lit А 
+                                    |Этаж: 
+                                    span.num 14 
+
+                                a(href="#").btn.arrow Подробнее
+
+
+        include parts/_footer_default.jade
+
+        include parts/_scripts.jade
+

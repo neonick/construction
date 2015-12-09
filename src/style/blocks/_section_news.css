@@ -163,10 +163,14 @@
 }
 
 .breadcrumbs {
-	lost-column: 7/12 2 20px no-flex;
-	lost-move: 2/12;
+	
 	margin-bottom: 30px;
 	font-size: 0;
+
+	.news & {
+		lost-column: 7/12 2 20px no-flex;
+		lost-move: 2/12;
+	}
 
 	li {
 		font-size: 14px;

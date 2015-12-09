@@ -5,6 +5,10 @@
 	padding: 50px 0;
 	background-color: #fff;
 
+	.conditions & {
+		background-color: transparent;
+	}
+
 	h2 {
 		@extend section_h2;
 
