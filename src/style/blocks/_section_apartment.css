@@ -168,3 +168,47 @@
         font-weight: bold; 
     }
 }
+
+.apt_info__liter {
+    margin-bottom: 30px;
+
+    .line {
+        width: 120px;
+        height: 2px;
+        background-color: #02263d;
+        margin: 8px 0;
+        display: block;
+    }
+}
+
+
+
+.apt_info__floor {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    line-height: 16px;
+    font-family: $custom;
+    color: #02263d;
+    vertical-align: bottom;
+
+    span {
+        font-size: 56px;
+        line-height: 36px;
+         vertical-align: bottom;
+        display: inline-block;
+    }
+}
+.apt_info__liternum {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 7px;
+    text-transform: uppercase;
+    line-height: 16px;
+    font-family: $custom;
+    color: #02263d;
+    span {
+        margin-left: 10px;
+    }
+}
