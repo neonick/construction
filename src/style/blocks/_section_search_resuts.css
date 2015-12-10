@@ -2,7 +2,7 @@
 *   search_results
 */
 .search_results {
-    padding: 170px 0 0;
+    padding: 100px 0 0;
 
     .container {
             max-width: 790px;
@@ -80,7 +80,6 @@
 
 .search_num {
     height: 50px;
-    margin-bottom: 30px;
 
     p {
         float: right;

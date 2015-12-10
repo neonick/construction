@@ -285,6 +285,9 @@
     &.docs {
         background: #c81fca url(../i/pink_icon_docs.png) center center no-repeat;
     }
+    &.view {
+        background: #c81fca url(../i/pink_icon_view.png) center center no-repeat;
+    }
     &.i-plan {
         width: 80px;
         height: 80px;

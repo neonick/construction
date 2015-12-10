@@ -40,10 +40,23 @@
 
 .centered_block {
     text-align: center;
+
+
 }
 
 .download_plan {
     text-align: center;
+
+    .one_document__icon {
+        width: 85px;
+        height: 55px;
+        background: url(../i/new_pdf_icon.png) top right no-repeat;
+        margin: 0 auto 10px;
+
+        span {
+            display: none;
+        }
+    }
    
 
     h3 {
@@ -86,14 +99,72 @@
     lost-center: 100%;
 }
 .apt_pic {
-    lost-column: 2/3;
+    lost-column: 3/5;
     padding-right: 40px;
+    text-align: center;
+    position: relative;
 
     img {
-        float: right;
+       display: inline-block;
+
+    }
+
+    .view_icon {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+
+        span {
+            display: block;
+        }
     }
 }
 
 .apt_info {
-    lost-column: 1/3;
+    lost-column: 2/5;
+}
+
+.apt_info__heading {
+    color: #02263d;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 30px;
+    font-family: $custom;
+    margin-bottom: 15px;
+}
+
+.apt_info__params {
+    margin-bottom: 40px;
+
+    li {
+        width: 280px;
+        display: block;
+        margin-bottom: 7px;
+        text-transform: uppercase;
+        font-size: 18px;
+        line-height: 18px;
+        font-family: $custom;
+        color: #02263d;
+    }
+
+    span {
+        width: 90px;
+        float: right;
+        text-transform: none;
+        text-align: right;
+    }
+}
+
+.apt_info__price {
+    color: #02263d;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 20px;
+    font-family: $custom;
+    margin-bottom: 15px;
+
+    span {
+        font-size: 24px;
+        font-weight: bold; 
+    }
 }

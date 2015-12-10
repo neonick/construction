@@ -200,7 +200,7 @@
     width: 50%;
     height: 800px;
     position: absolute;
-    background-color: #dadada;
+    background-color: #fff;
     left: 0;
     top: 0;
     z-index: 5;
@@ -209,11 +209,11 @@
 }
 
 .dummy2 {
-    width: 300px;
+    width: 20%;
     height: 300px;
     position: absolute;
     background-color: #fff;
-    left: 10%;
+    left: 15%;
     top: 0;
     transform: skewY(20deg);
 }
@@ -222,10 +222,11 @@
     width: 40%;
     height: 1200px;
     position: absolute;
-    background-color: #272727;
+    background-color: #fff;
     right: 0;
     top: -40%;
     transform: skewY(-20deg);
+    z-index: -1;
 }
 
 .dummy4 {
@@ -233,18 +234,18 @@
     height: 20%;
     position: absolute;
     background-color: #dadada;
-    left: 50%;
+    left: 60%;
     top: 70%;
     transform: skewY(-20deg);
 }
 
 .dummy5 {
-    width: 20%;
-    height: 20%;
+    width: 30%;
+    height: 30%;
     position: absolute;
-    background-color: #272727;
+    background-color: #fff;
     left: 30%;
-    top: 40%;
+    top: 30%;
     transform: skewY(20deg);
 }
 
@@ -252,7 +253,7 @@
     width: 30%;
     height: 20%;
     position: absolute;
-    background-color: #fff;
+    background-color: #dadada;
     left: 35%;
     top: 40%;
     transform: skewY(-20deg);
@@ -264,7 +265,7 @@
     height: 40%;
     position: absolute;
     background-color: #fff;
-    right:10%;
+    right:20%;
     top: 60%;
     transform: skewY(-20deg);
     z-index: -1;
@@ -276,29 +277,29 @@
     height: 40%;
     position: absolute;
     background-color: #dadada;
-    left:20%;
+    left:15%;
     top: 100%;
     transform: skewY(20deg);
     z-index: -1;
 }
 
 .dummy9 {
-    width: 10%;
+    width: 15%;
     height: 30%;
     position: absolute;
-    background-color: #272727;
-    left:5%;
+    background-color: #fff;
+    left:0%;
     top: 100%;
     transform: skewY(-20deg);
     z-index: -1;
 }
 
 .dummy10 {
-    width: 10%;
+    width: 15%;
     height: 30%;
     position: absolute;
-    background-color: #272727;
-    right:5%;
+    background-color: #dadada;
+    right:0%;
     top: 90%;
     transform: skewY(20deg);
     z-index: -1;

@@ -27,7 +27,11 @@ html(lang='ru')
 
                         .apt_pic
 
-                            img(src="i/apt_plan.png", alt="")    
+                            img(src="i/apt_plan.png", alt="") 
+
+                            .view_icon
+                                .pink_icon.view 
+                                a(href="#").pink_icon__link Вид из окна
 
                         .apt_info
 
@@ -45,17 +49,19 @@ html(lang='ru')
                                 li холл   
                                     span 12,35 м²
                                 li Гостиная-кухня  
-                                    span 36,00 м2²
+                                    span 336,00 м²
                                 li лоджия
                                     span  2,32 м²
                                 li балкон
                                     span  2,16 м²
 
+                            p.apt_info__price
+                                | стоимость:  
+                                span 60 000 
+                                | р/м²
+
                             
-
-
-
-                            a(href="#").btn.green Рассчитать ипотеку
+                            a(href="#").btn.green Уточнить наличие
                             a(href="#").ask_manager Задать вопрос менеджеру 
 
 
