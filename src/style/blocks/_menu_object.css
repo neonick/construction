@@ -4,6 +4,19 @@
 .object_menu {
     width: 173px;
     transition: all 0.4s;
+    position: relative;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 100px;
+        left: 3px;
+        width: 19px;
+        height: 20px;
+        background: url(../i/mobile_menu.svg) 0 0 no-repeat;
+        background-size: 100%;
+        opacity: 0;
+    }
 
     &.is-hidden {
         width: 25px;
@@ -13,6 +26,11 @@
             opacity: 0;
             transform: translateX(-10px);
             transition: all .5s;
+        }
+
+        &:before {
+            opacity: 1;
+            transition: all 0.4s;
         }
     }
 
@@ -49,7 +67,7 @@
     }
 
     &__list {
-        margin-right: -50px;
+        margin-right: -20px;
         
         li {
             display: block;
@@ -67,7 +85,7 @@
                 padding-left: 65px;
                 background-color: #272727;
                 height: 45px;
-                width: 220px;
+                width: 200px;
 
                 a {
                     font-size: 15px;

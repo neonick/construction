@@ -7,10 +7,42 @@
 //= ../../bower_components/ion.rangeslider/js/ion.rangeSlider.min.js
 //= ../../bower_components/fotorama/fotorama.js
 //= ../../bower_components/skrollr/dist/skrollr.min.js
+//= ../../bower_components/raphael/raphael-min.js
 //= modernizr-custom.js
-
+//= svg_paths.js
+// svg_init.js
 
 $(document).ready(function () {
+
+	function getPosition(e) {
+	  var posx = 0;
+	  var posy = 0;
+
+	  if (!e) var e = window.event;
+
+	  if (e.pageX || e.pageY) {
+	    posx = e.pageX;
+	    posy = e.pageY;
+	  }
+	  else if (e.clientX || e.clientY) {
+	    posx = e.clientX + document.body.scrollLeft
+	      + document.documentElement.scrollLeft;
+	    posy = e.clientY + document.body.scrollTop
+	      + document.documentElement.scrollTop;
+	  }
+	  return {
+	    x: posx,
+	    y: posy
+	  }
+	}
+
+	if ($(".floor_label") != 0) {
+		document.addEventListener( "mousemove", function(e) {
+		  var x = getPosition(e).x;
+		  var y = getPosition(e).y;
+		  $(".floor_label").css({top: y-40, left: x+10});
+		});
+	};
 
 
 	skrollr.init({
@@ -110,11 +142,25 @@ $(document).ready(function () {
 		var window_top = $(window).scrollTop();
 
     	if (window_top > 100) {
-    		$('.object_menu').addClass('is-hidden')
+    		$('.object_menu').addClass('is-hidden');
+    		$('.big_slider_object__prev').addClass('short');
     	}
     	else {
-    		$('.object_menu').removeClass('is-hidden')
+    		$('.object_menu').removeClass('is-hidden');
+    		$('.big_slider_object__prev').removeClass('short');
     	};
+
+	    $('.object_menu').hover(
+		    function(){
+		    	$('.object_menu').removeClass('is-hidden');
+		    	$('.big_slider_object__prev').removeClass('short');
+		    },
+		    function(){
+		      if (window_top > 100) {
+		      	$('.object_menu').addClass('is-hidden');
+		      	$('.big_slider_object__prev').addClass('short');
+		      }
+		});
     };
 
     $(function() {
@@ -132,10 +178,6 @@ $(document).ready(function () {
     });
 
 
-
-
-
-
     // mobile menu
     $(document).on("click", ".js-open-mobile-menu", function() {
      	if ($(this).hasClass("is-opened")) {
@@ -147,8 +189,6 @@ $(document).ready(function () {
      		$(this).addClass("is-opened"); 
      	}
     });
-
-
 
 
     video_resize();

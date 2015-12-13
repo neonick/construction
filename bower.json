@@ -17,6 +17,7 @@
     "ion.rangeslider": "ionrangeslider#~2.1.2",
     "fotorama": "~4.6.4",
     "BigVideo": "BigVideo.js#~1.1.5",
-    "skrollr": "~0.6.30"
+    "skrollr": "~0.6.30",
+    "raphael": "~2.1.4"
   }
 }

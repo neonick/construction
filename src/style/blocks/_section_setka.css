@@ -523,7 +523,22 @@
 
 	@media (--w768) {
 		display: block;
+		z-index: 10000;
 	}
+
+}
+
+.big_slider_object__prev {
+	left: 200px;
+	transition: all 0.4s;
+
+	&.short {
+		left: 45px;
+	}
+}
+
+.big_slider_object__next {
+	right: 20px;
 }
 
 .full_block--object {

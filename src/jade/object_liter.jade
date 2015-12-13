@@ -28,9 +28,22 @@ html(lang='ru')
             .liter_plan
                 img(src="i/liter_1.jpg", alt="")
                 .liter_plan__shadow
-                img(src="i/cinema_overlay2.svg", class="js-replace-svg")
+
+                #liter_eji
+
+                .floor_label
+                    p этаж
+                        span.floor_label_num 15
+
+                a(href="#response_popup" class="popup_caller")
+
                 a(href="#").btn.white.tour_btn Виртуальный тур
                 a(href="#").btn.white.podbor_btn Подобрать по параметрам
+
+
+        #response_popup.alt_pupup.mfp-hide.zoom-anim-dialog
+            h1 Этаж 15 литера A 
+   
 
 
         include parts/_scripts.jade

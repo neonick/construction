@@ -37,6 +37,7 @@
     "postcss-scss": "^0.1.2",
     "postcss-svg": "^1.0.1",
     "precss": "^1.2.3",
+    "raphael": "^2.1.4",
     "rimraf": "^2.4.3",
     "swiper": "^3.2.5"
   }

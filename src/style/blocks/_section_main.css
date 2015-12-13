@@ -58,6 +58,10 @@
 	lost-center: 960px;
 	lost-utility: clearfix;
 	padding-top: 150px;
+
+	.full_block--object & {
+		width: 300px;
+	}
 }
 
 .search_form__item {
@@ -111,7 +115,7 @@
 		margin: 0 auto;
 
 		@media (--w768) {
-			lost-move: 1/3;
+			width: 100%;
 		}
 		
 	}
