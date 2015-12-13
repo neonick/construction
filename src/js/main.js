@@ -9,10 +9,9 @@
 //= ../../bower_components/skrollr/dist/skrollr.min.js
 //= ../../bower_components/raphael/raphael-min.js
 //= modernizr-custom.js
-//= svg_paths.js
-// svg_init.js
 
 $(document).ready(function () {
+
 
 	function getPosition(e) {
 	  var posx = 0;

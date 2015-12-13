@@ -560,7 +560,7 @@
         height: 1280px;
     }
 
-    #liter_eji {
+    .svg_holst {
         position: absolute;
         top: 0; 
         left: 50%; 
@@ -639,6 +639,7 @@
     left: 200px;
     z-index: 10000;
     transition: all 0.1s;
+    display: none;
 
     p {
         vertical-align: bottom;
@@ -678,6 +679,98 @@
 
 
 
+.swiper-bigplan {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow-y: visible !important;
+
+    .fader_after {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60px;
+        height: 100%;
+        background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+        background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+        background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 );
+        z-index: 10000;
+        display: none;
+    }
+
+    .fader_before {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 60px;
+        height: 100%;
+        background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+        background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+        background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 );
+        z-index: 10000;
+        display: none;
+    }
+
+    .swiper-wrapper {
+        overflow-y: visible;
+    }
+  
+    .swiper-slide {
+        padding-bottom: 30px;
+        position: relative;
+    }
+
+    .swiper-bigplan-scrollbar {
+        bottom: 0px;
+    }
+
+    
+}
+
+.plan {
+    position: relative;
+    width: 200%;
+
+    img {
+        width: 100%;
+    }
+    
+}
+.svg_plan_holst {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+
+    svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    path {
+        opacity: 0.2;
+        transition: all 0.4s;
+        cursor: pointer;
+        
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
+
+
+
+
+
 /*popups*/
 
 
@@ -685,16 +778,16 @@
 *   Popups
 */
 .mfp-bg {
-    z-index: 10000;
+    z-index: 10000000000;
 }
 .mfp-wrap {
-    z-index: 10001;
+    z-index: 10000000001;
 }
 .alt_pupup {
     background: #FFF;
     padding: 20px;
     text-align: left;
-    max-width: 960px;
+    max-width: 800px;
     margin: 0 auto;
     position: relative;
     min-height: 300px;

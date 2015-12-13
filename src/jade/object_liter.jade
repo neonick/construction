@@ -29,7 +29,7 @@ html(lang='ru')
                 img(src="i/liter_1.jpg", alt="")
                 .liter_plan__shadow
 
-                #liter_eji
+                #liter_eji_svg.svg_holst
 
                 .floor_label
                     p этаж
@@ -43,7 +43,27 @@ html(lang='ru')
 
         #response_popup.alt_pupup.mfp-hide.zoom-anim-dialog
             h1 Этаж 15 литера A 
+
+            .swiper-container.swiper-bigplan
+                .swiper-wrapper
+                    .swiper-slide(style="z-index: 1")
+                        .plan.plan_floor15
+                            img(src="i/plan15.jpg", alt="")
+                            #eji_floor15_svg.svg_plan_holst
+                    .swiper-slide
+                        
+
+
+                
+                .swiper-scrollbar.swiper-bigplan-scrollbar
+                .fader_before
+                .fader_after
+
    
 
 
         include parts/_scripts.jade
+
+        <script src="js/svg_paths.js"></script>
+        <script src="js/svg_init.js"></script>
+

@@ -35,7 +35,7 @@
     <section class="full_block full_block--liter">
       <div class="liter_plan"><img src="i/liter_1.jpg" alt="">
         <div class="liter_plan__shadow"></div>
-        <div id="liter_eji"></div>
+        <div id="liter_eji_svg" class="svg_holst"></div>
         <div class="floor_label">
           <p>этаж<span class="floor_label_num">15</span></p>
         </div><a href="#response_popup" class="popup_caller"></a><a href="#" class="btn white tour_btn">Виртуальный тур</a><a href="#" class="btn white podbor_btn">Подобрать по параметрам</a>
@@ -43,8 +43,22 @@
     </section>
     <div id="response_popup" class="alt_pupup mfp-hide zoom-anim-dialog">
       <h1>Этаж 15 литера A </h1>
+      <div class="swiper-container swiper-bigplan">
+        <div class="swiper-wrapper">
+          <div style="z-index: 1" class="swiper-slide">
+            <div class="plan plan_floor15"><img src="i/plan15.jpg" alt="">
+              <div id="eji_floor15_svg" class="svg_plan_holst"></div>
+            </div>
+          </div>
+          <div class="swiper-slide"></div>
+        </div>
+        <div class="swiper-scrollbar swiper-bigplan-scrollbar"></div>
+        <div class="fader_before"></div>
+        <div class="fader_after"></div>
+      </div>
     </div>
     <!-- scripts--><script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdrLjcwRWoPkHw8bTvGD2gtNCn_6brs0w&sensor=true&language=ru"></script>
-    <script src="js/main.js"></script>
+    <script src="js/main.js"></script><script src="js/svg_paths.js"></script>
+    <script src="js/svg_init.js"></script>
   </body>
 </html>
