@@ -190,6 +190,30 @@ $(document).ready(function () {
     });
 
 
+    $(document).on("click", ".js-open_podbor_block", function() {
+     	if ($(this).hasClass("is-opened")) {
+     		$(".liter_podbor_block").removeClass("is-opened");
+     		$(this).removeClass("is-opened").text("Подобрать по параметрам");
+     	}
+     	else {
+     		$(".liter_podbor_block").addClass("is-opened");
+     		$(this).addClass("is-opened").text("Скрыть параметры"); 
+     	}
+    });
+
+
+	$(".js-open-backcall").magnificPopup({
+        type: 'inline',
+        preloader: false,
+        removalDelay: 300,
+        mainClass: 'my-mfp-zoom-in',
+        overflowY: "auto",
+        alignTop: true
+    });
+
+    
+
+
     video_resize();
 
     //= parts/_init_gmaps.js

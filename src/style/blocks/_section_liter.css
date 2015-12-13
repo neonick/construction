@@ -1,0 +1,305 @@
+
+.liter_plan {
+
+    position: relative;
+
+    @media (--w980) {
+        height: 933px;
+    }
+
+    @media (--w1200) {
+        height: 933px;
+    }
+
+    @media (--w1400) {
+        height: 1067px;
+    }
+
+    @media (--w1600) {
+        height: 1280px;
+    }
+}
+
+.liter_plan__shadow {
+    box-shadow: inset 0px 0px 250px rgba(0,0,0,0.8);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    @media (--w980) {
+        height: 800px;
+    }
+
+    @media (--w1200) {
+        height: 933px;
+    }
+
+    @media (--w1400) {
+        height: 1067px;
+    }
+
+    @media (--w1600) {
+        height: 1280px;
+    }
+}
+
+.full_block--liter {
+    overflow: hidden;  
+
+    @media (--w980) {
+        height: 800px;
+    }
+
+    @media (--w1200) {
+        height: 933px;
+    }
+
+    @media (--w1400) {
+        height: 1067px;
+    }
+
+    @media (--w1600) {
+        height: 1280px;
+    }
+
+    .svg_holst {
+        position: absolute;
+        top: 0; 
+        left: 50%; 
+        z-index:1;
+        transform: translateX(-50%);
+        height: 100%;
+
+        @media (--w980) {
+            width: 1200px;
+        }
+
+        @media (--w1200) {
+            width: 1400px;
+        }
+
+        @media (--w1400) {
+            width: 1600px;
+        }
+
+        @media (--w1600) {
+            width: 1920px;
+        }
+    }
+
+    svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+    img {
+        position: absolute;
+        top: 0; 
+        left: 50%; 
+        z-index:-1;
+        transform: translateX(-50%);
+        
+        @media (--w980) {
+            width: 1200px;
+        }
+
+        @media (--w1200) {
+            width: 1400px;
+        }
+
+        @media (--w1400) {
+            width: 1600px;
+        }
+
+        @media (--w1600) {
+            width: 1920px;
+        }
+    }
+
+    path {
+        opacity: 0;
+        transition: all 0.4s;
+        cursor: pointer;
+        
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
+
+.floor_label {
+    width: 170px;
+    height: 40px;
+    border-bottom: 2px solid #fff;
+    padding-left: 65px;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    z-index: 10000;
+    transition: all 0.1s;
+    display: none;
+
+    p {
+        vertical-align: bottom;
+        color: #fff;
+        font-size: 14px;
+        line-height: 14px;
+        text-transform: uppercase;
+        font-family: $custom;
+        font-weight: 300;
+
+        span {
+            font-size: 62px;
+            line-height: 32px;
+            vertical-align: bottom;
+            font-weight: bold;
+        }
+    }
+}
+
+
+
+
+
+
+
+.swiper-bigplan {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow-y: visible !important;
+
+    .fader_after {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60px;
+        height: 100%;
+        background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+        background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+        background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 );
+        z-index: 10000;
+        display: none;
+    }
+
+    .fader_before {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 60px;
+        height: 100%;
+        background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+        background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+        background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 );
+        z-index: 10000;
+        display: none;
+    }
+
+    .swiper-wrapper {
+        overflow-y: visible;
+    }
+  
+    .swiper-slide {
+        padding-bottom: 30px;
+        position: relative;
+    }
+
+    .swiper-bigplan-scrollbar {
+        bottom: 0px;
+    }
+
+    
+}
+
+.plan {
+    position: relative;
+    width: 200%;
+
+    img {
+        width: 100%;
+    }
+    
+}
+.svg_plan_holst {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+
+    svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    path {
+        opacity: 0.2;
+        transition: all 0.4s;
+        cursor: pointer;
+        
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
+
+
+
+.liter_podbor_block {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 230px;
+    height: 390px;
+    z-index: 100000;
+    display: none;
+
+    &.is-opened {
+        display: block;
+    }
+
+    .search_form__item {
+        width: 100%;
+    }
+}
+
+
+
+.podbor_btn {
+    position: fixed;
+    bottom: 10px;
+    right: 30px;
+    z-index: 100;
+    width: 230px;
+    font-size: 12px;
+    padding: 12px 0 !important;
+
+    &.is-opened {
+        bottom: 399px
+    }
+}
+
+.tour_btn {
+    position: fixed;
+    bottom: 10px;
+    left: 210px;
+    z-index: 100;
+    background-color: rgba(215, 234, 59, 0.12);
+    font-size: 12px;
+
+}

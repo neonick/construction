@@ -16,8 +16,7 @@
   <body>
     <!-- header-->
     <section class="header js-sticky-header header--mainpage"><a href="/">
-        <div class="header_corner_logo"></div></a>
-      <div class="backcall_block"><span class="backcall_block__phone">8(861) 777-77-77</span><span class="backcall_block__text">Заказать обратный звонок</span></div>
+        <div class="header_corner_logo"></div></a><a href="#backcall_popup" class="backcall_block js-open-backcall"><span class="backcall_block__phone">8(861) 777-77-77</span><span class="backcall_block__text">Заказать обратный звонок</span></a>
       <nav class="main_menu"><a href="#" class="active">Обьекты</a><a href="#">О компании</a><a href="#">События</a><a href="#">Контакты</a></nav><a href="#" class="mobile_menu js-open-mobile-menu">Меню</a>
     </section>
     <!-- object_menu-->
@@ -38,10 +37,29 @@
         <div id="liter_eji_svg" class="svg_holst"></div>
         <div class="floor_label">
           <p>этаж<span class="floor_label_num">15</span></p>
-        </div><a href="#response_popup" class="popup_caller"></a><a href="#" class="btn white tour_btn">Виртуальный тур</a><a href="#" class="btn white podbor_btn">Подобрать по параметрам</a>
+        </div><a href="#response_popup" class="popup_caller"></a><a href="#" class="btn white tour_btn">Виртуальный тур</a><a href="#" class="btn white podbor_btn js-open_podbor_block">Подобрать по параметрам</a>
+      </div>
+      <div class="liter_podbor_block">
+        <form action="" class="search_form__item">
+          <div class="search_form__block">
+            <div class="range-slider">
+              <h2>Цена</h2>
+              <input type="text" value="" class="js-price-slider">
+            </div>
+            <div class="range-slider">
+              <h2>Площадь</h2>
+              <input type="text" value="" class="js-square-slider">
+            </div>
+            <div class="range-slider floor">
+              <h2>Комнат</h2>
+              <input type="text" value="" class="js-floor-slider">
+            </div>
+          </div>
+          <button class="btn active">Подобрать</button>
+        </form>
       </div>
     </section>
-    <div id="response_popup" class="alt_pupup mfp-hide zoom-anim-dialog">
+    <div id="response_popup" class="neo_pupup mfp-hide zoom-anim-dialog">
       <h1>Этаж 15 литера A </h1>
       <div class="swiper-container swiper-bigplan">
         <div class="swiper-wrapper">

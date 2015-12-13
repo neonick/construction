@@ -207,8 +207,8 @@
 	lost-column: 12/12 2 20px no-flex;
 
 	@media (--w768) {
-		lost-column: 10/12 2 20px no-flex;
-		lost-move: 1/12;
+		lost-column: 14/12 2 20px no-flex;
+		lost-move: -1/12;
 	}
 }
 

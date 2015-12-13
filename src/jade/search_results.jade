@@ -21,7 +21,7 @@ html(lang='ru')
                     li 
                         span подбор по параметрам
 
-                .search_form__item.wide
+                form(action="").search_form__item.wide
 
                     .search_form__block
                         
@@ -37,7 +37,7 @@ html(lang='ru')
                             h2 Комнат
                             input(type="text" class="js-floor-slider" value="")
 
-                    a(href="#").btn.active Подобрать
+                    button(class="btn active") Подобрать
 
 
                 .search_num

@@ -37,20 +37,24 @@ html(lang='ru')
                 .swiper-button-next.swiper-button-white.big_slider_object__next
 
             .search_form__grid
-                .search_form__item.active
-                    .search_form__logo.cinema_logo
+                form(action="").search_form__item.active
+                    a(href="#")
+                        .search_form__logo.cinema_logo
                     .search_form__block
-                        h2 Цена
+
                         .range-slider
+                            h2 Цена
                             input(type="text" class="js-price-slider" value="")
-                        h2 Площадь
+                        
                         .range-slider
+                            h2 Площадь
                             input(type="text" class="js-square-slider" value="")
-                        h2 Комнат
+                        
                         .range-slider.floor
+                            h2 Комнат
                             input(type="text" class="js-floor-slider" value="")
 
-                    a(href="#").btn.white Подобрать
+                    button(class="btn white") Подобрать
 
             .container
                 h1.full_block__header 

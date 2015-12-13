@@ -38,10 +38,30 @@ html(lang='ru')
                 a(href="#response_popup" class="popup_caller")
 
                 a(href="#").btn.white.tour_btn Виртуальный тур
-                a(href="#").btn.white.podbor_btn Подобрать по параметрам
+                a(href="#").btn.white.podbor_btn.js-open_podbor_block Подобрать по параметрам
 
 
-        #response_popup.alt_pupup.mfp-hide.zoom-anim-dialog
+            .liter_podbor_block
+                form(action="").search_form__item
+
+                    .search_form__block
+                        
+                        .range-slider
+                            h2 Цена
+                            input(type="text" class="js-price-slider" value="")
+                        
+                        .range-slider
+                            h2 Площадь
+                            input(type="text" class="js-square-slider" value="")
+                        
+                        .range-slider.floor
+                            h2 Комнат
+                            input(type="text" class="js-floor-slider" value="")
+
+                    button(class="btn active") Подобрать
+
+
+        #response_popup.neo_pupup.mfp-hide.zoom-anim-dialog
             h1 Этаж 15 литера A 
 
             .swiper-container.swiper-bigplan
@@ -51,9 +71,6 @@ html(lang='ru')
                             img(src="i/plan15.jpg", alt="")
                             #eji_floor15_svg.svg_plan_holst
                     .swiper-slide
-                        
-
-
                 
                 .swiper-scrollbar.swiper-bigplan-scrollbar
                 .fader_before

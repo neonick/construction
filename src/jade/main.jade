@@ -33,8 +33,9 @@ html(lang='ru')
 
                 .search_form__grid
 
-                    .search_form__item
-                        .search_form__logo.eji_logo
+                    form(action="").search_form__item
+                        a(href="#")
+                            .search_form__logo.eji_logo
                         .search_form__block
                             
                             .range-slider
@@ -49,12 +50,13 @@ html(lang='ru')
                                 h2 Комнат
                                 input(type="text" class="js-floor-slider" value="")
 
-                        a(href="#").btn.white Подобрать
+                        button(class="btn white") Подобрать
                         a(href="#").location_link местоположение
 
-                    .search_form__item
-                        .search_form__logo.cinema_logo
-                        .search_form__block
+                    form(action="").search_form__item
+                        a(href="#")
+                            .search_form__logo.cinema_logo
+                        .search_form__block 
 
                             .range-slider
                                 h2 Цена
@@ -68,11 +70,12 @@ html(lang='ru')
                                 h2 Комнат
                                 input(type="text" class="js-floor-slider" value="")
 
-                        a(href="#").btn.white Подобрать
+                        button(class="btn white") Подобрать
                         a(href="#").location_link местоположение
 
-                    .search_form__item
-                        .search_form__logo.cinema_logo
+                    form(action="").search_form__item
+                        a(href="#")
+                            .search_form__logo.cinema_logo
                         .search_form__block
                             
                             .range-slider
@@ -87,7 +90,7 @@ html(lang='ru')
                                 h2 Комнат
                                 input(type="text" class="js-floor-slider" value="")
 
-                        a(href="#").btn.white Подобрать
+                        button(class="btn white") Подобрать
                         a(href="#").location_link местоположение   
 
         // geometry
