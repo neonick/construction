@@ -77,9 +77,13 @@ $(function(){
             objfloor.attr({fill : floors[floor_num].color});
             arr_floor[objfloor.id] = floor_num;     
 
-            objfloor.click(function() {
-                
-            });
+            objfloor.hover(function(){
+                $(".app_label").show();
+                $(".app_label__rooms span").html(floors[arr_floor[this.id]].apartment);
+                $(".app_label__sq span").html(floors[arr_floor[this.id]].square);
+            }, function(){
+                $(".app_label").hide();
+            }); 
 
         }
     }

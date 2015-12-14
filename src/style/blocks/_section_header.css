@@ -38,8 +38,12 @@
         background-color: rgba(0, 0, 0, 0.5);
         height: 53px;
         z-index: 1000;
+    }
 
-
+    &.dark {
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 53px;
+        z-index: 1000;
     }
 
     .backcall_block {

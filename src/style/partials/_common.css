@@ -508,6 +508,9 @@
 .mfp-wrap {
     z-index: 10000000001;
 }
+.my-mfp-zoom-in.mfp-ready.mfp-bg {
+    opacity: .2;
+}
 .neo_pupup {
     background: #FFF;
     padding: 20px;

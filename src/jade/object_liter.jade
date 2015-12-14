@@ -64,17 +64,19 @@ html(lang='ru')
         #response_popup.neo_pupup.mfp-hide.zoom-anim-dialog
             h1 Этаж 15 литера A 
 
-            .swiper-container.swiper-bigplan
-                .swiper-wrapper
-                    .swiper-slide(style="z-index: 1")
-                        .plan.plan_floor15
-                            img(src="i/plan15.jpg", alt="")
-                            #eji_floor15_svg.svg_plan_holst
-                    .swiper-slide
-                
-                .swiper-scrollbar.swiper-bigplan-scrollbar
-                .fader_before
-                .fader_after
+            
+            .plan.plan_floor15
+                img(src="i/plan15.jpg", alt="")
+                #eji_floor15_svg.svg_plan_holst
+
+                .app_label
+                    p.app_label__rooms
+                        span 3
+                        | к.
+                    p.app_label__sq
+                        span 69
+                        | м²
+
 
    
 

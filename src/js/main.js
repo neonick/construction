@@ -43,6 +43,14 @@ $(document).ready(function () {
 		});
 	};
 
+	if ($(".app_label") != 0) {
+		document.addEventListener( "mousemove", function(e) {
+		  var x = getPosition(e).x;
+		  var y = getPosition(e).y;
+		  $(".app_label").css({top: y-200, left: x-270});
+		});
+	};
+
 
 	skrollr.init({
 		smoothScrolling: false,

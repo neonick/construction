@@ -77,9 +77,12 @@ $(function(){
             objfloor.attr({fill : floors[floor_num].color});
             arr_floor[objfloor.id] = floor_num;     
 
-            objfloor.click(function() {
-                
-            });
+            eji_floor.hover(function(){
+                $(".app_label").show();
+                // $(".floor_label_num").html(paths[arr[this.id]].floor);
+            }, function(){
+                $(".app_label").hide();
+            }); 
 
         }
     }

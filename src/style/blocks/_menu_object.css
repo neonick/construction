@@ -10,10 +10,11 @@
         content: "";
         position: absolute;
         top: 100px;
-        left: 3px;
-        width: 19px;
-        height: 20px;
+        left: 5px;
+        width: 15px;
+        height: 15px;
         background: url(../i/mobile_menu.svg) 0 0 no-repeat;
+
         background-size: 100%;
         opacity: 0;
     }

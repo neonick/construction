@@ -1,0 +1,347 @@
+.jspContainer {
+    overflow: hidden;
+    position: relative;
+}
+
+.jspPane {
+    position: absolute;
+}
+
+.jspVerticalBar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 16px;
+    height: 100%;
+    background: #272727;
+}
+
+.jspHorizontalBar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 16px;
+    background: #272727;
+}
+
+.jspCap {
+    display: none;
+}
+
+.jspHorizontalBar .jspCap {
+    float: left;
+}
+
+.jspTrack {
+    background: #272727;
+    position: relative;
+}
+
+.jspDrag {
+    background: #3a3a3a;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    cursor: pointer;
+    width: 4px;
+    border-radius: 5px;
+}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag {
+    float: left;
+    height: 100%;
+}
+
+.jspHorizontalBar .jspDrag {
+    float: left;
+    margin: auto 0;
+    bottom: 0;
+    right: auto;
+    height: 100%;
+}
+
+.jspArrow {
+    background: #50506d;
+    text-indent: -20000px;
+    display: block;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+.jspArrow.jspDisabled {
+    cursor: default;
+    background: #80808d;
+}
+
+.jspVerticalBar .jspArrow {
+    height: 16px;
+}
+
+.jspHorizontalBar .jspArrow {
+    width: 16px;
+    float: left;
+    height: 100%;
+}
+
+.jspVerticalBar .jspArrow:focus {
+    outline: none;
+}
+
+.jspCorner {
+    background: #eeeef4;
+    float: left;
+    height: 100%;
+}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner {
+    margin: 0 -3px 0 0;
+}
+
+
+
+
+
+
+.map {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+
+.wf-active .legend {
+  font-family: 'Roboto Condensed';
+}
+
+.legend {
+  display: inline-block;
+  width: 100%;
+  background: #272727;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 14px;
+  line-height: 12px;
+  color: white;
+  overflow: hidden;
+  box-sizing: border-box;
+  > .bottom {
+    display: none;
+    position: absolute;
+    bottom: 13px;
+    height: 29px;
+    left: 20px;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    &:hover {
+      cursor: pointer;
+    }
+    > .back {
+      display: inline-block;
+      float: left;
+      background: url('../i/back.png') center center no-repeat;
+      height: 29px;
+      width: 29px;
+      margin: 0;
+      padding: 0;
+    }
+    > .toggle-size {
+      display: inline-block;
+      float: left;
+      background: url('../i/toggle-size.png') center center no-repeat;
+      height: 29px;
+      width: 20px;
+      padding: 0;
+      margin: 0 0 0 12px;
+    }
+  }
+  &.-back {
+    padding-bottom: 46px;
+    max-height: 65%;
+    > .content {
+      display: block;
+    }
+    > .bottom {
+      display: block;
+    }
+  }
+  &.-mini {
+    height: auto;
+    > .content, > .content-title {
+      display: none !important;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    width: 280px;
+    height: 454px;
+    &.-back {
+      max-height: inherit;
+    }
+  }
+  > .title {
+    vertical-align: top;
+    display: block;
+    font-size: 24px;
+    line-height: 25px;
+    text-transform: uppercase;
+    padding: 20px 20px 0 20px;
+    margin: 0;
+  }
+  > .subtitle {
+    vertical-align: top;
+    display: block;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 14px;
+    line-height: 12px;
+    font-weight: bold;
+    padding: 20px;
+  }
+
+  > .text {
+    vertical-align: top;
+    display: block;
+    padding: 20px 20px 10px 20px;
+    font-size: 14px;
+    line-height: 12px;
+  }
+
+  > .content-title {
+    vertical-align: top;
+    display: block;
+    padding: 20px;
+    font-size: 14px;
+    line-height: 12px;
+  }
+
+  > .content {
+    display: none;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    box-sizing: border-box;
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
+    &:focus {
+      outline: none;
+    }
+    .category-item {
+      display: block;
+      padding: 10px 20px;
+      background: #272727;
+      > .title {
+        display: table;
+        width: 100%;
+        > .icon, > .name {
+          display: table-cell;
+          vertical-align: middle;
+        }
+        > .name {
+          padding: 0 0 0 14px;
+        }
+      }
+      > .desc {
+        display: block;
+        margin: 0;
+        vertical-align: top;
+        padding: 0 0 0 46px;
+        color: #898989;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+
+      border-bottom: 1px solid #3f3f3f;
+    }
+    .item {
+      display: table;
+      width: 100%;
+      min-height: 37px;
+      padding: 0px 20px;
+      background: #272727;
+      &:hover {
+        cursor: pointer;
+      }
+      > .icon, > .name {
+        display: table-cell;
+        vertical-align: middle;
+      }
+      > .name {
+        padding: 0 0 0 14px;
+      }
+    }
+  }
+}
+
+.icon {
+  background-position: center center;
+  background-repeat: no-repeat;
+  &.-cinema {
+    background-image: url('../i/cinema.png');
+    height: 37px;
+    width: 32px;
+  }
+  &.-conveniencestore {
+    background-image: url('../i/conveniencestore.png');
+    height: 37px;
+    width: 32px;
+  }
+  &.-fillingstation {
+    background-image: url('../i/fillingstation.png');
+    height: 37px;
+    width: 32px;
+  }
+  &.-drugstore {
+    background-image: url('../i/drugstore.png');
+    height: 37px;
+    width: 32px;
+  }
+  &.-hospital-building {
+    background-image: url('../i/hospital-building.png');
+    height: 37px;
+    width: 32px;
+  }
+  &.-market {
+    background-image: url('../i/market.png');
+    height: 37px;
+    width: 32px;
+  }
+  &.-restaurant {
+    background-image: url('../i/restaurant.png');
+    height: 37px;
+    width: 32px;
+  }
+  &.-school {
+    background-image: url('../i/school.png');
+    height: 37px;
+    width: 32px;
+  }
+  &.-university {
+    background-image: url('../i/university.png');
+    height: 37px;
+    width: 32px;
+  }
+  &.-car-access {
+    background-image: url('../i/car-access.png');
+    height: 1px;
+    width: 25px;
+  }
+  &.-public-transport {
+    background-image: url('../i/public-transport.png');
+    height: 1px;
+    width: 24px;
+  }
+}
