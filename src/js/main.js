@@ -12,6 +12,21 @@
 
 $(document).ready(function () {
 
+	$('.dinamic__item a').magnificPopup({
+			type: 'image',
+			closeOnContentClick: true,
+			closeBtnInside: false,
+			fixedContentPos: true,
+			mainClass: 'mfp-no-margins mfp-with-zoom',
+			image: {
+				verticalFit: true
+			},
+			zoom: {
+				enabled: true,
+				duration: 300
+			}
+		});
+
 
 	function getPosition(e) {
 	  var posx = 0;
