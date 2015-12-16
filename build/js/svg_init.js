@@ -26,7 +26,6 @@ $(function(){
             }); 
 
             obj.click(function() {
-                $(".popup_caller").click();
                 $(".popup_caller").magnificPopup({
                     type: 'inline',
                     preloader: false,
@@ -34,24 +33,7 @@ $(function(){
                     mainClass: 'my-mfp-zoom-in',
                     overflowY: "auto",
                 });
-
-                var swiperbigplan = new Swiper('.swiper-bigplan', {
-                    scrollbar: '.swiper-bigplan-scrollbar',
-                    slidesPerView: "auto",
-                    grabCursor: true,
-                    scrollbarHide: false,
-                    scrollbarDraggable: true,
-
-                    onReachBeginning: function () {
-                        $(".fader_after").show();
-                        $(".fader_before").hide();
-                    },
-                    onReachEnd: function () {
-                        $(".fader_before").show();
-                        $(".fader_after").hide();
-                      
-                    }
-                });
+                $(".popup_caller").click();
             });
 
         }
