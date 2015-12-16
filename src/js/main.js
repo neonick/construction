@@ -9,6 +9,7 @@
 //= ../../bower_components/skrollr/dist/skrollr.min.js
 //= ../../bower_components/raphael/raphael-min.js
 //= modernizr-custom.js
+//= scrollyeah.min.js
 
 $(document).ready(function () {
 

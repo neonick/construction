@@ -523,12 +523,9 @@
     z-index: 14;
 
     @media (--w768) {
-         padding: 30px;
+         padding: 40px;
     }
 
-    @media (--w980) {
-         padding: 60px;
-    }
 
     h1 {
         font-size: 24px;
@@ -722,3 +719,41 @@ uncomment this part if you haven't added this code anywhere else
     opacity: 0;
 }
 */
+
+#backcall_popup {
+    max-width: 600px;
+    top: 200px;
+
+}
+
+.callback_form {
+    z-index: 100000;
+    .btn {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+}
+
+.neo_input__head {
+    display: block;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 10px;
+    color: #333;
+}
+.neo_input {
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    height: 40px;
+    background-color: #fff;
+    font-size: 14px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+
+.neo_pupup .mfp-close {
+    font-size: 20px;
+}

@@ -41,14 +41,10 @@
           <li><a href="apartment.html">apartment.html</a></li>
           <li><a href="object_map_eji.html">object_map_eji.html</a></li>
           <li><a href="object_map_cinema.html">object_map_cinema.html</a></li><br>
-          <p>Не потерять при clean:</p>
-          <p>-<strong>ВООБЩЕ ЛУЧШЕ CLEAN НЕ ДЕЛАТЬ    </strong></p>
-          <p>- скрипты для карты</p>
-          <p>- видео </p><br>
-          <p>TODO (в порядке приоритета)</p>
-          <p>- паралакс на всех страницах: футер и центр страницы</p>
-          <p>- попапы по перезвонить, заказать звонок  </p>
-          <p>- В попапа (увеличить!) на литере Скролье https://github.com/artpolikarpov/scrollyeah</p>
+          <p> <strong>ВООБЩЕ ЛУЧШЕ GULP CLEAN НЕ ДЕЛАТЬ    </strong></p><br>
+          <p>TODO </p>
+          <p>- сделать попап на литере (скролье https://github.com/artpolikarpov/scrollyeah)</p>
+          <p>- паралакс-полоски на страницах</p>
           <p>- мобильные версиии всех страниц (доделать, проверить)</p><br>
           <p>Починить</p>
           <p>- Залипающее меню - в ff на маке - не видно (проверить)</p>
@@ -56,19 +52,21 @@
           <p>Контент</p>
           <p>- рыбные картинки литеров </p><br>
           <p>Андрею</p>
-          <p>- выяснить что делать с маркерами карт</p><br>
-          <p>Витя</p>
-          <p>- уточнить форму в контактах по кнопке рядом с людьми</p>
+          <p>- выяснить что делать с маркерами карт</p>
         </ul>
       </div>
     </section>
     <div id="backcall_popup" class="neo_pupup mfp-hide zoom-anim-dialog">
-      <h1>Форма обратной связи</h1>
-      <p>dffdsf </p>
+      <h1>Заказать обратный звонок</h1>
+      <form action="" class="callback_form"><span class="neo_input__head">Ваше имя</span>
+        <input type="text" class="neo_input"><span class="neo_input__head">Ваш телефон</span>
+        <input type="text" class="neo_input">
+        <button class="btn active">Перезвоните мне </button>
+      </form>
     </div>
+    <div style="z-index: 0; width: 200px; height: 200px; background: #fff; position: fixed; right: 20%; bottom: 0; opacity: 0.8" data-300-end="transform: translateY(0%) skewY(-20deg)" data-end="transform: translateY(-300%) skewY(-20deg)" class="divuk"></div>
     <!-- footer-->
     <section class="footer">
-      <div style="width: 200px; height: 200px; background: red; absolute: fixed; right: 20%; bottom: 30%;" data-top-bottom="top: -30%" data-bottom-top="top: 50%" class="divuk"></div>
       <div class="container">
         <nav class="main_menu"><a href="#" class="active">Обьекты</a><a href="#">О компании</a><a href="#">События</a><a href="#">Контакты</a></nav>
         <div class="soc_block"><a href="" class="fb"></a><a href="" class="tw"></a><a href="" class="ig"></a><a href="" class="vk"></a></div>

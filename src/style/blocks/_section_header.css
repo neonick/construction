@@ -80,6 +80,7 @@
         padding: 20px 15px;
         transition: all 0.3s;
         position: relative;
+        transform-origin: 50% 50%;
 
         .is-fixed & {
             margin-top: 5px;
@@ -119,12 +120,17 @@
         &:after {
             height: 1px;
             width: 0;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            border-bottom: 1px solid #1d1d1b;
             position: absolute;
             bottom: -1px;
-            left: 0;
+            left: 50%;
+            transform: translateX(-50%);
             content: "";
-            transition: all 0.5s;
+            transition: all 0.25s;
+        }
+
+        .header--mainpage &:after, .is-fixed &:after {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
         }
 
         &:hover:after {
@@ -134,6 +140,8 @@
         &.active:hover:after {
             border-bottom: 0;
         }
+
+    
     }
 
     &.white {

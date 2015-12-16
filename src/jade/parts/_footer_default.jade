@@ -1,17 +1,27 @@
 #backcall_popup.neo_pupup.mfp-hide.zoom-anim-dialog
-    h1 Форма обратной связи
-    p dffdsf 
+    h1 Заказать обратный звонок
+
+    form(action="" class="callback_form")
+        span.neo_input__head Ваше имя
+        input(type="text" class='neo_input') 
+
+        span.neo_input__head Ваш телефон
+        input(type="text" class='neo_input')
+
+        button.btn.active Перезвоните мне 
 
 
 
+.divuk(
+    style="z-index: 0; width: 200px; height: 200px; background: #fff; position: fixed; right: 20%; bottom: 0; opacity: 0.8"
+    data-300-end="transform: translateY(0%) skewY(-20deg)"
+    data-end="transform: translateY(-300%) skewY(-20deg)")
 
 
 // footer
 section.footer
 
-    .divuk(style="width: 200px; height: 200px; background: red; absolute: fixed; right: 20%; bottom: 30%;"
-    data-top-bottom="top: -30%"
-    data-bottom-top="top: 50%")
+
 
     .container
 
