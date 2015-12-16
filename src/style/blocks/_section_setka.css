@@ -23,6 +23,8 @@
 	display: inline-block;
 	padding: 15px;
 
+
+
 	&.pl40 {
 		@media (--w768) {
 			padding-left: 40px;
@@ -186,8 +188,8 @@
 		background-color: #40635e;
 		height: 340px;
 		padding: 0;
-		background: url(../i/mesto.jpg) 0 0 no-repeat;
-		background-size: cover;
+		overflow: hidden;
+	
 
 		@media (--w768) {
 			width: 33.33333333333333333%;
@@ -197,11 +199,21 @@
 		}
 
 		img {
-			height: 100%;
+			width: 100%;
 			top: 0;
 			left: 0;
+			animation: animationFrames linear 30s;
+			animation-iteration-count: infinite;
+			transform-origin: 50% 50%;
 		}
+
+
+
 	}
+
+	
+
+
 
 
 
@@ -331,10 +343,20 @@
 	.row_type4 &.col3 {
 		background-color: #40635e;
 		height: 340px;
-		background: url(../i/zona.jpg) 0 0 no-repeat;
-		background-size: cover;
 		width: 100%;
 		position: relative;
+		overflow: hidden;
+
+		img {
+			width: 100%;
+			top: 0;
+			left: 0;
+			position: absolute;
+			animation: animationFrames linear 30s;
+			animation-iteration-count: infinite;
+			transform-origin: 0% 50%;
+		}
+
 
 		@media (--w768) {
 			width: 33.33333333333333333%;
@@ -564,4 +586,16 @@
 		font-weight: 400;
 		display: block;
 	}
+}
+
+@keyframes animationFrames{
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

@@ -79,6 +79,7 @@
         margin-right: 30px;
         padding: 20px 15px;
         transition: all 0.3s;
+        position: relative;
 
         .is-fixed & {
             margin-top: 5px;
@@ -113,6 +114,25 @@
         .header--mainpage &.active {
             color: #fff;
             border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        &:after {
+            height: 1px;
+            width: 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            content: "";
+            transition: all 0.5s;
+        }
+
+        &:hover:after {
+            width: 100%;
+        }
+
+        &.active:hover:after {
+            border-bottom: 0;
         }
     }
 

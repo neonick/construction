@@ -54,6 +54,10 @@
         left: -40px;
         top: 0;
     }
+
+    hr {
+        margin: 40px 0 40px -40px;
+    }
 }
 
 .dinamic__grid {
@@ -85,4 +89,9 @@
     img {
         max-width: 100%;
     }
+}
+
+.dinamic_popup .mfp-content {
+    vertical-align: top;
+    margin-top: 200px;
 }

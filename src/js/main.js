@@ -17,7 +17,7 @@ $(document).ready(function () {
 			closeOnContentClick: true,
 			closeBtnInside: false,
 			fixedContentPos: true,
-			mainClass: 'mfp-no-margins mfp-with-zoom',
+			mainClass: 'mfp-no-margins mfp-with-zoom dinamic_popup',
 			image: {
 				verticalFit: true
 			},
