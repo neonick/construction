@@ -269,7 +269,7 @@
 
 .plan {
     position: relative;
-    width: 200%;
+    width: 100%;
 
     img {
         width: 100%;
@@ -293,7 +293,7 @@
     }
 
     path {
-        opacity: 0.2;
+        opacity: 0.1;
         transition: all 0.4s;
         cursor: pointer;
         
@@ -347,4 +347,45 @@
     background-color: rgba(215, 234, 59, 0.12);
     font-size: 12px;
 
+}
+
+
+.tabs {
+    text-align: center;
+    margin-bottom: 30px;
+    
+    a {
+        display: inline-block;
+        width: 60px;
+        height: 39px;
+        text-align: center;
+        line-height: 38px;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        color: #6D8819;
+
+        &.liter_1_1 {
+            background-image: svg("tabs_eji_1_1", "[fill]: #F2F7DF");
+        }
+        &.liter_1_2 {
+            background-image: svg("tabs_eji_1_2", "[fill]: #F2F7DF");
+        }
+    }
+
+    li {
+        display: inline-block;
+        margin-bottom: 30px;
+
+        &.active a {
+            background-image: svg("tabs_eji_1_1", "[fill]: #6D8819");
+            color: #fff;
+
+            &.liter_1_1 {
+                background-image: svg("tabs_eji_1_1", "[fill]: #6D8819");
+            }
+            &.liter_1_2 {
+                background-image: svg("tabs_eji_1_2", "[fill]: #6D8819");
+            }
+        }
+    }
 }

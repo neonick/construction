@@ -8,6 +8,8 @@
 //= ../../bower_components/fotorama/fotorama.js
 //= ../../bower_components/skrollr/dist/skrollr.min.js
 //= ../../bower_components/raphael/raphael-min.js
+//= ../../bower_components/tabslet/jquery.tabslet.min.js
+
 //= modernizr-custom.js
 //= scrollyeah.min.js
 

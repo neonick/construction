@@ -61,7 +61,7 @@ $(function(){
 
     if ($(".plan") != 0) {
      
-        var eji_floor = Raphael('eji_floor15_svg', "100%", "100%"),
+        var eji_floor = Raphael('eji_1_1', "100%", "100%"),
         attributes = {
                 'stroke-width': 0,
                 'stroke-linejoin': 'round'
@@ -69,22 +69,39 @@ $(function(){
 
         arr_floor = new Array();
 
-        eji_floor.setViewBox(0, 0, 2235, 820);
+        eji_floor.setViewBox(0, 0, 1174, 721);
          
         for (var floor_num in floors) {
             var objfloor = eji_floor.path(floors[floor_num].path);
             objfloor.attr(attributes);
             objfloor.attr({fill : floors[floor_num].color});
-            arr_floor[objfloor.id] = floor_num;     
+            arr_floor[objfloor.id] = floor_num;   
 
-            objfloor.hover(function(){
-                $(".app_label").show();
-                $(".app_label__rooms span").html(floors[arr_floor[this.id]].apartment);
-                $(".app_label__sq span").html(floors[arr_floor[this.id]].square);
-            }, function(){
-                $(".app_label").hide();
+            objfloor.click(function() {
+                window.open(floors[arr_floor[this.id]].link);
+            });   
+        }
+
+
+        var eji_floor2 = Raphael('eji_1_2', "100%", "100%"),
+        attributes = {
+                'stroke-width': 0,
+                'stroke-linejoin': 'round'
+            },
+
+        arr_floor2 = new Array();
+
+        eji_floor2.setViewBox(0, 0, 1174, 721);
+         
+        for (var floor_num in floors2) {
+            var objfloor = eji_floor2.path(floors2[floor_num].path);
+            objfloor.attr(attributes);
+            objfloor.attr({fill : floors2[floor_num].color});
+            arr_floor2[objfloor.id] = floor_num;  
+
+            objfloor.click(function() {
+                window.open(floors2[arr_floor2[this.id]].link);
             }); 
-
         }
     }
              
