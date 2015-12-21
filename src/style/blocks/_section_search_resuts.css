@@ -16,9 +16,14 @@
 }
 
 .search_list__item {
-    height: 225px;
-    width: 500px;
-    margin: 0 auto 50px;
+    
+    margin: 0 auto 80px;
+
+    @media (--w768) {
+        height: 225px;
+        width: 500px;
+         margin: 0 auto 50px;
+    }
 
     &:after {
         content: '';
@@ -30,14 +35,23 @@
     .search_list__pic {
         display: inline-block;
         vertical-align: middle;
-        width: 150px;
+        width: 100%;
+        margin-bottom: 40px;
+
+        @media (--w768) {
+            width: 150px;
+            margin-bottom: 0;
+        }
     }
 
     .search_list__content {
         display: inline-block;
         vertical-align: middle;
-        padding-left: 30px;
         
+        
+        @media (--w768) {
+            padding-left: 30px;
+        }
 
         h3 {
             text-transform: uppercase;

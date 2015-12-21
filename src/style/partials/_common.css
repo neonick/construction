@@ -447,20 +447,33 @@
 
 
 .secondary_menu {
-    position: fixed;
-    top: 200px;
-    left: 30px;
+    text-align: center;
     z-index: 10;
-    width: 180px;
+    width: 100%;
+    padding: 100px 10px 0;
+
+    @media (--w768) {
+        position: fixed;
+        top: 200px;
+        left: 30px;
+        width: 180px;
+        text-align: left;
+        padding: 0;
+    }
 
     a {
         color: rgba(39, 39, 39, 0.6);
         font-size: 14px;
         line-height: 40px;
-        padding-left: 20px;
+        
         display: block;
         text-transform: uppercase;
         transition: all 0.2s;
+
+
+        @media (--w768) {
+            padding-left: 20px;
+        }
 
         &:hover {
             color: #272727;
@@ -480,7 +493,7 @@
     height: 30px;
     height: 30px;
     padding-left: 40px;
-    margin-left: -40px;
+    
     font-size: 14px;
     line-height: 30px;
     font-family: $mainfont;
@@ -491,6 +504,10 @@
 
     &:hover {
         text-decoration: none;
+    }
+
+    @media (--w768) {
+        margin-left: -40px;
     }
 }
 

@@ -4,6 +4,10 @@
 .apartment {
     padding: 170px 0 30px;
 
+    @media (--w768) {
+        padding: 30px 0;
+    }
+
     .container {
         max-width: 790px
     }
@@ -87,10 +91,15 @@
     }
 
     .useful_square__grid > div {
-        width: 49%;
+        
         display: inline-block;
         text-align: center;
-        margin: 30px 0;
+        width: 100%;
+
+        @media (--w768) {
+            width: 49%;
+            margin: 30px 0;
+        }
     }
 }
 
@@ -99,10 +108,16 @@
     lost-center: 100%;
 }
 .apt_pic {
-    lost-column: 3/5;
+    width: 100%;
+    margin-bottom: 50px;
     padding-right: 40px;
     text-align: center;
     position: relative;
+
+    @media (--w768) {
+        lost-column: 3/5;
+        margin-bottom: 0;
+    }
 
     img {
        display: inline-block;
@@ -121,7 +136,11 @@
 }
 
 .apt_info {
-    lost-column: 2/5;
+    width: 100%;
+
+     @media (--w768) {
+        lost-column: 2/5;
+    }
 }
 
 .apt_info__heading {

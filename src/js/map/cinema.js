@@ -48,7 +48,7 @@ $(function () {
                     ],
                     "options": {
                         "strokeColor": "#c259b5",
-                        "strokeWidth": 1,
+                        "strokeWidth": 4,
                         "strokeStyle": "6 3"
                     }
                 },
@@ -62,7 +62,7 @@ $(function () {
                     ],
                     "options": {
                         "strokeColor": "#ef4446",
-                        "strokeWidth": 1,
+                        "strokeWidth": 4,
                         "strokeStyle": "3 3"
                     }
                 }

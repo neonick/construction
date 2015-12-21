@@ -154,7 +154,8 @@
 
     &.is-opened {
         display: block;
-        background-color: rgba(255,255,255,0.6);
+        background-color: rgba(255,255,255,0.9);
+        box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
 
         a {
             width: 100%;
@@ -206,14 +207,25 @@
 
 .mobile_menu {
     display: block;
-    float: right;
-    margin: 10px 10px 0 0;
-    border: 1px solid #fff;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 1px solid #272727;
     padding: 15px 23px;
     font-size: 16px;
     line-height: 16px;
     text-transform: uppercase;
-    color: #fff;
+    color: #272727;
+
+    .header--mainpage & {
+        color: #fff;
+        border: 1px solid #fff;
+    }
+
+    .header--mainpage &.is-opened {
+        color: #272727;
+        border: 1px solid #272727;
+    }
 
     @media (--w768) {
         display: none;

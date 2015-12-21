@@ -571,13 +571,19 @@
 
 .full_block__header {
 	margin-top: 30px;
-	font-size: 50px;
-	line-height: 50px;
+	font-size: 40px;
+	line-height: 40px;
 	color: #fff;
 	font-family: $custom;
 	font-weight: bold;
 	text-transform: uppercase;
-	padding-left: 170px;	
+	
+
+	@media (--w768) {
+		padding-left: 170px;	
+		font-size: 50px;
+		line-height: 50px;
+	}
 
 	span {
 		font-size: 20px;

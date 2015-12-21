@@ -69,11 +69,15 @@ $(document).ready(function () {
 		});
 	};
 
+	if ($(window).width > 1200) {
+		
+		skrollr.init({
+			smoothScrolling: false,
+			mobileDeceleration: 0.004
+		});
 
-	skrollr.init({
-		smoothScrolling: false,
-		mobileDeceleration: 0.004
-	});
+	}
+
 
 	// range sliders
 	$(".js-price-slider").ionRangeSlider({
