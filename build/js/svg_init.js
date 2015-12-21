@@ -66,4 +66,42 @@ $(function() {
 
 	};
 
+
+	if ($(".mob_floor_selector") != 0) {
+
+		$(".mob_floor_selector__item").click(function() {
+			$("#response_popup").load( 'get_flats.html' , function (){ 
+				$(".popup_caller").magnificPopup({
+					type : 'inline',
+					preloader : false,
+					removalDelay : 300,
+					mainClass : 'my-mfp-zoom-in',
+					overflowY : "scroll",
+                    close: function() {
+                        $("#response_popup").empty();
+                    }
+				});
+				$(".popup_caller").click();
+			} );
+			
+			//load потому что мы не на сервере, при переносе на сервак лучше бы заменить на это
+			/*$.get('get_flats.php [или какой угодно удобный путь к скрипту, важно лишь то, что он вернет]', $(this).data(), function(innerHTML){
+				$("#response_popup").html(innerHTML);
+				$(".popup_caller").magnificPopup({
+					type : 'inline',
+					preloader : false,
+					removalDelay : 300,
+					mainClass : 'my-mfp-zoom-in',
+					overflowY : "scroll",
+                    close: function() {
+                        $("#response_popup").empty();
+                    }
+				});
+				$(".popup_caller").click();
+			});*/
+		});
+
+
+	}
+
 }); 
