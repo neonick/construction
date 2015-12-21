@@ -38,6 +38,9 @@ $(function() {
 						removalDelay : 300,
 						mainClass : 'my-mfp-zoom-in',
 						overflowY : "scroll",
+                        close: function() {
+                            $("#response_popup").empty();
+                        }
 					});
 					$(".popup_caller").click();
 				} );
@@ -51,6 +54,9 @@ $(function() {
 						removalDelay : 300,
 						mainClass : 'my-mfp-zoom-in',
 						overflowY : "scroll",
+                        close: function() {
+                            $("#response_popup").empty();
+                        }
 					});
 					$(".popup_caller").click();
 				});*/
@@ -59,10 +65,5 @@ $(function() {
 		}
 
 	};
-
-	if ($(".plan") != 0) {
-
-		
-	}
 
 }); 

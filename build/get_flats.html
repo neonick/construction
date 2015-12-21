@@ -9,18 +9,21 @@
     <ul class="horizontal">
         <li>
             <a href="#eji_liter1_1" class="liter_1_1">1</a>
+            <!-- liter_1_1 может меняться -->
         </li>
         <li>
             <a href="#eji_liter1_2" class="liter_1_2">2</a>
+            <!-- liter_1_2 может меняться -->
         </li>
     </ul>
     <div id="eji_liter1_1">
-        <div class="plan plan_floor15"><img src="i/plan15_1.jpg" alt="">
+        <div class="plan">
+            <img src="i/plan15_1.jpg" alt="">
             <div id="eji_1_1" class="svg_plan_holst"></div>
         </div>
     </div>
     <div id="eji_liter1_2">
-        <div class="plan plan_floor15"><img src="i/plan15_2.jpg" alt="">
+        <div class="plan"><img src="i/plan15_2.jpg" alt="">
             <div id="eji_1_2" class="svg_plan_holst"></div>
         </div>
     </div>
@@ -134,7 +137,7 @@ var floors2 = {
         arr_floor2[objfloor.id] = floor_num;
 
         objfloor.click(function() {
-            window.open(floors2[arr_floor2[this.id]].link);x
+            window.open(floors2[arr_floor2[this.id]].link);
         });
     }
 </script>
