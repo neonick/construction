@@ -1,31 +1,32 @@
 $(function() {
 
-	if ($("#liter_eji_svg") != 0) {
+	if ($("#liter_cinema_svg") != 0) {
 
-		var eji = Raphael('liter_eji_svg', "100%", "100%"), attributes = {
+		var cinema = Raphael('liter_cinema_svg', "100%", "100%"), attributes = {
 			'stroke-width' : 0,
 			'stroke-linejoin' : 'round'
 		}, arr = new Array();
 	
-		eji.setViewBox(0, 0, 1200, 800);
+		cinema.setViewBox(0, 0, 1146, 764);
 
-		for (var country in paths) {
-			var obj = eji.path(paths[country].path);
+
+		for (var country in pathscinema) {
+			var obj = cinema.path(pathscinema[country].path);
 			
 			obj.attr(attributes);
 			obj.attr({
-				fill : paths[country].color 
+				fill : pathscinema[country].color 
 			});
 
 			arr[obj.id] = country;
 			
 			/* добавляем data-атрибуты для path, которые потом будем передавать в запросе */
-			$(obj).data("liter", paths[country].liter);
-			$(obj).data("floor", paths[country].floor);
+			$(obj).data("liter", pathscinema[country].liter);
+			$(obj).data("floor", pathscinema[country].floor);
 
 			obj.hover(function() {
 				$(".floor_label").show();
-				$(".floor_label_num").html(paths[arr[this.id]].floor);
+				$(".floor_label_num").html(pathscinema[arr[this.id]].floor);
 			}, function() {
 				$(".floor_label").hide();
 			});

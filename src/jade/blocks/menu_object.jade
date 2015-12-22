@@ -1,5 +1,5 @@
 // object_menu
-section.object_menu.sidebar.eji
+section.object_menu
 
     // object_menu.sidebar.cinema
 
@@ -10,7 +10,7 @@ section.object_menu.sidebar.eji
             // img(src="i/object_logo_cinema.png", class="object_menu__logo")
 
         ul.object_menu__list
-            li.active
+            li
                 a(href="#") Планировки
 
             li
@@ -22,5 +22,16 @@ section.object_menu.sidebar.eji
             li
                 a(href="#") События
 
-            li
-                a(href="#") О проекте
+            li.active
+                | О проекте
+
+                ul.submenu
+
+                    li.active 
+                        a(href="#") Преимущества
+                    li 
+                        a(href="#") Динамика строительства
+                    li 
+                        a(href="#") Правовая информация
+
+
