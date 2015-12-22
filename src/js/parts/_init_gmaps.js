@@ -23,7 +23,7 @@ function initialize() {
         position: pos,
         map: map,
         title: '',
-        icon: 'local/templates/.default/markup/build/i/map_icon_3.png'
+        icon: '/local/templates/.default/markup/build/i/map_icon_3.png'
     });
 
 }

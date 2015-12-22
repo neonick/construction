@@ -69,8 +69,8 @@ $(document).ready(function () {
 		});
 	};
 
-	if ($(window).width > 1200) {
-		
+	if ($(window).width() > 1200) {
+
 		skrollr.init({
 			smoothScrolling: false,
 			mobileDeceleration: 0.004
