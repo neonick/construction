@@ -2,7 +2,7 @@
 *   full_block
 */
 .full_block {
-    min-height: 700px;
+    min-height: 630px;
     padding-bottom: 30px;	
     width: 100%;
     padding-top: 0px;
@@ -68,7 +68,7 @@
 .search_form__grid {
 	/*lost-center: 960px;
 	lost-utility: clearfix;*/
-	padding-top: 100px;
+	padding-top: 90px;
 	max-width: 960px;
 	text-align: center;
 	margin: 0 auto;
@@ -165,8 +165,9 @@
 		text-transform: uppercase;
 		font-size: 25px;
 		line-height: 25px;
-		margin-bottom: 15px;
+		margin-bottom: 8px;
 		color: #272727;
+		text-align: left;
 	}
 }
 
