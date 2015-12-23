@@ -1,14 +1,14 @@
 // initialize Google map
 function initialize() {
-    var pos = new google.maps.LatLng(45.049200, 38.944139);
-    var pos2 = new google.maps.LatLng(45.049200, 38.954139);
-    var pos3 = new google.maps.LatLng(45.049200, 38.964139);
+    var pos = new google.maps.LatLng(45.016687, 39.109758);
+    var pos2 = new google.maps.LatLng(45.039188, 39.010475);
+    var pos3 = new google.maps.LatLng(45.015846, 39.035264);
 
     var centr = new google.maps.LatLng(45.049434, 38.956139);
 
     var mapOptions = {
         center: centr,
-        zoom: 14,
+        zoom: 13,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         mapTypeControlOptions: {
             style: google.maps.MapTypeControlStyle.DROPDOWN_MENU

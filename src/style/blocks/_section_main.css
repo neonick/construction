@@ -45,6 +45,10 @@
     	padding-bottom: 0;
     }
 
+.full_block--object {
+    min-height: 800px;
+}  
+
 .pattern {
 	width: 100%;
 	height: 100%;
