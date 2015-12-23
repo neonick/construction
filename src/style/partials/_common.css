@@ -364,6 +364,9 @@
         background-position: 100% -30px;
     }
 
+
+
+
 .irs-bar {
     height: 8px; top: 25px;
     background-position: 0 -60px;
@@ -405,11 +408,10 @@
 }
 
 .irs-from, .irs-to, .irs-single {
-    color: #fff;
+    color: #272727;
     font-size: 12px; line-height: 1.333;
     text-shadow: none;
     padding: 1px 5px;
-    background: rgba(0,0,0,0.5);
     -moz-border-radius: 3px;
     border-radius: 3px;
 }
@@ -434,6 +436,30 @@
     height: 0;
 }
 
+
+.floor {
+    .irs-line-mid {
+        height: 8px;
+        background-position: 0 -60px;
+    }
+    .irs-line-right {
+        height: 8px;
+        background-position: 100% -60px;
+    }
+
+    .irs-bar {
+        height: 8px; top: 25px;
+     
+        background-position: 0 -1px;
+    }
+    
+    .irs-bar-edge {
+        top: 25px;
+        height: 8px; width: 11px;
+        background: none;
+       
+    }
+}
 
 .floor {
     .irs-grid {
@@ -800,7 +826,7 @@ uncomment this part if you haven't added this code anywhere else
 }
 
 .mfp-inline-holder {
-    background-color: rgba(255, 0, 0, 0.3);
+    /*background-color: rgba(255, 0, 0, 0.3);*/
 }
 
 /*tabs*/

@@ -98,33 +98,38 @@ $(document).ready(function () {
 	$(".js-price-slider").ionRangeSlider({
 	    type: "double",
 	    prettify_enabled: true, 
-	    min: 1000000,
-	    max: 20000000,
-	    from: 5000000,
-	    to: 16000000,
-	    step: 500000,
-	    postfix: ' р.'
+	    min: 1,
+	    max: 20,
+	    from: 1,
+	    to: 20,
+	    step: 0.1,
+	    postfix: ' млн. р.',
+	    hide_min_max: true,
+    	hide_from_to: false
 	});
 
 	$(".js-square-slider").ionRangeSlider({
 	    type: "double",
 	    min: 50,
 	    max: 200,
-	    from: 100,
-	    to: 150,
-	    postfix: ' м²'
+	    from: 50,
+	    to: 200,
+	    postfix: ' м²',
+	    hide_min_max: true,
+    	hide_from_to: false
 	});
 
 	$(".js-floor-slider").ionRangeSlider({
-	    min: 1,
-	    max: 5,
-	    from: 1,
+	    from: 0,
 	    grid: true,
 	    grid_num: 4,
 	    hide_min_max: true,
-	    hide_from_to: true
+	    hide_from_to: true,
+	    values: [
+	        "1+", "2+", "3+",
+	        "4+", "ПХ"
+	    ]
 	});
-
     
     // slider for managers
     if ($(".managers").width != 0) {
