@@ -112,6 +112,7 @@
     &__logo {
         margin: 0 auto 20px;
         display: block;
+        width: 65px;
     }
 
     &__list {
