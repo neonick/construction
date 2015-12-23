@@ -1,14 +1,79 @@
 #backcall_popup.neo_pupup.mfp-hide.zoom-anim-dialog
     h1 Заказать обратный звонок
 
-    form(action="" class="callback_form")
-        span.neo_input__head Ваше имя
-        input(type="text" class='neo_input') 
+    .callback_form
+        form(action="")
+            span.neo_input__head Ваше имя
+            input(type="text" class='neo_input' required) 
 
-        span.neo_input__head Ваш телефон
-        input(type="text" class='neo_input')
+            span.neo_input__head Ваш телефон
+            input(type="text" class='neo_input phone' required)
 
-        button.btn.active Перезвоните мне 
+            button.btn.active Перезвоните мне 
+
+
+#avail_popup.neo_pupup.mfp-hide.zoom-anim-dialog
+    h1 Уточнить наличие
+
+    .callback_form
+        form(action="")
+            span.neo_input__head Ваше имя
+            input(type="text" class='neo_input' required) 
+
+            span.neo_input__head Ваш телефон
+            input(type="text" class='neo_input phone' required)
+
+            button.btn.active Перезвоните мне 
+
+
+#action_popup.neo_pupup.mfp-hide.zoom-anim-dialog
+    h1 Участвовать в акции
+
+    .callback_form
+        form(action="")
+            span.neo_input__head Ваше имя
+            input(type="text" class='neo_input' required) 
+
+            span.neo_input__head Ваш телефон
+            input(type="text" class='neo_input phone' required)
+
+            button.btn.active Принять участие
+
+
+#message_popup.neo_pupup.mfp-hide.zoom-anim-dialog
+    h1 Написать сообщение 
+
+    .callback_form
+        form(action="")
+            span.neo_input__head Ваше имя
+            input(type="text" class='neo_input' required) 
+
+            span.neo_input__head Ваш телефон
+            input(type="text" class='neo_input phone' required)
+            
+            span.neo_input__head Сообщение
+            textarea(name="" class='neo_textarea' required)
+
+            button.btn.active Написать сообщение 
+
+
+#question_popup.neo_pupup.mfp-hide.zoom-anim-dialog
+    h1 Задать вопрос менеджеру 
+
+    .callback_form
+        form(action="")
+            span.neo_input__head Ваше имя
+            input(type="text" class='neo_input' required) 
+
+            span.neo_input__head Ваш телефон
+            input(type="text" class='neo_input phone' required)
+            
+            span.neo_input__head Ваш вопрос
+            textarea(name="" class='neo_textarea' required)
+
+            button.btn.active Написать сообщение 
+
+
 
 
 

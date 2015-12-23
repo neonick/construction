@@ -19,9 +19,9 @@
         position: relative;
         overflow: hidden;
 
-        &:after {
+        .scroll_next_btn {
         	width: 100%;
-        	height: 20px;
+        	height: 30px;
         	background: url(../i/icon_scroll.png) top center no-repeat;
         	border-bottom: 10px solid $yellow;
         	content: "";
@@ -29,6 +29,12 @@
         	bottom: 0;
         	left: 0;
         	z-index: 4;
+        	cursor: pointer;
+        	transition: all 0.25s ease-in-out;
+
+        	&:hover {
+        		transform: translateY(5px);
+        	}
         }
     }
 

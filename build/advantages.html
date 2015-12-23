@@ -1,185 +1,253 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8"><!--[if lt IE 9]>
+
+	<head>
+		<meta charset="utf-8">
+		<!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <title>Gagarin Template</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="i/favicon.ico" type="image/vnd.microsoft.icon">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700&amp;subset=cyrillic,latin" type="text/css">
-    <link rel="stylesheet" href="css/main.css">
-  </head>
-  <body>
-    <!-- header-->
-    <section class="header js-sticky-header"><a href="/">
-        <div class="header_corner_logo"></div></a><a href="#backcall_popup" class="backcall_block js-open-backcall"><span class="backcall_block__phone">8(861) 777-77-77</span><span class="backcall_block__text">Заказать обратный звонок</span></a>
-      <nav class="main_menu"><a href="#" class="active">Обьекты</a><a href="#">О компании</a><a href="#">События</a><a href="#">Контакты</a></nav><a href="#" class="mobile_menu js-open-mobile-menu">Меню</a>
-    </section>
-    <!-- object_menu-->
-    <section class="object_menu">
-      <!-- object_menu.sidebar.cinema-->
-      <div class="object_menu__content"><a href=""><img src="i/object_logo_eji.png" class="object_menu__logo">
-          <!-- img(src="i/object_logo_cinema.png", class="object_menu__logo")--></a>
-        <ul class="object_menu__list">
-          <li><a href="#">Планировки</a></li>
-          <li><a href="#">Место и окружение</a></li>
-          <li><a href="#">Условия покупки</a></li>
-          <li><a href="#">События</a></li>
-          <li class="active">О проекте
-            <ul class="submenu">
-              <li class="active"> <a href="#">Преимущества</a></li>
-              <li> <a href="#">Динамика строительства</a></li>
-              <li> <a href="#">Правовая информация</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!-- object_tizers_large-->
-    <section class="object_tizers_large">
-      <div style="max-width: 760px" class="container">
-        <div class="one_obj_tizers_l">
-          <div class="one_obj_tizers_l__pic"><img src="i/object_tizer_large.png" alt=""></div>
-          <div class="one_obj_tizers_l__info"><span class="one_obj_tizers_l__heading">ЖК «Ежи»</span><span class="one_obj_tizers_l__where icon_text where">
+		<title>Gagarin Template</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="i/favicon.ico" type="image/vnd.microsoft.icon">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700&amp;subset=cyrillic,latin" type="text/css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+
+	<body>
+		<!-- header-->
+		<section class="header js-sticky-header">
+			<a href="/">
+				<div class="header_corner_logo"></div>
+			</a><a href="#backcall_popup" class="backcall_block js-open-backcall"><span class="backcall_block__phone">8(861) 777-77-77</span><span class="backcall_block__text">Заказать обратный звонок</span></a>
+			<nav class="main_menu"><a href="#" class="active">Обьекты</a><a href="#">О компании</a><a href="#">События</a><a href="#">Контакты</a></nav><a href="#" class="mobile_menu js-open-mobile-menu">Меню</a>
+		</section>
+		<!-- object_menu-->
+		<section class="object_menu eji">
+			<!-- object_menu.cinema-->
+			<div class="object_menu__content">
+				<a href=""><img src="i/object_logo_eji.png" class="object_menu__logo">
+					<!-- img(src="i/object_logo_cinema.png", class="object_menu__logo")-->
+				</a>
+				<ul class="object_menu__list">
+					<li><a href="#">Планировки</a></li>
+					<li><a href="#">Место и окружение</a></li>
+					<li><a href="#">Условия покупки</a></li>
+					<li><a href="#">События</a></li>
+					<li class="active">О проекте
+						<!-- ul.submenu-->
+						<!--     li.active -->
+						<!--         a(href="#") Преимущества-->
+						<!--     li -->
+						<!--         a(href="#") Динамика строительства-->
+						<!--     li -->
+						<!--         a(href="#") Правовая информация-->
+
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!-- object_tizers_large-->
+		<section class="object_tizers_large">
+			<div style="max-width: 760px" class="container">
+				<div class="one_obj_tizers_l">
+					<div class="one_obj_tizers_l__pic"><img src="i/object_tizer_large.png" alt=""></div>
+					<div class="one_obj_tizers_l__info"><span class="one_obj_tizers_l__heading">ЖК «Ежи»</span><span class="one_obj_tizers_l__where icon_text where">
                
               Краснодар, ул. Айвазовского, 116<br><a href="#">посмотреть на карте</a></span><span class="one_obj_tizers_l__when icon_text when">Сдача: IV квартал 2016</span><span class="one_obj_tizers_l__num icon_text num">1 литер</span>
-            <p class="one_obj_tizers_l__rest"> <span>10</span>квартир доступно</p><a href="#" class="btn green"> подобрать квартиру</a>
-            <!--! .btn.gray  продано--><a href="#" class="ask_manager">Задать вопрос менеджеру</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- advantags-->
-    <section class="advantags">
-      <div class="container">
-        <div class="text_block">   
-          <h3 class="text_block__header">ЖИЛОЙ КОМПЛЕКС «ЕЖИ»</h3>
-          <p class="text_block__text">Думать о покупке новой квартиры — это всегда волнующий, но приятный процесс. Чтобы перестать волноваться, а получать от выбора только удовольствие, надо быть уверенным, где купить квартиру в Краснодаре. Такую уверенность даёт жилой экокомплекс «Ежи».</p>
-        </div>
-        <div class="advantages_icons">
-          <h3>Преимущества</h3>
-          <div class="advantages_icons__grid">
-            <div class="advantages_icon">
-              <div class="advantages_icon__pic type1"></div><span>
+						<p class="one_obj_tizers_l__rest"> <span>10</span>квартир доступно</p><a href="#" class="btn green"> подобрать квартиру</a>
+						<!--! .btn.gray  продано--><a href="#" class="ask_manager">Задать вопрос менеджеру</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- advantags-->
+		<section class="advantags">
+			<div class="container">
+				<div class="text_block">
+					<h3 class="text_block__header">ЖИЛОЙ КОМПЛЕКС «ЕЖИ»</h3>
+					<p class="text_block__text">Думать о покупке новой квартиры — это всегда волнующий, но приятный процесс. Чтобы перестать волноваться, а получать от выбора только удовольствие, надо быть уверенным, где купить квартиру в Краснодаре. Такую уверенность даёт жилой экокомплекс «Ежи».</p>
+				</div>
+				<div class="advantages_icons">
+					<h3>Преимущества</h3>
+					<div class="advantages_icons__grid">
+						<div class="advantages_icon">
+							<div class="advantages_icon__pic type1"></div><span>
                  
                 Дом посреди<br>парка</span>
-            </div>
-            <div class="advantages_icon">
-              <div class="advantages_icon__pic type2"></div><span>
+						</div>
+						<div class="advantages_icon">
+							<div class="advantages_icon__pic type2"></div><span>
                  
                 охраняемая<br>территория</span>
-            </div>
-            <div class="advantages_icon">
-              <div class="advantages_icon__pic type3"></div><span>
+						</div>
+						<div class="advantages_icon">
+							<div class="advantages_icon__pic type3"></div><span>
                  
                 просторные<br>планировки</span>
-            </div>
-            <div class="advantages_icon">
-              <div class="advantages_icon__pic type4"></div><span>
+						</div>
+						<div class="advantages_icon">
+							<div class="advantages_icon__pic type4"></div><span>
                  
                 подземная <br>парковка</span>
-            </div>
-          </div>
-        </div>
-        <div class="text_block">   
-          <h3 class="text_block__header">ЭКОЛОГИЯ</h3>
-          <p class="text_block__text">Живя буквально на природе, вы не останетесь вдали от цивилизации. Рядом с жилым экокомплексом «Ежи» у вас есть выбор во всём. Две заправки — Лукойл и Газпром, два крупных банка — Кубань Кредит и Сбербанк, россыпь продуктовых магазинов, четыре кафе и даже продуктовый рынок. Выбор есть и у ваших детей — два детских сада и две школы. Только гостиница поблизости одна. Но зачем она вам, когда вы живёте в ЖК «Ежи».</p>
-        </div><img src="i/content_single_pic.jpg" class="content_single_pic">
-        <div class="text_block">   
-          <h3 class="text_block__header">ИНФРАСТРУКТУРА</h3>
-          <p class="text_block__text">Живя буквально на природе, вы не останетесь вдали от цивилизации. Рядом с жилым экокомплексом «Ежи» у вас есть выбор во всём. Две заправки — Лукойл и Газпром, два крупных банка — Кубань Кредит и Сбербанк, россыпь продуктовых магазинов, четыре кафе и даже продуктовый рынок. Выбор есть и у ваших детей — два детских сада и две школы. Только гостиница поблизости одна. Но зачем она вам, когда вы живёте в ЖК «Ежи».</p>
-        </div>
-        <div class="text_block">   
-          <h3 class="text_block__header">Место</h3>
-          <p class="text_block__text">Живя буквально на природе, вы не останетесь вдали от цивилизации. Рядом с жилым экокомплексом «Ежи» у вас есть выбор во всём. Две заправки — Лукойл и Газпром, два крупных банка — Кубань Кредит и Сбербанк, россыпь продуктовых магазинов, четыре кафе и даже продуктовый рынок. Выбор есть и у ваших детей — два детских сада и две школы. Только гостиница поблизости одна. Но зачем она вам, когда вы живёте в ЖК «Ежи».</p>
-        </div>
-      </div>
-    </section>
-    <!-- managers-->
-    <section class="managers">
-      <div class="container">
-        <h2>Наши менеджеры готовы ответить на ваши вопросы</h2>
-        <div class="swiper-container swiper-managers">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide one_manager">
-              <div class="one_manager__block"><img src="i/manager.jpg" alt="" class="one_manager__pic"></div><a href="#backcall_popup" class="backcall_block js-open-backcall"><span class="backcall_block__phone">8(861) 777-77-77</span><span class="backcall_block__text">Заказать обратный звонок</span></a>
-              <p class="one_manager__text">
-                 
-                Настя Карпова<br>ответит на ваши вопросы
-              </p>
-            </div>
-            <div class="swiper-slide one_manager">
-              <div class="one_manager__block"><img src="i/manager.jpg" alt="" class="one_manager__pic"></div><a href="#backcall_popup" class="backcall_block js-open-backcall"><span class="backcall_block__phone">8(861) 777-77-77</span><span class="backcall_block__text">Заказать обратный звонок</span></a>
-              <p class="one_manager__text">
-                 
-                Настя Карпова<br>ответит на ваши вопросы
-              </p>
-            </div>
-            <div class="swiper-slide one_manager">
-              <div class="one_manager__block"><img src="i/manager.jpg" alt="" class="one_manager__pic"></div><a href="#backcall_popup" class="backcall_block js-open-backcall"><span class="backcall_block__phone">8(861) 777-77-77</span><span class="backcall_block__text">Заказать обратный звонок</span></a>
-              <p class="one_manager__text">
-                 
-                Настя Карпова<br>ответит на ваши вопросы
-              </p>
-            </div>
-            <div class="swiper-slide one_manager">
-              <div class="one_manager__block"><img src="i/manager.jpg" alt="" class="one_manager__pic"></div><a href="#backcall_popup" class="backcall_block js-open-backcall"><span class="backcall_block__phone">8(861) 777-77-77</span><span class="backcall_block__text">Заказать обратный звонок</span></a>
-              <p class="one_manager__text">
-                 
-                Настя Карпова<br>ответит на ваши вопросы
-              </p>
-            </div>
-            <div class="swiper-slide one_manager">
-              <div class="one_manager__block"><img src="i/manager.jpg" alt="" class="one_manager__pic"></div><a href="#backcall_popup" class="backcall_block js-open-backcall"><span class="backcall_block__phone">8(861) 777-77-77</span><span class="backcall_block__text">Заказать обратный звонок</span></a>
-              <p class="one_manager__text">
-                 
-                Настя Карпова<br>ответит на ваши вопросы
-              </p>
-            </div>
-            <div class="swiper-slide one_manager">
-              <div class="one_manager__block"><img src="i/manager.jpg" alt="" class="one_manager__pic"></div><a href="#backcall_popup" class="backcall_block js-open-backcall"><span class="backcall_block__phone">8(861) 777-77-77</span><span class="backcall_block__text">Заказать обратный звонок</span></a>
-              <p class="one_manager__text">
-                 
-                Настя Карпова<br>ответит на ваши вопросы
-              </p>
-            </div>
-            <div class="swiper-slide one_manager">
-              <div class="one_manager__block"><img src="i/manager.jpg" alt="" class="one_manager__pic"></div><a href="#backcall_popup" class="backcall_block js-open-backcall"><span class="backcall_block__phone">8(861) 777-77-77</span><span class="backcall_block__text">Заказать обратный звонок</span></a>
-              <p class="one_manager__text">
-                 
-                Настя Карпова<br>ответит на ваши вопросы
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div id="backcall_popup" class="neo_pupup mfp-hide zoom-anim-dialog">
-      <h1>Заказать обратный звонок</h1>
-      <form action="" class="callback_form"><span class="neo_input__head">Ваше имя</span>
-        <input type="text" class="neo_input"><span class="neo_input__head">Ваш телефон</span>
-        <input type="text" class="neo_input">
-        <button class="btn active">Перезвоните мне </button>
-      </form>
-    </div>
-    
-    <!-- footer-->
-    <section class="footer">
-      <div class="container">
-        <nav class="main_menu"><a href="#" class="active">Обьекты</a><a href="#">О компании</a><a href="#">События</a><a href="#">Контакты</a></nav>
-        <div class="soc_block"><a href="" class="fb"></a><a href="" class="tw"></a><a href="" class="ig"></a><a href="" class="vk"></a></div>
-        <p class="soc_block__text">Мы рады новым друзьям!</p>
-        <p class="copyrights">
-           
-          создание сайта <a href="http://platzkart.ru/" target="_blank">Platzkart</a>
-        </p>
-      </div>
-    </section>
-    <!-- scripts--><script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdrLjcwRWoPkHw8bTvGD2gtNCn_6brs0w&sensor=true&language=ru"></script>
-    <script src="js/main.js"></script>
-  </body>
+						</div>
+					</div>
+				</div>
+				<div class="text_block">
+					<h3 class="text_block__header">ЭКОЛОГИЯ</h3>
+					<p class="text_block__text">Живя буквально на природе, вы не останетесь вдали от цивилизации. Рядом с жилым экокомплексом «Ежи» у вас есть выбор во всём. Две заправки — Лукойл и Газпром, два крупных банка — Кубань Кредит и Сбербанк, россыпь продуктовых магазинов, четыре кафе и даже продуктовый рынок. Выбор есть и у ваших детей — два детских сада и две школы. Только гостиница поблизости одна. Но зачем она вам, когда вы живёте в ЖК «Ежи».</p>
+				</div><img src="i/content_single_pic.jpg" class="content_single_pic">
+				<div class="text_block">
+					<h3 class="text_block__header">ИНФРАСТРУКТУРА</h3>
+					<p class="text_block__text">Живя буквально на природе, вы не останетесь вдали от цивилизации. Рядом с жилым экокомплексом «Ежи» у вас есть выбор во всём. Две заправки — Лукойл и Газпром, два крупных банка — Кубань Кредит и Сбербанк, россыпь продуктовых магазинов, четыре кафе и даже продуктовый рынок. Выбор есть и у ваших детей — два детских сада и две школы. Только гостиница поблизости одна. Но зачем она вам, когда вы живёте в ЖК «Ежи».</p>
+				</div>
+				<div class="text_block">
+					<h3 class="text_block__header">Место</h3>
+					<p class="text_block__text">Живя буквально на природе, вы не останетесь вдали от цивилизации. Рядом с жилым экокомплексом «Ежи» у вас есть выбор во всём. Две заправки — Лукойл и Газпром, два крупных банка — Кубань Кредит и Сбербанк, россыпь продуктовых магазинов, четыре кафе и даже продуктовый рынок. Выбор есть и у ваших детей — два детских сада и две школы. Только гостиница поблизости одна. Но зачем она вам, когда вы живёте в ЖК «Ежи».</p>
+				</div>
+			</div>
+		</section>
+		<!-- managers-->
+		<section class="managers">
+			<div class="container">
+				<h2>Наши менеджеры готовы ответить на ваши вопросы</h2>
+				<div class="swiper-container swiper-managers">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide one_manager">
+							<div class="one_manager__block"><img src="i/manager.jpg" alt="" class="one_manager__pic"></div><a href="#question_popup" class="backcall_block js-open-question-popup"><span class="backcall_block__phone">8(861) 777-77-77</span><span class="backcall_block__text">Задать вопрос менеджеру</span></a>
+							<p class="one_manager__text">
+
+								Настя Карпова
+								<br>ответит на ваши вопросы
+							</p>
+						</div>
+						<div class="swiper-slide one_manager">
+							<div class="one_manager__block"><img src="i/manager.jpg" alt="" class="one_manager__pic"></div><a href="#question_popup" class="backcall_block js-open-question-popup"><span class="backcall_block__phone">8(861) 777-77-77</span><span class="backcall_block__text">Задать вопрос менеджеру</span></a>
+							<p class="one_manager__text">
+
+								Настя Карпова
+								<br>ответит на ваши вопросы
+							</p>
+						</div>
+						<div class="swiper-slide one_manager">
+							<div class="one_manager__block"><img src="i/manager.jpg" alt="" class="one_manager__pic"></div><a href="#question_popup" class="backcall_block js-open-question-popup"><span class="backcall_block__phone">8(861) 777-77-77</span><span class="backcall_block__text">Задать вопрос менеджеру</span></a>
+							<p class="one_manager__text">
+
+								Настя Карпова
+								<br>ответит на ваши вопросы
+							</p>
+						</div>
+						<div class="swiper-slide one_manager">
+							<div class="one_manager__block"><img src="i/manager.jpg" alt="" class="one_manager__pic"></div><a href="#question_popup" class="backcall_block js-open-question-popup"><span class="backcall_block__phone">8(861) 777-77-77</span><span class="backcall_block__text">Задать вопрос менеджеру</span></a>
+							<p class="one_manager__text">
+
+								Настя Карпова
+								<br>ответит на ваши вопросы
+							</p>
+						</div>
+						<div class="swiper-slide one_manager">
+							<div class="one_manager__block"><img src="i/manager.jpg" alt="" class="one_manager__pic"></div><a href="#question_popup" class="backcall_block js-open-question-popup"><span class="backcall_block__phone">8(861) 777-77-77</span><span class="backcall_block__text">Задать вопрос менеджеру</span></a>
+							<p class="one_manager__text">
+
+								Настя Карпова
+								<br>ответит на ваши вопросы
+							</p>
+						</div>
+						<div class="swiper-slide one_manager">
+							<div class="one_manager__block"><img src="i/manager.jpg" alt="" class="one_manager__pic"></div><a href="#question_popup" class="backcall_block js-open-question-popup"><span class="backcall_block__phone">8(861) 777-77-77</span><span class="backcall_block__text">Задать вопрос менеджеру</span></a>
+							<p class="one_manager__text">
+
+								Настя Карпова
+								<br>ответит на ваши вопросы
+							</p>
+						</div>
+						<div class="swiper-slide one_manager">
+							<div class="one_manager__block"><img src="i/manager.jpg" alt="" class="one_manager__pic"></div><a href="#question_popup" class="backcall_block js-open-question-popup"><span class="backcall_block__phone">8(861) 777-77-77</span><span class="backcall_block__text">Задать вопрос менеджеру</span></a>
+							<p class="one_manager__text">
+
+								Настя Карпова
+								<br>ответит на ваши вопросы
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div id="backcall_popup" class="neo_pupup mfp-hide zoom-anim-dialog">
+			<h1>Заказать обратный звонок</h1>
+			<div class="callback_form">
+				<form action=""><span class="neo_input__head">Ваше имя</span>
+					<input type="text" required class="neo_input"><span class="neo_input__head">Ваш телефон</span>
+					<input type="text" required class="neo_input phone">
+					<button class="btn active">Перезвоните мне </button>
+				</form>
+			</div>
+		</div>
+		<div id="avail_popup" class="neo_pupup mfp-hide zoom-anim-dialog">
+			<h1>Уточнить наличие</h1>
+			<div class="callback_form">
+				<form action=""><span class="neo_input__head">Ваше имя</span>
+					<input type="text" required class="neo_input"><span class="neo_input__head">Ваш телефон</span>
+					<input type="text" required class="neo_input phone">
+					<button class="btn active">Перезвоните мне </button>
+				</form>
+			</div>
+		</div>
+		<div id="action_popup" class="neo_pupup mfp-hide zoom-anim-dialog">
+			<h1>Участвовать в акции</h1>
+			<div class="callback_form">
+				<form action=""><span class="neo_input__head">Ваше имя</span>
+					<input type="text" required class="neo_input"><span class="neo_input__head">Ваш телефон</span>
+					<input type="text" required class="neo_input phone">
+					<button class="btn active">Принять участие</button>
+				</form>
+			</div>
+		</div>
+		<div id="message_popup" class="neo_pupup mfp-hide zoom-anim-dialog">
+			<h1>Написать сообщение </h1>
+			<div class="callback_form">
+				<form action=""><span class="neo_input__head">Ваше имя</span>
+					<input type="text" required class="neo_input"><span class="neo_input__head">Ваш телефон</span>
+					<input type="text" required class="neo_input phone"><span class="neo_input__head">Сообщение</span>
+					<textarea name="" required class="neo_textarea"></textarea>
+					<button class="btn active">Написать сообщение </button>
+				</form>
+			</div>
+		</div>
+		<div id="question_popup" class="neo_pupup mfp-hide zoom-anim-dialog">
+			<h1>Задать вопрос менеджеру </h1>
+			<div class="callback_form">
+				<form action=""><span class="neo_input__head">Ваше имя</span>
+					<input type="text" required class="neo_input"><span class="neo_input__head">Ваш телефон</span>
+					<input type="text" required class="neo_input phone"><span class="neo_input__head">Ваш вопрос</span>
+					<textarea name="" required class="neo_textarea"></textarea>
+					<button class="btn active">Написать сообщение </button>
+				</form>
+			</div>
+		</div>
+
+		<!-- footer-->
+		<section class="footer">
+			<div class="container">
+				<nav class="main_menu"><a href="#" class="active">Обьекты</a><a href="#">О компании</a><a href="#">События</a><a href="#">Контакты</a></nav>
+				<div class="soc_block">
+					<a href="" class="fb"></a>
+					<a href="" class="tw"></a>
+					<a href="" class="ig"></a>
+					<a href="" class="vk"></a>
+				</div>
+				<p class="soc_block__text">Мы рады новым друзьям!</p>
+				<p class="copyrights">
+
+					создание сайта <a href="http://platzkart.ru/" target="_blank">Platzkart</a>
+				</p>
+			</div>
+		</section>
+		<!-- scripts-->
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdrLjcwRWoPkHw8bTvGD2gtNCn_6brs0w&sensor=true&language=ru"></script>
+		<script src="js/main.js"></script>
+	</body>
+
 </html>

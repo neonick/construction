@@ -6,61 +6,61 @@ $(document).ready(function () {
         yandexIcons = {
             'drugstore': {
                 iconLayout: 'default#image',
-                iconImageHref: 'i/drugstore.png',
+                iconImageHref: '/local/templates/.default/markup/build/i/drugstore.png',
                 iconImageSize: [32, 37],
                 iconImageOffset: [-16, -37]
             },
             'conveniencestore': {
                 iconLayout: 'default#image',
-                iconImageHref: 'i/conveniencestore.png',
+                iconImageHref: '/local/templates/.default/markup/build/i/conveniencestore.png',
                 iconImageSize: [32, 37],
                 iconImageOffset: [-16, -37]
             },
             'school': {
                 iconLayout: 'default#image',
-                iconImageHref: 'i/school.png',
+                iconImageHref: '/local/templates/.default/markup/build/i/school.png',
                 iconImageSize: [32, 37],
                 iconImageOffset: [-16, -37]
             },
             'fillingstation': {
                 iconLayout: 'default#image',
-                iconImageHref: 'i/fillingstation.png',
+                iconImageHref: '/local/templates/.default/markup/build/i/fillingstation.png',
                 iconImageSize: [32, 37],
                 iconImageOffset: [-16, -37]
             },
             'restaurant': {
                 iconLayout: 'default#image',
-                iconImageHref: 'i/restaurant.png',
+                iconImageHref: '/local/templates/.default/markup/build/i/restaurant.png',
                 iconImageSize: [32, 37],
                 iconImageOffset: [-16, -37]
             },
             'university': {
                 iconLayout: 'default#image',
-                iconImageHref: 'i/university.png',
+                iconImageHref: '/local/templates/.default/markup/build/i/university.png',
                 iconImageSize: [32, 37],
                 iconImageOffset: [-16, -37]
             },
             'market': {
                 iconLayout: 'default#image',
-                iconImageHref: 'i/market.png',
+                iconImageHref: '/local/templates/.default/markup/build/i/market.png',
                 iconImageSize: [32, 37],
                 iconImageOffset: [-16, -37]
             },
             'hospital-building': {
                 iconLayout: 'default#image',
-                iconImageHref: 'i/hospital-building.png',
+                iconImageHref: '/local/templates/.default/markup/build/i/hospital-building.png',
                 iconImageSize: [32, 37],
                 iconImageOffset: [-16, -37]
             },
             'cinema': {
                 iconLayout: 'default#image',
-                iconImageHref: 'i/cinema.png',
+                iconImageHref: '/local/templates/.default/markup/build/i/cinema.png',
                 iconImageSize: [32, 37],
                 iconImageOffset: [-16, -37]
             },
             'ezhi': {
                 iconLayout: 'default#image',
-                iconImageHref: 'i/ezhi.png',
+                iconImageHref: '/local/templates/.default/markup/build/i/ezhi.png',
                 iconImageSize: [81, 100],
                 iconImageOffset: [-40.5, -79]
             },

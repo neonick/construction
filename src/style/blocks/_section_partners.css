@@ -22,15 +22,18 @@
 .partners_grid {
     lost-center: 100%;
     padding: 70px 0;
+    text-align: center;
 }
 
 .partners_col {
-    lost-column: 1/1;
+    width: 100%;
     margin-bottom: 80px;
+    display: inline-block;
 
     @media (--w768) {
-        lost-column: 1/4;
+        width: 25%;
         margin-bottom: 0;
+        
     }
 }
 

@@ -741,10 +741,17 @@ uncomment this part if you haven't added this code anywhere else
 }
 */
 
-#backcall_popup {
+#backcall_popup,
+#avail_popup,
+#message_popup,
+#question_popup,
+#action_popup {
     max-width: 600px;
-    top: 200px;
-
+    z-index: 99999999999999999999999999 !important;
+    
+    @media (--w768) {
+        top: 200px;
+    }
 }
 
 .callback_form {
@@ -774,12 +781,27 @@ uncomment this part if you haven't added this code anywhere else
     outline: none;
 }
 
+.neo_textarea {
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    height: 70px;
+    background-color: #fff;
+    font-size: 14px;
+    margin-bottom: 20px;
+    outline: none;
+    padding-top: 5px;
+}
+
 
 .neo_pupup .mfp-close {
     font-size: 20px;
 }
 
-
+.mfp-inline-holder {
+    background-color: rgba(255, 0, 0, 0.3);
+}
 
 /*tabs*/
 

@@ -19,6 +19,8 @@
     "BigVideo": "BigVideo.js#~1.1.5",
     "skrollr": "~0.6.30",
     "raphael": "~2.1.4",
-    "Tabslet": "~1.7.0"
+    "Tabslet": "~1.7.0",
+    "jquery.maskedinput": "~1.4.1",
+    "jquery.scrollTo": "~2.1.2"
   }
 }

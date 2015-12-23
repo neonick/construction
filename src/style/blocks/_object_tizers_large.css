@@ -17,6 +17,10 @@
 		@media (--w768) {
 			lost-column: 5/8;
 			margin-bottom: 0;
+
+			img {
+				margin-left: -50px;
+			}
 		}
 
 		img {

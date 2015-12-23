@@ -7,20 +7,35 @@
 //= ../../bower_components/ion.rangeslider/js/ion.rangeSlider.min.js
 //= ../../bower_components/fotorama/fotorama.js
 //= ../../bower_components/skrollr/dist/skrollr.min.js
+//= ../../bower_components/jquery.scrollTo/jquery.scrollTo.min.js
 //= ../../bower_components/raphael/raphael-min.js
 //= ../../bower_components/tabslet/jquery.tabslet.min.js
+//= ../../bower_components/jquery.maskedinput/dist/jquery.maskedinput.min.js
 
 //= modernizr-custom.js
 //= scrollyeah.min.js
 
 $(document).ready(function () {
 
-	$('.dinamic__item a').magnificPopup({
+
+	$(".phone").mask("(999) 999-99-99");
+
+	$(".js-scroll-next").click(function() {
+        $('body').scrollTo($(".geometry"), 500);
+    });
+
+	$('.dinamic__grid').magnificPopup({
+			delegate: 'a', 
 			type: 'image',
 			closeOnContentClick: true,
 			closeBtnInside: false,
 			fixedContentPos: true,
 			mainClass: 'mfp-no-margins mfp-with-zoom dinamic_popup',
+			gallery: {
+				enabled: true,
+				navigateByImgClick: true,
+				preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+			},
 			image: {
 				verticalFit: true
 			},
@@ -69,7 +84,7 @@ $(document).ready(function () {
 		});
 	};
 
-	if ($(window).width() > 1200) {
+	if ($(window).width() > 1200 && $(".geometry").length !=0 ) {
 
 		skrollr.init({
 			smoothScrolling: false,
@@ -241,7 +256,53 @@ $(document).ready(function () {
         alignTop: true
     });
 
-    
+
+    $(".js-open-avail-popup").magnificPopup({
+        type: 'inline',
+        preloader: false,
+        removalDelay: 300,
+        mainClass: 'my-mfp-zoom-in',
+        overflowY: "auto",
+        alignTop: true
+    });
+
+    $(".js-open-message-popup").magnificPopup({
+        type: 'inline',
+        preloader: false,
+        removalDelay: 300,
+        mainClass: 'my-mfp-zoom-in',
+        overflowY: "auto",
+        alignTop: true
+    });
+
+    $(".js-open-question-popup").magnificPopup({
+        type: 'inline',
+        preloader: false,
+        removalDelay: 300,
+        mainClass: 'my-mfp-zoom-in',
+        overflowY: "auto",
+        alignTop: true
+    });
+
+    $(".js-open-action-popup").magnificPopup({
+        type: 'inline',
+        preloader: false,
+        removalDelay: 300,
+        mainClass: 'my-mfp-zoom-in',
+        overflowY: "auto",
+        alignTop: true
+    });
+
+    $('.js-open-apartment-details').magnificPopup({
+		type: 'image',
+		closeBtnInside: false,
+		fixedContentPos: true,
+		mainClass: 'mfp-no-margins mfp-with-zoom dinamic_popup',
+		image: {
+			verticalFit: true
+		},
+		alignTop: true
+	});    
 
 
     video_resize();

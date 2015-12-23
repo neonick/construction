@@ -10,6 +10,7 @@ var gulp = require('gulp'),
     browserSync = require("browser-sync"),
     rigger = require("gulp-rigger"),
     gutil = require('gulp-util'),
+    gulpprettify = require('gulp-prettify'),
 
     // postcss and plugins
     postcss = require('gulp-postcss'),
@@ -25,6 +26,30 @@ var gulp = require('gulp'),
     pkg = require('./package.json'),
 
     reload = browserSync.reload;
+
+var configPrettify = {
+    "indent_size": 4,
+    "indent_char": " ",
+    "eol": "\n",
+    "indent_level": 0,
+    "indent_with_tabs": true,
+    "indent-inner-html": true,
+    "preserve_newlines": true,
+    "max_preserve_newlines": 10,
+    "jslint_happy": false,
+    "space_after_anon_function": false,
+    "brace_style": "collapse",
+    "keep_array_indentation": false,
+    "keep_function_indentation": false,
+    "space_before_conditional": true,
+    "break_chained_methods": false,
+    "eval_code": false,
+    "unescape_strings": false,
+    "wrap_line_length": 0,
+    "wrap_attributes": "auto",
+    "wrap_attributes_indent_size": 4,
+    "end_with_newline": false
+};
 
 var path = {
     build: {
@@ -82,6 +107,7 @@ gulp.task('hello', function () {
 gulp.task('jade:build', function () {
     gulp.src(path.src.jade)
         .pipe(jade({pretty: true}))
+        .pipe(gulpprettify(configPrettify))
         .pipe(gulp.dest(path.build.html))
         .pipe(reload({stream: true}));
 });

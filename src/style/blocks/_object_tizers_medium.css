@@ -110,7 +110,7 @@ h2.number_header {
 
 		@media (--w600) {
 			position: absolute;
-			left: 0;
+			left: -50px;
 			top: 70px;
 			margin-top: 0;
 		}

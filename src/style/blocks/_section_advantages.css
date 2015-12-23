@@ -48,16 +48,16 @@
         border-radius: 50%;
 
         &.type1 {
-            background: #fff30e url(../i/advantages_icon1.png) 0 0 no-repeat;
+            background: #fff30e url(../i/advantages_icon1.png) 0 0 no-repeat !important;
         }
         &.type2 {
-            background: #fff30e url(../i/advantages_icon1.png) 0 0 no-repeat;
+            background: #fff30e url(../i/advantages_icon2.png) 0 0 no-repeat !important;
         }
         &.type3 {
-            background: #fff30e url(../i/advantages_icon1.png) 0 0 no-repeat;
+            background: #fff30e url(../i/advantages_icon3.png) 0 0 no-repeat !important;
         }
         &.type4 {
-            background: #fff30e url(../i/advantages_icon1.png) 0 0 no-repeat;
+            background: #fff30e url(../i/advantages_icon4.png) 0 0 no-repeat !important;
         }
     }
 
