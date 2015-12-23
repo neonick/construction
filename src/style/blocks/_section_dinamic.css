@@ -92,6 +92,7 @@
 }
 
 .dinamic_popup .mfp-content {
-    vertical-align: top;
-    margin-top: 200px;
+    /*vertical-align: top;
+    margin-top: 200px;*/
+    vertical-align: middle;
 }
