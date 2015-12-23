@@ -228,7 +228,8 @@ $(document).ready(function () {
 
 
     // mobile menu
-    $(document).on("click", ".js-open-mobile-menu", function() {
+    $(document).on("click", ".js-open-mobile-menu", function(e) {
+    	e.preventDefault();
      	if ($(this).hasClass("is-opened")) {
      		$(".main_menu").removeClass("is-opened");
      		$(this).removeClass("is-opened");
@@ -240,7 +241,8 @@ $(document).ready(function () {
     });
 
 
-    $(document).on("click", ".js-open_podbor_block", function() {
+    $(document).on("click", ".js-open_podbor_block", function(e) {
+    	e.preventDefault();
      	if ($(this).hasClass("is-opened")) {
      		$(".liter_podbor_block").removeClass("is-opened");
      		$(this).removeClass("is-opened").text("Подобрать по параметрам");

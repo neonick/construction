@@ -8,12 +8,14 @@
     position: relative;
     padding-top: 120px;
     width: 100%;  
+    backface-visibility: hidden; 
+    transform: translateZ(0);
 
     @media (--w768) {
         position: fixed;
         top: 0;
         left: 0;
-        height: 100vh;
+        height: 100%;
         padding-top: 150px;
         z-index: 100;
         width: 173px;
@@ -112,7 +114,6 @@
     &__logo {
         margin: 0 auto 20px;
         display: block;
-        width: 65px;
     }
 
     &__list {
