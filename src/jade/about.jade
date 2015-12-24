@@ -16,7 +16,16 @@ html(lang='ru')
             a(href="#") «Неометрия»
 
 
-        include blocks/block_alone_text.jade
+        // alone text
+        section.alone_text
+            .container
+                .alone_text_block
+                    h3 СТРОИТЕЛЬНАЯ КОМПАНИЯ «Неометрия» 
+                    p Отправной точкой «Неометрии» является человек и комфортная среда его обитания. 
+                        br 
+                        | И эта среда не ограничевается стенами и крышей. 
+                        br 
+                        | Уникальность «Неометрии» и её строительных объектов базируется на трёх основных составляющих: Место, Технологии, Человек 
 
         section.big_yelow_nums
             .container
@@ -28,21 +37,34 @@ html(lang='ru')
 
                 .one_byn
                     span 02
-                    h2 Технологии
-                    p В объектах «Неометрии» всегда присутствуют конструктивные особенности, о которых можно с гордостью говорить.
+                    h2 Место
+                    p Поиск уникальных мест для строительства имеет приоритетное значение. «Неометрии» — это всегда лучшие места в городе.
 
                 .one_byn
                     span 03
-                    h2 Технологии
-                    p В объектах «Неометрии» всегда присутствуют конструктивные особенности, о которых можно с гордостью говорить.
+                    h2 Человек
+                    p Комфорт человека — это аксиома. Для «Неометрии» комфорт человека — больше, чем просто наборбытовых удобств. В это понятие входит весь комплекс ощущений.
 
 
 
-        include blocks/block_alone_text.jade
+        // alone text
+        section.alone_text
+            .container
+                .alone_text_block
+                    h3 Уникальность 
+                    p Только в ДК "Неометрия" - самые выгодные условия ипотечного кредитования!
+                        br
+                        | Акция действует с 15 июля по 15 августа 2015 года. Предложение ограничено. Подробности предложения и условия участия в акции - в отделе продаж по тел. 8 (861) 203-46-20
+
                 
         include blocks/section_object_tizers_small.jade
 
-        include blocks/block_alone_text.jade
+        // alone text
+        section.alone_text
+            .container
+                .alone_text_block
+                    h3 Наши партнёры 
+                    p Только в ДК "Неометрия" - самые выгодные условия ипотечного кредитования! Акция действует с 15 июля по 15 августа 2015 года. Предложение ограничено. Подробности предложения 
 
         .container
             .partners       
@@ -54,20 +76,37 @@ html(lang='ru')
 
                     .partners_col
                         .partner
-                            img(src="i/parnter_sber.png", class="partner__pic")
-                            span Сбербанк
+                            img(src="i/parnter_m.png", class="partner__pic")
+                            span БАНК МОСКВЫ
 
                     .partners_col
                         .partner
-                            img(src="i/parnter_sber.png", class="partner__pic")
-                            span Сбербанк
+                            img(src="i/parnter_sl.png", class="partner__pic")
+                            span СОБИ ЛИЗИНГ
                             
                     .partners_col
                         .partner
-                            img(src="i/parnter_sber.png", class="partner__pic")
-                            span Сбербанк
+                            img(src="i/parnter_wl.png", class="partner__pic")
+                            span ВЭБ ЛИЗИНГ
 
-        include blocks/block_alone_text.jade
+        // alone text
+        section.alone_text
+            .container
+                .alone_text_block
+                    h3 Контакты 
+                    p Свяжитесь с нам и наши специалисты с удовольствием ответят на интересующие вас вопросы
+                        br
+                        | ГОРЯЧАЯ ЛИНИЯ: 8 (861) 203-46-20
+                        br
+                        | г. Краснодар, 
+                        br
+                        | ул. Комсомольская, 15, 4-й этаж
+                        br
+                        | 8 (800) 250-10-56
+                        br
+                        | с 9:00 до 18:00
+
+        
 
         include parts/_footer_default.jade
 

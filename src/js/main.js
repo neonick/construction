@@ -24,26 +24,46 @@ $(document).ready(function () {
         $('body').scrollTo($(".geometry"), 500);
     });
 
-	$('.dinamic__grid').magnificPopup({
-			delegate: 'a', 
-			type: 'image',
-			closeOnContentClick: true,
-			closeBtnInside: false,
-			fixedContentPos: true,
-			mainClass: 'mfp-no-margins mfp-with-zoom dinamic_popup',
-			gallery: {
-				enabled: true,
-				navigateByImgClick: true,
-				preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-			},
-			image: {
-				verticalFit: true
-			},
-			zoom: {
-				enabled: true,
-				duration: 300
-			}
-		});
+
+
+
+    var groups = {};
+    $('.dinamic__grid').each(function() {
+      var id = parseInt($(this).attr('data-group'), 10);
+      if(!groups[id]) {
+        groups[id] = [];
+      } 
+      groups[id].push( this );
+    });
+
+
+    $.each(groups, function() {
+      
+    	$(this).magnificPopup({
+    		delegate: 'a', 
+    		type: 'image',
+    		closeOnContentClick: true,
+    		closeBtnInside: false,
+    		fixedContentPos: true,
+    		mainClass: 'mfp-no-margins mfp-with-zoom dinamic_popup',
+    		gallery: {
+    			enabled: true,
+    			navigateByImgClick: true,
+    			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+    		},
+    		image: {
+    			verticalFit: true
+    		},
+    		zoom: {
+    			enabled: true,
+    			duration: 300
+    		}
+    	});
+      
+    });
+
+
+	
 
 
 	function getPosition(e) {
@@ -95,6 +115,8 @@ $(document).ready(function () {
 
 
 	// range sliders
+	var min, max, min2, max2;
+
 	$(".js-price-slider").ionRangeSlider({
 	    type: "double",
 	    prettify_enabled: true, 
@@ -105,7 +127,23 @@ $(document).ready(function () {
 	    step: 0.1,
 	    postfix: ' млн. р.',
 	    hide_min_max: true,
-    	hide_from_to: false
+    	hide_from_to: false,
+    	onChange: function (data) {
+    	    min = data.min;
+    	    max = data.max;
+    	}
+	});
+
+	$(".js-price-slider").on("change", function (data) {
+		var $this = $(this),
+			value = $this.prop("value").split(";");
+		
+		if (value[0] > min || value[1] < max) { 
+			$(this).closest(".search_form__block").next(".btn").addClass("active");
+		}
+		else {
+			$(this).closest(".search_form__block").next(".btn").removeClass("active");
+		}
 	});
 
 	$(".js-square-slider").ionRangeSlider({
@@ -116,7 +154,23 @@ $(document).ready(function () {
 	    to: 200,
 	    postfix: ' м²',
 	    hide_min_max: true,
-    	hide_from_to: false
+    	hide_from_to: false,
+    	onChange: function (data) {
+    	    min2 = data.min;
+    	    max2 = data.max;
+    	}
+	});
+
+	$(".js-square-slider").on("change", function (data) {
+		var $this = $(this),
+			value = $this.prop("value").split(";");
+		
+		if (value[0] > min2 || value[1] < max2) { 
+			$(this).closest(".search_form__block").next(".btn").addClass("active");
+		}
+		else {
+			$(this).closest(".search_form__block").next(".btn").removeClass("active");
+		}
 	});
 
 	$(".js-floor-slider").ionRangeSlider({
@@ -260,7 +314,7 @@ $(document).ready(function () {
         removalDelay: 300,
         mainClass: 'my-mfp-zoom-in',
         overflowY: "auto",
-        alignTop: true
+        alignTop: false
     });
 
 
@@ -270,7 +324,7 @@ $(document).ready(function () {
         removalDelay: 300,
         mainClass: 'my-mfp-zoom-in',
         overflowY: "auto",
-        alignTop: true
+        alignTop: false
     });
 
     $(".js-open-message-popup").magnificPopup({
@@ -279,7 +333,7 @@ $(document).ready(function () {
         removalDelay: 300,
         mainClass: 'my-mfp-zoom-in',
         overflowY: "auto",
-        alignTop: true
+        alignTop: false
     });
 
     $(".js-open-question-popup").magnificPopup({
@@ -288,7 +342,7 @@ $(document).ready(function () {
         removalDelay: 300,
         mainClass: 'my-mfp-zoom-in',
         overflowY: "auto",
-        alignTop: true
+        alignTop: false
     });
 
     $(".js-open-action-popup").magnificPopup({
@@ -297,7 +351,7 @@ $(document).ready(function () {
         removalDelay: 300,
         mainClass: 'my-mfp-zoom-in',
         overflowY: "auto",
-        alignTop: true
+        alignTop: false
     });
 
     $('.js-open-apartment-details').magnificPopup({
@@ -308,7 +362,7 @@ $(document).ready(function () {
 		image: {
 			verticalFit: true
 		},
-		alignTop: true
+		alignTop: false
 	});    
 
 

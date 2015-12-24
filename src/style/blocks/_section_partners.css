@@ -27,16 +27,15 @@
 }
 
 .partners_col {
-    width: 100%;
+    lost-column: 1/1;
     margin-bottom: 80px;
-    display: inline-block;
 
     @media (--w768) {
-        width: 25%;
+        lost-column: 1/4;
         margin-bottom: 0;
-        
     }
 }
+
 
 .partner {
     position: relative;
@@ -44,16 +43,19 @@
     margin: 0 auto;
     width: 180px;
     padding-top: 1px;
+    z-index: 1;
 
     &:before {
         @extend skew_block;
-        top: -30px
+        top: -30px;
+        z-index: -1;
     }
     
     &__pic {
         display: block;
         margin-top: 40px;
         margin-left: 25px;
+        z-index: 1;
     }
 
     span {

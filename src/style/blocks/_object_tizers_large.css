@@ -32,6 +32,7 @@
 	&__info {
 		lost-column: 8/8;
 		position: relative;
+		z-index: 1;
 
 		@media (--w768) {
 			lost-column: 3/8;

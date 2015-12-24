@@ -9,7 +9,31 @@ html(lang='ru')
 
         include blocks/menu_object.jade
 
-        include blocks/section_object_tizers_large.jade
+        // object_tizers_large
+        section.object_tizers_large
+            .container(style="max-width: 760px")
+                
+                .one_obj_tizers_l
+
+                    .one_obj_tizers_l__pic
+                        img(src="i/object_tizer_large3.png", alt="")
+
+                    .one_obj_tizers_l__info
+                        span.one_obj_tizers_l__heading ЖК «Ежи»
+                        span.one_obj_tizers_l__where.icon_text.where 
+                            | Краснодар, ул. Айвазовского, 116
+                            br
+                            a(href="#") посмотреть на карте
+                        span.one_obj_tizers_l__when.icon_text.when Сдача: IV квартал 2016
+                        span.one_obj_tizers_l__num.icon_text.num 1 литер
+                        p.one_obj_tizers_l__rest 
+                            span 10
+                            | квартир доступно
+
+                        
+                        a(href="#").btn.green  подобрать квартиру
+                        //! .btn.gray  продано
+                        a(href="#").ask_manager Задать вопрос менедже
 
         // advantags
         section.advantags
@@ -19,13 +43,13 @@ html(lang='ru')
                     h3.text_block__header ЖИЛОЙ КОМПЛЕКС «Зеленый квартал»
                     p.text_block__text Думать о покупке новой квартиры — это всегда волнующий, но приятный процесс. Чтобы перестать волноваться, а получать от выбора только удовольствие, надо быть уверенным, где купить квартиру в Краснодаре. Такую уверенность даёт жилой экокомплекс «Ежи».
 
-                img(src="i/content_single_pic.jpg", class="content_single_pic")
+                img(src="i/saled1.jpg", class="content_single_pic")
 
                 .text_block    
                     h3.text_block__header ЭКОЛОГИЯ
                     p.text_block__text Живя буквально на природе, вы не останетесь вдали от цивилизации. Рядом с жилым экокомплексом «Ежи» у вас есть выбор во всём. Две заправки — Лукойл и Газпром, два крупных банка — Кубань Кредит и Сбербанк, россыпь продуктовых магазинов, четыре кафе и даже продуктовый рынок. Выбор есть и у ваших детей — два детских сада и две школы. Только гостиница поблизости одна. Но зачем она вам, когда вы живёте в ЖК «Ежи».
 
-                img(src="i/content_single_pic.jpg", class="content_single_pic")
+                img(src="i/saled2.jpg", class="content_single_pic")
 
                 .text_block    
                     h3.text_block__header ИНФРАСТРУКТУРА

@@ -100,8 +100,24 @@
         @media (--w768) {
             width: 49%;
             margin: 30px 0;
+
+            .advantags & {
+                width: 32%;
+            }
         }
+
+
     }
+}
+
+.advantags .useful_square > h3 {
+    font-family: etelka,Arial,sans-serif;
+    color: #202628;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 40px;
 }
 
 
@@ -114,10 +130,15 @@
     padding-right: 40px;
     text-align: center;
     position: relative;
+    min-height: 400px;
 
     @media (--w768) {
         lost-column: 3/5;
         margin-bottom: 0;
+    }
+
+    &.nopic {
+        background: url(../i/nopic.png) center center no-repeat;
     }
 
     img {

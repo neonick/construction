@@ -22,7 +22,7 @@
 }
 
 .one_company_people {
-	lost-center: 645px;
+	lost-center: 700px;
 	lost-utility: clearfix;
 	margin-bottom: 80px;
 
@@ -41,11 +41,11 @@
 		lost-column: 8/8 1 20px no-flex;
 
 		@media (--w768) {
-			lost-column: 3/8 2 20px no-flex;
+			lost-column: 5/8 2 20px no-flex;
 		}
 
 		.name {
-			font-family: $custom;
+			font-family: $narrow;
 			font-weight: bold;
 			text-transform: uppercase;
 			font-size: 24px;

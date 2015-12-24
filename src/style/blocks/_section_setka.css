@@ -86,8 +86,12 @@
 	.row_type0 &.col1 {
 		width: 100%;
 		position: relative;
-		background-color: #272727;
+		background-color: #6c8819;
 		height: 340px;
+
+		.cinema & {
+			background: #272727;
+		}
 
 		@media (--w768) {
 			width: 33.33333333333333333%;
@@ -98,9 +102,13 @@
 	.row_type0 &.col2 {
 		width: 100%;
 		position: relative;
-		background-color: $yellow;
+		background-color: #e4b237;
 		height: 340px;
 		padding: 0;
+
+		.cinema & {
+			background: $yellow;
+		}
 
 		@media (--w768) {
 			width: 66.66666666666666666%;
@@ -144,7 +152,11 @@
 	.row_type1 &.col2 {
 		width: 100%;
 		position: relative;
-		background-color: $yellow;
+		background-color: #e4b237;
+
+		.cinema & {
+			background: $yellow;
+		}
 
 		@media (--w768) {
 			width: 33.33333333333333333%;
@@ -159,7 +171,11 @@
 		width: 100%;
 		position: relative;
 		height: 340px;
-		background: #da2338 url(../i/kirpich.jpg) top right no-repeat;
+		background: #dd8b27 url(../i/kirpich.jpg) top right no-repeat;
+		
+		.cinema & {
+			background: #da2338 url(../i/kirpich.jpg) top right no-repeat;
+		}
 
 		@media (--w768) {
 			width: 50%;
@@ -170,8 +186,12 @@
 	.row_type1 &.col4 {
 		width: 100%;
 		position: relative;
-		background-color: #83bae8;
+		background-color: #8281bb;
 		height: 340px;
+
+		.cinema & {
+			background: #83bae8;
+		}
 
 		@media (--w768) {
 			width: 33.33333333333333333%;
@@ -218,10 +238,14 @@
 
 
 	.row_type2 &.col1 {
-		background-color: $yellow;
+		background-color: #e4b237;
 		height: 340px;
 		width: 100%;
 		position: relative;
+
+		.cinema & {
+			background: $yellow;
+		}
 
 		@media (--w768) {
 			width: 33.33333333333333333%;
@@ -254,9 +278,14 @@
 
 	.row_type3 &.col1 {
 		height: 340px;
-		background: #da2338 url(../i/vid.jpg) top right no-repeat;
 		width: 100%;
 		position: relative;
+
+		background: #dd8b27 url(../i/vid.jpg) top right no-repeat;
+		
+		.cinema & {
+			background: #da2338 url(../i/kirpich.jpg) top right no-repeat;
+		}
 
 		@media (--w768) {
 			width: 50%;
@@ -265,9 +294,13 @@
 	}
 
 	.row_type3 &.col2 {
-		background-color: $yellow;
+		background-color: #e4b237;
 		width: 100%;
 		position: relative;
+
+		.cinema & {
+			background: $yellow;
+		}
 
 		@media (--w768) {
 			width: 33.33333333333333333%;
@@ -279,9 +312,13 @@
 	}
 
 	.row_type3 &.col3 {
-		background-color: #83bae8;
+		background-color: #8281bb;
 		width: 100%;
 		position: relative;
+
+		.cinema & {
+			background: #83bae8;
+		}
 
 		@media (--w768) {
 			width: 33.33333333333333333%;
@@ -290,11 +327,15 @@
 	}
 
 	.row_type3 &.col4 {
-		background-color: #272727;
+		background-color: #6c8819;
 		height: 340px;
 		padding: 50px 40px 40px;
 		width: 100%;
 		position: relative;
+
+		.cinema & {
+			background-color: #272727;
+		}
 
 		@media (--w768) {
 			width: 50%;
@@ -326,9 +367,13 @@
 	}
 
 	.row_type4 &.col2 {
-		background-color: $yellow;
+		background-color: #e4b237;
 		width: 100%;
 		position: relative;
+
+		.cinema & {
+			background: $yellow;
+		}
 
 		@media (--w768) {
 			width: 33.33333333333333333%;
@@ -341,11 +386,15 @@
 	}
 
 	.row_type4 &.col3 {
-		background-color: #40635e;
+		background-color: #92579b;
 		height: 340px;
 		width: 100%;
 		position: relative;
 		overflow: hidden;
+
+		.cinema & {
+			background: #40635e;
+		}
 
 		img {
 			width: 100%;
@@ -367,11 +416,15 @@
 	}
 
 	.row_type4 &.col4 {
-		background-color: #da2338;
 		height: 340px;
-		background: #da2338 url(../i/vid.jpg) top right no-repeat;
 		width: 100%;
 		position: relative;
+
+		background: #dd8b27 url(../i/vid.jpg) top right no-repeat;
+		
+		.cinema & {
+			background: #da2338 url(../i/vid.jpg) top right no-repeat;
+		}
 
 		@media (--w768) {
 			width: 50%;
@@ -451,9 +504,14 @@
 	}
 
 	.row_type5 &.col5 {
-		background-color: $yellow;
+		background-color: #e4b237;
 		width: 100%;
 		position: relative;
+
+		.cinema & {
+			background: $yellow;
+		}
+
 
 		@media (--w768) {
 			width: 33.3333333333333333%;
@@ -466,9 +524,13 @@
 
 
 	.row_type5 &.col6 {
-		background-color: #83bae8;
+		background-color: #8281bb;
 		width: 100%;
 		position: relative;
+
+		.cinema & {
+			background: #83bae8;
+		}
 
 		@media (--w768) {
 			width: 33.3333333333333333%;

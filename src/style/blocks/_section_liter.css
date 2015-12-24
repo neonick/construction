@@ -546,3 +546,42 @@
         }
     }
 }
+
+
+
+.app_last {
+    position: fixed;
+    top: 90px;
+    right: 30px;
+    padding-left: 70px;
+    font-size: 12px;
+    line-height: 15px;
+    color: #fff;
+    font-family: $custom;
+    font-weight: 300;
+    text-transform: uppercase;
+    display: none;
+
+    @media (--w768) {
+        display: block;
+    }
+
+    span {
+        font-size: 36px;
+        line-height: 36px;
+        display: block;
+        float: left;
+        color: #fff30e;
+        font-weight: bold;
+        font-family: $custom;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    i {
+        display: block;
+        font-style: normal;
+        color: #fff30e;
+    }
+}

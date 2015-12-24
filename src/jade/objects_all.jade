@@ -15,12 +15,12 @@ html(lang='ru')
 
                 h2.number_header
                     span Распроданы
-                        i 04
+                        i 03
                 
                 .obj_tizers_s__grid
 
                     .one_obj_tizers_s
-                        .one_obj_tizers_s__block.is_not_availible
+                        .one_obj_tizers_s__block
                             a(href="#")
                                 span.one_obj_tizers_s__heading ЖК «Фаворит»
                             a(href="#")
@@ -28,32 +28,31 @@ html(lang='ru')
                             span.one_obj_tizers_s__status распродан
 
                     .one_obj_tizers_s
-                        .one_obj_tizers_s__block.is_not_availible
-                            a(href="#")
-                                span.one_obj_tizers_s__heading ЖК «Фаворит»
-                            a(href="#")
-                                img.one_obj_tizers_s__pic(src="i/object_tizer_small.png", alt="")
-                            span.one_obj_tizers_s__status распродан
-
-
-                    .one_obj_tizers_s
-                        .one_obj_tizers_s__block.is_not_availible
-                            a(href="#")
-                                span.one_obj_tizers_s__heading ЖК «Фаворит»
-                            a(href="#")
-                                img.one_obj_tizers_s__pic(src="i/object_tizer_small.png", alt="")
-                            span.one_obj_tizers_s__status распродан
-
-                    .one_obj_tizers_s
-                        .one_obj_tizers_s__block.is_not_availible
+                        .one_obj_tizers_s__block
                             a(href="#")
                                 span.one_obj_tizers_s__heading ЖК «Зелёный квартал»
                             a(href="#")
                                 img.one_obj_tizers_s__pic(src="i/object_tizer_small.png", alt="")
                             span.one_obj_tizers_s__status распродан
-                            
 
-        include blocks/block_alone_text.jade
+
+                    .one_obj_tizers_s
+                        .one_obj_tizers_s__block
+                            a(href="#")
+                                span.one_obj_tizers_s__heading Дом у моря
+                            a(href="#")
+                                img.one_obj_tizers_s__pic(src="i/object_tizer_small3.png", alt="")
+                            span.one_obj_tizers_s__status распродан
+
+
+        // alone text
+        section.alone_text
+            .container
+                .alone_text_block
+                    h3 Уникальность 
+                    p Только в ДК "Неометрия" - самые выгодные условия ипотечного кредитования!
+                        br
+                        | Акция действует с 15 июля по 15 августа 2015 года. Предложение ограничено. Подробности предложения и условия участия в акции - в отделе продаж по тел. 8 (861) 203-46-20
        
         include parts/_footer_default.jade
 
