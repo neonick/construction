@@ -374,7 +374,7 @@
 
 .irs-bar {
     height: 8px; top: 25px;
-    background-position: 0 -60px;
+    background-position: 0 -59px;
 }
     .irs-bar-edge {
         top: 25px;
@@ -425,7 +425,8 @@
 }
 
 .irs-grid-pol {
-    background: #DDD;
+    background: #c9c9c9;
+    height: 9px;
 }
 .irs-grid-text {
     color: #272727;
@@ -442,7 +443,7 @@
 }
 
 
-.floor {
+/*.floor {
     .irs-line-mid {
         height: 8px;
         background-position: 0 -60px;
@@ -464,7 +465,7 @@
         background: none;
        
     }
-}
+}*/
 
 .floor {
     .irs-grid {
@@ -475,6 +476,10 @@
 
     .irs-grid-text {
         top: -10px;
+    }
+
+    .irs-slider.to {
+        display: none;
     }
 }
 

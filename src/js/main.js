@@ -166,17 +166,38 @@ $(document).ready(function () {
 	});
 
 	$(".js-floor-slider").ionRangeSlider({
+		type: "double",
 	    from: 0,
 	    to: 4,
+	    min: 0,
+	    max: 4,
 	    grid: true,
 	    grid_num: 4,
 	    hide_min_max: true,
 	    hide_from_to: true,
 	    to_fixed: true,
+	    onChange: function (data) {
+    	    min3 = data.min;
+    	    max3 = data.max;
+    	},
 	    values: [
 	        "1+", "2+", "3+",
 	        "4+", "ПХ"
 	    ]
+	});
+
+	$(".js-floor-slider").on("change", function (data) {
+		var $this = $(this),
+			value = $this.prop("value").split(";");
+
+		console.log(value[0] + " - " + value[1]);
+		
+		if (value[0] != min3 || value[1] != max3) { 
+			$(this).closest(".search_form__block").next(".btn").addClass("active");
+		}
+		else {
+			$(this).closest(".search_form__block").next(".btn").removeClass("active");
+		}
 	});
     
     // slider for managers
