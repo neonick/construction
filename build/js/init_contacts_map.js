@@ -25,21 +25,21 @@ function initialize() {
         position: pos,
         map: map,
         title: '',
-        icon: '/local/templates/.default/markup/build/i/map_icon_1.png'
+        icon: '/local/templates/.default/markup/build/i/map_icon_neo.png'
     });
 
     var marker2 = new google.maps.Marker({
         position: pos2,
         map: map,
         title: '',
-        icon: '/local/templates/.default/markup/build/i/map_icon_2.png'
+        icon: '/local/templates/.default/markup/build/i/map_icon_eji.png'
     });
 
     var marker3 = new google.maps.Marker({
         position: pos3,
         map: map,
         title: '',
-        icon: '/local/templates/.default/markup/build/i/map_icon_3.png'
+        icon: '/local/templates/.default/markup/build/i/map_icon_cinema.png'
     });
 }
 google.maps.event.addDomListener(window, 'load', initialize);

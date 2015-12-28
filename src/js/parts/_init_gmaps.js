@@ -1,8 +1,12 @@
 
 // initialize object map
 function initialize() {
-    var pos = new google.maps.LatLng(45.049200, 38.944139);
-    var centr = new google.maps.LatLng(45.05100, 38.944139);
+    var lat = $("#object_map").data('lat'),
+        lng = $("#object_map").data('lng'),
+        mapIcon = '/local/templates/.default/markup/build/i/' + $("#object_map").data('mapicon');
+
+    var pos = new google.maps.LatLng(lat, lng);
+    var centr = new google.maps.LatLng(lat, lng);
 
     var mapOptions = {
         center: centr,
@@ -23,7 +27,7 @@ function initialize() {
         position: pos,
         map: map,
         title: '',
-        icon: '/local/templates/.default/markup/build/i/map_icon_3.png'
+        icon: mapIcon
     });
 
 }
