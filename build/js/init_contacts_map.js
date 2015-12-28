@@ -4,7 +4,7 @@ function initialize() {
     var pos2 = new google.maps.LatLng(45.039188, 39.010475);
     var pos3 = new google.maps.LatLng(45.015846, 39.035264);
 
-    var centr = new google.maps.LatLng(45.028415, 38.990296);
+    var centr = new google.maps.LatLng(45.028915, 39.010475);
 
     var mapOptions = {
         center: centr,

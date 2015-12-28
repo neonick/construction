@@ -39,7 +39,7 @@
         margin-bottom: 40px;
 
         @media (--w768) {
-            width: 150px;
+            width: 160px;
             margin-bottom: 0;
         }
     }
@@ -60,6 +60,10 @@
             line-height: 18px;
             margin-bottom: 10px;
             font-family: $custom;
+
+            a {
+                color: #202628;
+            }
         }
 
         p {
@@ -112,6 +116,8 @@
             top: 0;
             font-weight: bold;
             font-family: $custom;
+            width: 50px;
+            text-align: right;
         }
     }
 }
