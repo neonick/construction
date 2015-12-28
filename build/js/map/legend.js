@@ -60,12 +60,13 @@ $(document).ready(function () {
             },
             'ezhi': {
                 iconLayout: 'default#image',
-                iconImageHref: '/local/templates/.default/markup/build/i/ezhi.png',
+                iconImageHref: '/local/templates/.default/markup/build/i/map_icon_eji.png',
                 iconImageSize: [81, 100],
                 iconImageOffset: [-40.5, -79]
             },
             'cinema-building': {
                 iconLayout: 'default#image',
+                iconImageHref: '/local/templates/.default/markup/build/i/map_icon_cinema.png',
                 iconImageSize: [81, 100],
                 iconImageOffset: [-40.5, -79]
             }
@@ -80,7 +81,7 @@ $(document).ready(function () {
     function initMap() {
         map = new ymaps.Map($map.get(0), {
             center: mainPoint.position,
-            zoom: 17,
+            zoom: 15,
             controls: []
         });
 
@@ -122,7 +123,7 @@ $(document).ready(function () {
 
         createPoints(categories);
         map.geoObjects.add(new ymaps.Placemark(mainPoint.position, {}, yandexIcons[mainPoint.icon]));
-        reloadBounds();
+        // reloadBounds();
 
         loadCategories($content, categories, true);
 
