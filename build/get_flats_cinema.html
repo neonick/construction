@@ -1,0 +1,155 @@
+<!--
+
+    тут происходит неизвестно что, чтобы получить данные
+    
+-->
+
+<h1>Этаж 15 литера Б </h1>
+<div data-toggle="tabslet" class="tabs">
+    <ul class="horizontal">
+        <li>
+            <a href="#eji_liter1_1" class="liter_cinema_tab">БС-2</a>
+            <!-- liter_1_1 может меняться -->
+        </li>
+        <li>
+            <a href="#eji_liter1_2" class="liter_cinema_tab">БС-1</a>
+            <!-- liter_1_2 может меняться -->
+        </li>
+    </ul>
+    <div id="eji_liter1_1">
+        <div class="plan">
+            <img src="i/cinema_liter1.jpg" alt="">
+            <div id="eji_1_1" class="svg_plan_holst"></div>
+        </div>
+    </div>
+    <div id="eji_liter1_2">
+        <div class="plan"><img src="i/cinema_liter2.jpg" alt="">
+            <div id="eji_1_2" class="svg_plan_holst"></div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+$('.tabs').tabslet();
+
+var floors = {
+
+    ap1: { 
+        color: "#FBC563",
+        link: "http://ya.ru/", 
+        path: "M718.343 50.037v163H507.01V3.703h112.667v47"},
+    
+    ap2: { 
+        color: "#E7B7C0",
+        link: "http://ya.ru/", 
+        path: "M821.51 469.37l-13 1v36.5h-160.5l-3-286.5 80.5-.5.5-170h93"},
+
+    ap3: { 
+        color: "#FFF381",
+        link: "http://ya.ru/", 
+        path: "M640.343 507.37h-88.916v34.167l-88.584-.167V284.703H639.34"},
+
+    ap4: { 
+        color: "#FBC563",
+        link: "http://ya.ru/", 
+        path: "M459.343 541.37h-177V284.703h176"},
+  
+    ap5: { 
+        color: "#FFF381",
+        link: "http://ya.ru/", 
+        path: "M278.343 507.37h-177V284.703h176"},  
+
+    ap6: { 
+        color: "#E7B7C0",
+        link: "http://ya.ru/", 
+        path: "M96.76 507.62l-92.75.5-.25-466.75 108.312-.125-.375-37.906 97.563.06.03 33.72-22.28-.03.5 114.28-28.75-.25.5 68.25 28 .25-.25 59.75-89.5-.5"},
+
+    ap7: { 
+        color: "#FFF381",
+        link: "http://ya.ru/", 
+        path: "M164.51 157.37l.5 55.75 158.75.5 2-176-.25-33.75h-112v38.25h-19.75v115.5"}
+
+}
+
+
+var floors2 = {
+
+    ap1: { 
+        color: "#FFF381",
+        link: "http://ya.ru/", 
+        path: "M705.64 157.37l-.5 55.75-158.75.5-2-176 .25-33.75h112v38.25h19.75v115.5"},     
+    
+    ap2: { 
+        color: "#E7B7C0",
+        link: "http://ya.ru/", 
+        path: "M773.39 507.62l92.75.5.25-466.75-108.313-.125.375-37.906-97.562.06-.03 33.72 22.28-.03-.5 114.28 28.75-.25-.5 68.25-28 .25.25 59.75 89.5-.5"},
+
+    ap3: { 
+        color: "#FFF381",
+        link: "http://ya.ru/", 
+        path: "M591.807 507.37h177V284.703h-176"},
+
+    ap4: { 
+        color: "#FBC563",
+        link: "http://ya.ru/", 
+        path: "M410.807 541.37h177V284.703h-176"},
+  
+    ap5: { 
+        color: "#FFF381",
+        link: "http://ya.ru/", 
+        path: "M229.807 507.37h88.916v34.167l88.584-.167V284.703H230.81"},
+
+    ap6: { 
+        color: "#E7B7C0",
+        link: "http://ya.ru/", 
+        path: "M48.64 469.37l13 1v36.5h160.5l3-286.5-80.5-.5-.5-170h-93"},
+
+    ap7: { 
+        color: "#FBC563",
+        link: "http://ya.ru/", 
+        path: "M151.807 50.037v163H363.14V3.703H250.473v47"}
+
+}
+
+    var eji_floor = Raphael('eji_1_1', "100%", "100%"), attributes = {
+        'stroke-width' : 0,
+        'stroke-linejoin' : 'round'
+    }, arr_floor = new Array();
+
+    eji_floor.setViewBox(0, 0, 870, 545);
+
+    for (var floor_num in floors) {
+        var objfloor = eji_floor.path(floors[floor_num].path);
+        objfloor.attr(attributes);
+        objfloor.attr({
+            fill : floors[floor_num].color
+        });
+        arr_floor[objfloor.id] = floor_num;
+
+        objfloor.click(function() {
+            window.open(floors[arr_floor[this.id]].link); // не самый лучший способ, некоторые браузеры могут открыть не во вкладке а в отдельном окне, запустив еще одно окно браузера
+        });
+    }
+
+    var eji_floor2 = Raphael('eji_1_2', "100%", "100%"), attributes = {
+        'stroke-width' : 0,
+        'stroke-linejoin' : 'round'
+    }, arr_floor2 = new Array();
+
+    eji_floor2.setViewBox(0, 0, 870, 545);
+
+    for (var floor_num in floors2) {
+        var objfloor = eji_floor2.path(floors2[floor_num].path);
+        objfloor.attr(attributes);
+        objfloor.attr({
+            fill : floors2[floor_num].color
+        });
+        arr_floor2[objfloor.id] = floor_num;
+
+        objfloor.click(function() {
+            window.open(floors2[arr_floor2[this.id]].link);
+        });
+    }
+</script>

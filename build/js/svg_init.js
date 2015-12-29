@@ -32,6 +32,8 @@ $(function() {
 
 			obj.click(function() {
 				$("#response_popup").load( 'get_flats.html' , function (){ 
+					// get_flats_liter2.html
+					// get_flats_cinema.html
 					$(".popup_caller").magnificPopup({
 						type : 'inline',
 						preloader : false,

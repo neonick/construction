@@ -384,6 +384,20 @@
         &.liter_1_2 {
             background-image: svg("tabs_eji_1_2", "[fill]: #F2F7DF");
         }
+        &.liter_2_1 {
+            width: 93px;
+            background-image: svg("tabs_eji_2_1", "[fill]: #F2F7DF");
+        }
+        &.liter_2_2 {
+            width: 65px;
+            margin-top: 15px;
+            background-image: svg("tabs_eji_2_2", "[fill]: #F2F7DF");
+        }
+        &.liter_cinema_tab {
+            width: 66px;
+            color: #767676;
+            background-image: svg("tabs_cinema", "[fill]: #F9E4C0");
+        }
     }
 
     li {
@@ -399,6 +413,16 @@
             }
             &.liter_1_2 {
                 background-image: svg("tabs_eji_1_2", "[fill]: #6D8819");
+            }
+            &.liter_2_1 {
+                background-image: svg("tabs_eji_2_1", "[fill]: #6D8819");
+            }
+            &.liter_2_2 {
+                background-image: svg("tabs_eji_2_2", "[fill]: #6D8819");
+            }
+            &.liter_cinema_tab {
+                background-image: svg("tabs_cinema", "[fill]: #F2C26C");
+                color: #767676;
             }
         }
     }
