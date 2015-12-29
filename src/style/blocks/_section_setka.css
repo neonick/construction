@@ -312,7 +312,7 @@
 		}
 
 		.rezid & {
-			background: #004367 url(../i/rezid_kub.png) top right no-repeat;
+			background: #004367 url(../i/rezid_kub2.jpg) top right no-repeat;
 		}
 
 		@media (--w768) {
@@ -473,7 +473,7 @@
 		}
 
 		.rezid & {
-			background: #004367 url(../i/vid.jpg) top right no-repeat;
+			background: #004367 url(../i/rezid_kub3.jpg) top right no-repeat;
 		}
 
 		@media (--w768) {
@@ -506,7 +506,7 @@
 		position: relative;
 
 		.rezid & {
-			background: #fbe349;
+			background: #c5cbcc;
 		}
 
 		@media (--w768) {

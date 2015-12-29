@@ -3,7 +3,7 @@
 function initialize() {
     var lat = $("#object_map").data('lat'),
         lng = $("#object_map").data('lng'),
-        mapIcon = '/local/templates/.default/markup/build/i/' + $("#object_map").data('mapicon');
+        mapIcon = $("#object_map").data('mapicon');
 
     var pos = new google.maps.LatLng(lat, lng);
     var centr = new google.maps.LatLng(lat, lng);
