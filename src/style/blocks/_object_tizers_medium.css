@@ -100,7 +100,7 @@ h2.number_header {
 		display: block;
 		text-shadow: 5px 12px 10px rgba(0,0,0,0.15);
 		font-family: $custom;
-		max-width: 220px;
+		max-width: 250px;
 		margin: 80px 0 10px;
 	}
 

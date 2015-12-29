@@ -93,6 +93,10 @@
 			background: #272727;
 		}
 
+		.rezid & {
+			background: #272727;
+		}
+
 		@media (--w768) {
 			width: 33.33333333333333333%;
 		}
@@ -158,6 +162,11 @@
 			background: $yellow;
 		}
 
+		.rezid & {
+			background: #fbe349;
+		}
+
+
 		@media (--w768) {
 			width: 33.33333333333333333%;
 		}
@@ -177,6 +186,10 @@
 			background: #da2338 url(../i/kirpich.jpg) top right no-repeat;
 		}
 
+		.rezid & {
+			background: #004367 url(../i/rezid_kub.png) top right no-repeat;
+		}
+
 		@media (--w768) {
 			width: 50%;
 		}
@@ -192,6 +205,12 @@
 		.cinema & {
 			background: #83bae8;
 		}
+
+		.rezid & {
+			background: #195d81;
+		}
+
+		
 
 		@media (--w768) {
 			width: 33.33333333333333333%;
@@ -247,6 +266,11 @@
 			background: $yellow;
 		}
 
+		.rezid & {
+			background: #fbe349;
+		}
+
+
 		@media (--w768) {
 			width: 33.33333333333333333%;
 		}
@@ -287,6 +311,10 @@
 			background: #da2338 url(../i/kirpich.jpg) top right no-repeat;
 		}
 
+		.rezid & {
+			background: #004367 url(../i/rezid_kub.png) top right no-repeat;
+		}
+
 		@media (--w768) {
 			width: 50%;
 		}
@@ -300,6 +328,10 @@
 
 		.cinema & {
 			background: $yellow;
+		}
+
+		.rezid & {
+			background: #fbe349;
 		}
 
 		@media (--w768) {
@@ -320,6 +352,12 @@
 			background: #83bae8;
 		}
 
+		.rezid & {
+			background: #195d81;
+		}
+
+		
+
 		@media (--w768) {
 			width: 33.33333333333333333%;
 			margin-left: calc(50% - 33.3333333333333333333333333%)
@@ -334,6 +372,10 @@
 		position: relative;
 
 		.cinema & {
+			background-color: #272727;
+		}
+
+		.rezid & {
 			background-color: #272727;
 		}
 
@@ -373,6 +415,10 @@
 
 		.cinema & {
 			background: $yellow;
+		}
+
+		.rezid & {
+			background: #fbe349;
 		}
 
 		@media (--w768) {
@@ -426,6 +472,10 @@
 			background: #da2338 url(../i/vid.jpg) top right no-repeat;
 		}
 
+		.rezid & {
+			background: #004367 url(../i/vid.jpg) top right no-repeat;
+		}
+
 		@media (--w768) {
 			width: 50%;
 		}
@@ -435,6 +485,10 @@
 		background-color: #40635e;
 		width: 100%;
 		position: relative;
+
+		.rezid & {
+			background: #195d81;
+		}
 
 		@media (--w768) {
 			margin-top: 170px;
@@ -450,6 +504,10 @@
 		background-color: #7acec3;
 		width: 100%;
 		position: relative;
+
+		.rezid & {
+			background: #fbe349;
+		}
 
 		@media (--w768) {
 			width: 33.3333333333333333%;
@@ -485,6 +543,10 @@
 		position: relative;
 		display: none;
 
+		.rezid & {
+			background: #195d81;
+		}
+
 		@media (--w768) {
 			width: calc(50% - 33.3333333333333333%);
 			display: inline-block;
@@ -496,6 +558,10 @@
 		background: #40635e url(../i/vid.jpg) top right no-repeat;
 		width: 100%;
 		position: relative;
+
+		.rezid & {
+			background: #004367 url(../i/vid.jpg) top right no-repeat;
+		}
 
 		@media (--w768) {
 			width: 50%;
@@ -510,6 +576,10 @@
 
 		.cinema & {
 			background: $yellow;
+		}
+
+		.rezid & {
+			background: #fbe349;
 		}
 
 
@@ -531,6 +601,11 @@
 		.cinema & {
 			background: #83bae8;
 		}
+
+		.rezid & {
+			background: #195d81;
+		}
+
 
 		@media (--w768) {
 			width: 33.3333333333333333%;

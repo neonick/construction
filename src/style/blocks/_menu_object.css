@@ -75,6 +75,24 @@
     }
 
 
+    &.rezid {
+        background-color: rgba(49, 184, 255, 0.8);
+
+        &.is-hidden {
+            background-color: rgba(49, 184, 255, 0.8);
+        }
+        
+        a {
+            color: #272727;
+        }
+
+        .active a {
+            color: #fff;
+        } 
+    }
+   
+
+
     &.is-hidden {
         width: 25px;
         background-color: rgba(39, 39, 39, 0.8);

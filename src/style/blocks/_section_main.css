@@ -198,6 +198,10 @@
 		background-size: auto 30px;
 	}
 
+	&.rezid_logo {
+		background: url(../i/rezid_logo.png) center center no-repeat;
+	}
+
 	.full_block--object & {
 		display: none;
 	}

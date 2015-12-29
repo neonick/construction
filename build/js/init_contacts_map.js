@@ -3,6 +3,7 @@ function initialize() {
     var pos = new google.maps.LatLng(45.020538, 38.958618);
     var pos2 = new google.maps.LatLng(45.039188, 39.010475);
     var pos3 = new google.maps.LatLng(45.015846, 39.035264);
+    // var pos_rezid = new google.maps.LatLng(44.708171, 37.786147);
 
     var centr = new google.maps.LatLng(45.028915, 39.010475);
 

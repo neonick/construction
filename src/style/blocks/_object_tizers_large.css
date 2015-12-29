@@ -54,7 +54,7 @@
 		display: block;
 		text-shadow: 5px 12px 10px rgba(0,0,0,0.15);
 		font-family: $custom;
-		max-width: 220px;
+		max-width: 260px;
 		margin: 30px 0;
 		font-weight: bold;
 	}
