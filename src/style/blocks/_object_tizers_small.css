@@ -59,19 +59,20 @@
 		}
 
 		&.is_not_availible {
-			filter: grayscale(100%);
+			
 
 			.one_obj_tizers_s__pic {
-				opacity: 0.3;
+				
 			}
 
 			.one_obj_tizers_s__heading {
-				opacity: 0.3;
+		
+		
 			}
 
 			.one_obj_tizers_s__status {
 				color: #7f7f7f;
-				opacity: 0.9;
+
 			}
 		}
 	}

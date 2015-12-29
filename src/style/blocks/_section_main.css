@@ -46,7 +46,7 @@
     }
 
 .full_block--object {
-    min-height: 800px;
+    min-height: 650px;
 }  
 
 .pattern {
@@ -196,7 +196,11 @@
 	&.cinema_logo {
 		background-image: svg("cinema_logo", "[fill]: #fff");
 		background-size: auto 30px;
-	}	
+	}
+
+	.full_block--object & {
+		display: none;
+	}
 }
 
 .location_link {
