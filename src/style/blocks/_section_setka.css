@@ -14,6 +14,15 @@
 	margin: 0 auto;
 	position: relative;
 	font-size: 0;
+
+	&.row_type3 {
+		padding-bottom: 0;
+
+		@media (--w768) {
+			padding-bottom: 170px;
+		}
+	}
+
 }
 
 .setka__col {
@@ -360,7 +369,9 @@
 
 		@media (--w768) {
 			width: 33.33333333333333333%;
-			margin-left: calc(50% - 33.3333333333333333333333333%)
+			position: absolute;
+			bottom: 0;
+			right: 50%;
 		}
 	}
 
@@ -478,6 +489,10 @@
 
 		@media (--w768) {
 			width: 50%;
+		}
+
+		.panel {
+			padding-left: 40px;
 		}
 	}
 
