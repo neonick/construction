@@ -104,7 +104,7 @@
         color: #270000;
         font-size: 12px;
         text-transform: uppercase;
-        padding: 5px 0 0 55px;
+        padding: 5px 0 0 75px;
         position: relative;
         font-weight: bold;
         font-family: $custom;
@@ -116,7 +116,7 @@
             top: 0;
             font-weight: bold;
             font-family: $custom;
-            width: 50px;
+            width: 70px;
             text-align: right;
         }
     }

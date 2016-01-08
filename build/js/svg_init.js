@@ -31,7 +31,7 @@ $(function() {
 			});
 
 			obj.click(function() {
-				$("#response_popup").load( 'get_flats.html' , function (){ 
+				$("#response_popup").load( 'get_flats_cinema2.html' , function (){ 
 					// get_flats_liter2.html
 					// get_flats_cinema.html
 					$(".popup_caller").magnificPopup({
