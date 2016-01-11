@@ -114,8 +114,9 @@
 
     &__text {
         font-size: 11px;
-        color: #b6ad16;
+        color: #26221f;
         display: block;
+        opacity: 0.7;
     }
 }
 

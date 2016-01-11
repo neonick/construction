@@ -339,6 +339,7 @@
     font-size: 12px;
     padding: 12px 0 !important;
     display: none;
+    background-color: rgba(0,0,0,0.5);
 
     @media (--w768) {
         display: block;
@@ -354,7 +355,7 @@
     bottom: 10px;
     left: 210px;
     z-index: 100;
-    background-color: rgba(215, 234, 59, 0.12);
+    background-color: rgba(0,0,0,0.5);
     font-size: 12px;
     display: none;
 

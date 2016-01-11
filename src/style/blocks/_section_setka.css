@@ -637,6 +637,28 @@
 
 }
 
+.row_type1 {
+	position: relative;
+
+	&:after {
+		position: absolute;
+		bottom: -170px;
+		right: 0;
+		content: "";
+		height: 340px;
+		width: calc(50% - 33.33333333%);
+		background-color: #77b7a6;
+
+		.cinema & {
+			background: #40635d;
+		}
+
+		.rezid & {
+			background: #59bfcd;
+		}
+	}
+}
+
 
 .arr_link {
 	position: relative;

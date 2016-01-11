@@ -6,7 +6,7 @@
 
     @media (--w768) {
         
-        padding: 170px 0 30px;
+        padding: 100px 0 30px;
     }
 
     .container {
@@ -127,10 +127,11 @@
 .apt_pic {
     width: 100%;
     margin-bottom: 50px;
-    padding-right: 40px;
+    padding-bottom: 90px;
     text-align: center;
     position: relative;
     min-height: 400px;
+    background: #fff;
 
     @media (--w768) {
         lost-column: 3/5;
@@ -143,13 +144,13 @@
 
     img {
        display: inline-block;
-
+        max-height: 500px;
     }
 
     .view_icon {
         position: absolute;
-        bottom: 0px;
-        left: 0px;
+        bottom: 10px;
+        left: 10px;
 
         span {
             display: block;
