@@ -1,0 +1,44 @@
+doctype html
+html(lang='ru')
+    head
+        include parts/_meta.jade
+
+    body
+
+        // header
+        section.header.js-sticky-header.header--mainpage.dark
+
+            a(href="/")
+                .header_corner_logo
+
+            include blocks/block_back_call.jade
+
+            nav.main_menu
+                a(href="#").active Обьекты
+                a(href="#") О компании
+                a(href="#") События
+                a(href="#") Контакты
+
+            a(href="#" class="mobile_menu js-open-mobile-menu") Меню
+        
+        
+        include blocks/menu_object.jade
+            
+        .map#map
+
+
+        include parts/_scripts.jade
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+        
+        <script src="js/map/jquery.mousewheel.js"></script>
+        <script src="js/map/mwheelIntent.js"></script>
+        <script src="js/map/poi-api.js"></script>
+        <script src="js/map/jquery.jscrollpane.js"></script>
+        <script src="js/map/rezid.js"></script>
+        <script src="js/map/global.js"></script>
+        <script src="js/map/legend.js"></script>
+        <script src="js/map/font.js"></script>
+

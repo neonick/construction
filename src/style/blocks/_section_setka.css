@@ -353,7 +353,7 @@
 	}
 
 	.row_type3 &.col3 {
-		background-color: #8281bb;
+		background-color: #7acec3;
 		width: 100%;
 		position: relative;
 
@@ -497,9 +497,13 @@
 	}
 
 	.row_type4 &.col5 {
-		background-color: #40635e;
+		background-color: #93589c;
 		width: 100%;
 		position: relative;
+
+		.cinema & {
+			background: #40635e;
+		}
 
 		.rezid & {
 			background: #195d81;
@@ -553,10 +557,14 @@
 	}
 
 	.row_type5 &.col3 {
-		background-color: #40635e;
+		background-color: #93589c;
 		width: 100%;
 		position: relative;
 		display: none;
+
+		.cinema & {
+			background: #40635e;
+		}
 
 		.rezid & {
 			background: #195d81;
