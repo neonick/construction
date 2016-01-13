@@ -112,11 +112,6 @@ $(document).ready(function () {
 	$(".js-price-slider").ionRangeSlider({
 	    type: "double",
 	    prettify_enabled: true, 
-	    min: 1,
-	    max: 20,
-	    from: 1,
-	    to: 20,
-	    step: 0.1,
 	    postfix: ' млн. р.',
 	    hide_min_max: true,
     	hide_from_to: false,
@@ -140,10 +135,6 @@ $(document).ready(function () {
 
 	$(".js-square-slider").ionRangeSlider({
 	    type: "double",
-	    min: 50,
-	    max: 200,
-	    from: 50,
-	    to: 200,
 	    postfix: ' м²',
 	    hide_min_max: true,
     	hide_from_to: false,
@@ -167,23 +158,13 @@ $(document).ready(function () {
 
 	$(".js-floor-slider").ionRangeSlider({
 		type: "double",
-	    from: 0,
-	    to: 4,
-	    min: 0,
-	    max: 4,
-	    grid: true,
-	    grid_num: 4,
 	    hide_min_max: true,
 	    hide_from_to: true,
 	    to_fixed: true,
 	    onChange: function (data) {
     	    min3 = data.min;
     	    max3 = data.max;
-    	},
-	    values: [
-	        "1+", "2+", "3+",
-	        "4+", "ПХ"
-	    ]
+    	}
 	});
 
 	$(".js-floor-slider").on("change", function (data) {
