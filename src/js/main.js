@@ -388,6 +388,24 @@ $(document).ready(function () {
         alignTop: false
     });
 
+    $(".js-open-ok-popup").magnificPopup({
+        type: 'inline',
+        preloader: false,
+        removalDelay: 300,
+        mainClass: 'my-mfp-zoom-in',
+        overflowY: "auto",
+        alignTop: false
+    });
+
+    $(".js-open-ipoteka-popup").magnificPopup({
+        type: 'inline',
+        preloader: false,
+        removalDelay: 300,
+        mainClass: 'my-mfp-zoom-in',
+        overflowY: "auto",
+        alignTop: false
+    });
+
     $('.js-open-apartment-details').magnificPopup({
 		type: 'image',
 		closeBtnInside: false,
@@ -398,7 +416,6 @@ $(document).ready(function () {
 		},
 		alignTop: false
 	});    
-
 
     video_resize();
 

@@ -64,6 +64,12 @@ $(document).ready(function () {
                 iconImageSize: [81, 100],
                 iconImageOffset: [-40.5, -79]
             },
+            'rezidentsiya': {
+                iconLayout: 'default#image',
+                iconImageHref: '/local/templates/.default/markup/build/i/map_icon_rezid.png',
+                iconImageSize: [81, 100],
+                iconImageOffset: [-40.5, -79]
+            },
             'cinema-building': {
                 iconLayout: 'default#image',
                 iconImageHref: '/local/templates/.default/markup/build/i/map_icon_cinema.png',
