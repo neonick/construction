@@ -19,8 +19,8 @@
         font-family: $custom;
         color: #fff;
         position: absolute;
-        top: 55px;
-        left: 40px;
+        top: 100px;
+        left: 25px;
         z-index: 10;
         font-weight: 300;
 

@@ -158,6 +158,10 @@
             left: 0px;  
         }
 
+        a {
+            color: #333;
+        }
+
         &.post:before {
             background: url(../i/contact_icon1.png) left center no-repeat;
         }
@@ -491,9 +495,9 @@
         top: -10px;
     }
 
-    .irs-slider.to {
+/*    .irs-slider.to {
         display: none;
-    }
+    }*/
 }
 
 

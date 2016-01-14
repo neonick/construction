@@ -6,7 +6,7 @@ $(function () {
             name: 'СИНЕМА',
             api: '',
             radius: [0.05, 0.05],
-            mainPoint: {"position": [45.016155, 39.03488], "icon": "rezidentsiya"},
+            mainPoint: {"position": [44.709137,37.784968], "icon": "rezidentsiya"},
             categories: [
                 {
                     "type": "category",

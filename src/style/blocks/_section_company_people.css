@@ -62,13 +62,17 @@
 	&__block {
 		width: 180px;
 		height: 300px;
-		transform: skewY(-20deg);
+		transform: skewY(-20deg) translate3d(0);
 		display: block;
 		overflow: hidden;	
 		box-sizing: content-box;
 		transition: all 0.3s;
 		margin: 20px 0;
 		backface-visibility: hidden;
+		
+
+
+
 
 		@media (--w768) {
 			margin: 35px auto;
@@ -76,10 +80,17 @@
 	}
 
 	&__pic {
-		transform: skewY(20deg);
+		transform: skewY(20deg) translate3d(0);
 		margin-top: -60px;
 		display: block;	
 		backface-visibility: hidden;
+		position: relative;
+
+		&:before {
+			position: absolute; /* Абсолютное позиционирование */
+			left: 20px; bottom: -20px; /* Положение треугольника */
+			border: 20px solid transparent;	border-left: 20px solid green; border-top: 20px solid green;
+		}
 	}
 
 }

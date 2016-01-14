@@ -60,7 +60,7 @@
     font-style: italic;
     font-family: $custom;
 
-    a {
+    span {
         text-transform: uppercase;
         font-weight: bold;
         color: #888;

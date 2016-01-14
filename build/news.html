@@ -50,7 +50,7 @@
 			<h1>Заказать обратный звонок</h1>
 			<div class="callback_form">
 				<form action=""><span class="neo_input__head">Ваше имя</span>
-					<input type="text" required class="neo_input"><span class="neo_input__head">Ваш телефон</span>
+					<input type="text" pattern="^[а-яА-ЯёЁa-zA-Z- ]*$" required class="neo_input"><span class="neo_input__head">Ваш телефон</span>
 					<input type="text" required class="neo_input phone">
 					<button class="btn active">Перезвоните мне </button>
 				</form>
@@ -60,7 +60,7 @@
 			<h1>Уточнить наличие</h1>
 			<div class="callback_form">
 				<form action=""><span class="neo_input__head">Ваше имя</span>
-					<input type="text" required class="neo_input"><span class="neo_input__head">Ваш телефон</span>
+					<input type="text" pattern="^[а-яА-ЯёЁa-zA-Z- ]*$" required class="neo_input"><span class="neo_input__head">Ваш телефон</span>
 					<input type="text" required class="neo_input phone">
 					<button class="btn active">Перезвоните мне </button>
 				</form>
@@ -70,7 +70,7 @@
 			<h1>Участвовать в акции</h1>
 			<div class="callback_form">
 				<form action=""><span class="neo_input__head">Ваше имя</span>
-					<input type="text" required class="neo_input"><span class="neo_input__head">Ваш телефон</span>
+					<input type="text" pattern="^[а-яА-ЯёЁa-zA-Z- ]*$" required class="neo_input"><span class="neo_input__head">Ваш телефон</span>
 					<input type="text" required class="neo_input phone">
 					<button class="btn active">Принять участие</button>
 				</form>
@@ -80,7 +80,7 @@
 			<h1>Написать сообщение </h1>
 			<div class="callback_form">
 				<form action=""><span class="neo_input__head">Ваше имя</span>
-					<input type="text" required class="neo_input"><span class="neo_input__head">Ваш телефон</span>
+					<input type="text" pattern="^[а-яА-ЯёЁa-zA-Z- ]*$" required class="neo_input"><span class="neo_input__head">Ваш телефон</span>
 					<input type="text" required class="neo_input phone"><span class="neo_input__head">Сообщение</span>
 					<textarea name="" required class="neo_textarea"></textarea>
 					<button class="btn active">Написать сообщение </button>
@@ -91,14 +91,13 @@
 			<h1>Задать вопрос менеджеру </h1>
 			<div class="callback_form">
 				<form action=""><span class="neo_input__head">Ваше имя</span>
-					<input type="text" required class="neo_input"><span class="neo_input__head">Ваш телефон</span>
+					<input type="text" pattern="^[а-яА-ЯёЁa-zA-Z- ]*$" required class="neo_input"><span class="neo_input__head">Ваш телефон</span>
 					<input type="text" required class="neo_input phone"><span class="neo_input__head">Ваш вопрос</span>
 					<textarea name="" required class="neo_textarea"></textarea>
 					<button class="btn active">Написать сообщение </button>
 				</form>
 			</div>
 		</div>
-
 		<!-- footer-->
 		<section class="footer">
 			<div class="container">
@@ -109,11 +108,7 @@
 					<a href="" class="ig"></a>
 					<a href="" class="vk"></a>
 				</div>
-				<p class="soc_block__text">Мы рады новым друзьям!</p>
-				<p class="copyrights">
-
-					создание сайта <a href="http://platzkart.ru/" target="_blank">Platzkart</a>
-				</p>
+				<p class="soc_block__text">Мы рады новым друзьям!</p><a href="http://platzkart.ru/" target="_blank" class="copyrights">создание сайта <span>Platzkart</span></a>
 			</div>
 		</section>
 		<!-- scripts-->
