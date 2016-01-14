@@ -120,6 +120,14 @@
     }
 }
 
+.one_manager .backcall_block__text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+    color: #26221f;
+    font-weight: bold; 
+}
+
 
 /*
 *   icon_text
