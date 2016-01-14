@@ -160,26 +160,26 @@ $(document).ready(function () {
 		type: "double",
 	    hide_min_max: true,
 	    hide_from_to: true,
-	    to_fixed: true,
-	    onChange: function (data) {
-    	    min3 = data.min;
-    	    max3 = data.max;
-    	}
+	    to_fixed: true
+	    // onChange: function (data) {
+    	//     min3 = data.min;
+    	//     max3 = data.max;
+    	// }
 	});
 
-	$(".js-floor-slider").on("change", function (data) {
-		var $this = $(this),
-			value = $this.prop("value").split(";");
+	// $(".js-floor-slider").on("change", function (data) {
+	// 	var $this = $(this),
+	// 		value = $this.prop("value").split(";");
 
-		console.log(value[0] + " - " + value[1]);
+	// 	console.log(value[0] + " - " + value[1]);
 		
-		if (value[0] != min3 || value[1] != max3) { 
-			$(this).closest(".search_form__block").next(".btn").addClass("active");
-		}
-		else {
-			$(this).closest(".search_form__block").next(".btn").removeClass("active");
-		}
-	});
+	// 	if (value[0] != min3 || value[1] != max3) { 
+	// 		$(this).closest(".search_form__block").next(".btn").addClass("active");
+	// 	}
+	// 	else {
+	// 		$(this).closest(".search_form__block").next(".btn").removeClass("active");
+	// 	}
+	// });
     
     // slider for managers
     if ($(".managers").width != 0) {
