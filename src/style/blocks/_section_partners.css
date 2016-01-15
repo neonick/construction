@@ -32,7 +32,7 @@
 
     @media (--w768) {
         lost-column: 1/4;
-        margin-bottom: 100px;
+        margin-bottom: 160px;
     }
 }
 
@@ -65,8 +65,9 @@
         text-transform: uppercase;
         font-family: $custom;
         display: block;
-        margin-left: 20px;
-        margin-top: 60px;
         text-align: left;
+        position: absolute;
+        top: 190px;
+        left: 20px;
     }
 }

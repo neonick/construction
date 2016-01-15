@@ -60,14 +60,14 @@
 	}
 
 	&__rest {
-		margin-left: 40px;
+		margin-left: 20px;
 		font-size: 12px;
 		line-height: 15px;
 		width: 150px;
 		text-transform: uppercase;
 		font-family: $custom;
 		position: relative;
-		padding-left: 50px;
+		padding-left: 75px;
 		position: absolute;
 		top: 220px;
 		left: 0;
@@ -81,6 +81,8 @@
 			top: 0;
 			left: 0;
 			position: absolute;
+			width: 70px;
+    		text-align: right;
 		}
 	}
 

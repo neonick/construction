@@ -127,11 +127,22 @@
 .apt_pic {
     width: 100%;
     margin-bottom: 50px;
-    padding-bottom: 90px;
+    /*padding-bottom: 90px;*/
     text-align: center;
     position: relative;
-    min-height: 400px;
+    min-height: 500px;
+    height: 500px;
     background: #fff;
+    font-size: 0;
+
+    &:before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        min-height: 100%;
+        height: auto;
+        width: 0;
+    }
 
     @media (--w768) {
         lost-column: 3/5;
@@ -143,8 +154,9 @@
     }
 
     img {
-       display: inline-block;
+        display: inline-block;
         max-height: 500px;
+        vertical-align: middle;
     }
 
     .view_icon {
