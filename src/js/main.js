@@ -218,7 +218,8 @@ $(document).ready(function () {
 	            slidesPerView: $nSlides,
 	            spaceBetween: 0,
 	            centeredSlides: true,
-	            loop: true
+	            loop: true,
+	            loopedSlides: $nSlides
 	        });
 
 	   	$('.swiper-slide').click(function(e) {
