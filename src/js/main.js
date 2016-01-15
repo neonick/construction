@@ -18,6 +18,17 @@
 $(document).ready(function () {
 
 
+	$('.neo_input').bind("change keyup input click", function() {
+		if ($(this).hasClass("phone")) {
+			return false;
+		};
+
+	    if (this.value.match(/[^а-яА-Яa-zA-Z -]/g)) {
+	        this.value = this.value.replace(/[^а-яА-Яa-zA-Z -]/g, '');
+	    }
+	});
+
+
 	$(".phone").mask("(999) 999-99-99");
 
 	$(".js-scroll-next").click(function() {

@@ -357,6 +357,10 @@
     &.floor {
         margin-bottom: 0;
     }
+
+    input {
+        opacity: 0;
+    }
 }
 
 /*
@@ -502,9 +506,9 @@
         top: -10px;
     }
 
-/*    .irs-slider.to {
+    .irs-slider.to {
         display: none;
-    }*/
+    }
 }
 
 

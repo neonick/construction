@@ -59,6 +59,25 @@
         &.type4 {
             background: #fff30e url(../i/advantages_icon4.png) 0 0 no-repeat !important;
         }
+
+        .rezid &.type1 {
+            background: url(../i/111.png) 0 0 no-repeat !important;
+            background-size: 100% !important;
+        }
+        .rezid &.type2 {
+            background: url(../i/222.png) 0 0 no-repeat !important;
+            background-size: 100% !important;
+        }
+        .rezid &.type3 {
+            background: url(../i/333.png) top center no-repeat !important;
+            background-size: auto 100% !important;
+            border-radius: 0;
+        }
+        .rezid &.type4 {
+            background: url(../i/444.png) 0 0 no-repeat !important;
+            background-size: 100% !important;
+            border-radius: 0;
+        }
     }
 
     span {

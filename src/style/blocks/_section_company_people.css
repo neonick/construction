@@ -61,10 +61,10 @@
 
 	&__block {
 		width: 180px;
-		height: 300px;
-		transform: skewY(-20deg);
+		/*height: 300px;*/
+		/*transform: skewY(-20deg);*/
 		display: block;
-		overflow: hidden;	
+		/*overflow: hidden;	*/
 		box-sizing: content-box;
 		transition: all 0.3s;
 		margin: 20px 0;
@@ -80,7 +80,7 @@
 	}
 
 	&__pic {
-		transform: skewY(20deg);
+		/*transform: skewY(20deg);*/
 		margin-top: -60px;
 		display: block;	
 		backface-visibility: hidden;

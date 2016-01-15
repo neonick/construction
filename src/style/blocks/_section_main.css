@@ -170,6 +170,10 @@
 	font-family: $custom;
 	font-weight: 300;
 
+	.full_block--mainpage & {
+		height: 310px;
+	}
+	
 	h2 {
 		font-family: $custom;
 		font-weight: 300;
