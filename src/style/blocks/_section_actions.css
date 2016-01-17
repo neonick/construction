@@ -42,6 +42,7 @@
 .one_action {
 	lost-column: 1/1;
 	margin-bottom: 50px;
+	position: relative;
 	
 	@media (--w768) {
 		lost-column: 1/3;
@@ -49,22 +50,21 @@
 	}
 
 	&__block {
-		width: 180px;
-		height: 240px;
+		width: 168px;
+		height:  190px;
 		transform: skewY(-20deg);
 		display: block;
 		overflow: hidden;	
 		border: 20px solid #e8e8e8;
 		box-sizing: content-box;
 		transition: all 0.3s;
-		margin: 60px auto;
+		margin: 20px auto 60px;
 		backface-visibility: hidden;
-		transform-style: preserve-3d;
-
+		z-index: 100;
 
 		@media (--w768) {
-			width: 150px;
-			height: 200px;
+			width: 168px;
+			height: 190px;
 		}
 	}
 
@@ -73,11 +73,15 @@
 	}
 
 	&__pic {
-		transform: skewY(20deg);
-		margin-top: -45px;
+		/*transform: skewY(20deg);*/
+		/*margin-top: -45px;*/
 		display: block;	
 		backface-visibility: hidden;
 		transform-style: preserve-3d;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		margin-left: -84px;
 	}
 
 	&__heading {

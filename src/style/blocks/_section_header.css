@@ -211,11 +211,13 @@
     top: 10px;
     right: 10px;
     border: 1px solid #272727;
-    padding: 15px 23px;
-    font-size: 16px;
-    line-height: 16px;
+    padding: 12px 23px;
+    font-size: 14px;
+    line-height: 14px;
     text-transform: uppercase;
     color: #272727;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 3px;
 
     .header--mainpage & {
         color: #fff;

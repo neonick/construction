@@ -614,7 +614,8 @@
     z-index: 14;
 
     @media (--w768) {
-         padding: 20px 30px 10px;
+        /*padding: 20px 30px 10px;*/
+        padding: 20px 30px;
     }
 
     @media (--w1400) {
