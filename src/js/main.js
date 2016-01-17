@@ -193,40 +193,58 @@ $(document).ready(function () {
 	// });
     
     // slider for managers
-    if ($(".managers").width != 0) {
+  //   if ($(".managers").width != 0) {
 
-    	$nSlides = 1;
+  //   	$nSlides = 1;
 
-    	if ($(window).width() >= 450) {
-    		$nSlides = 2;
-    	}
+  //   	if ($(window).width() >= 450) {
+  //   		$nSlides = 2;
+  //   	}
 
-    	if ($(window).width() >= 768) {
-    		$nSlides = 3;
-    	}
+  //   	if ($(window).width() >= 768) {
+  //   		$nSlides = 3;
+  //   	}
 
-    	if ($(window).width() >= 980) {
-    		$nSlides = 4;
-    	}
+  //   	if ($(window).width() >= 980) {
+  //   		$nSlides = 4;
+  //   	}
 
-    	if ($(window).width() >= 1200) {
-    		$nSlides = 5;
-    	}
+  //   	if ($(window).width() >= 1200) {
+  //   		$nSlides = 5;
+  //   	}
 
-	    var swiper = new Swiper('.swiper-managers', {
-	            paginationClickable: true,
-	            slidesPerView: $nSlides,
-	            spaceBetween: 0,
-	            centeredSlides: true,
-	            loop: true,
-	            loopedSlides: $nSlides
-	        });
+	 //    var swiper = new Swiper('.swiper-managers', {
+	 //            paginationClickable: true,
+	 //            slidesPerView: $nSlides,
+	 //            spaceBetween: 0,
+	 //            centeredSlides: true,
+	 //            loop: true,
+	 //            loopedSlides: $nSlides
+	 //        });
 
-	   	$('.swiper-slide').click(function(e) {
-		    $(".swiper-slide").removeClass('swiper-slide-active');
-		    $(this).addClass('swiper-slide-active');
-		});
+    // }
+
+   	$('.one_manager').click(function(e) {
+	    $(".one_manager").removeClass('active');
+	    $(this).addClass('active');
+	});
+
+    if ($(window).width() < 768) {
+        $(".one_manager").eq(0).addClass("active");
     }
+
+    else {
+        if ($(window).width() > 1200) {
+            $(".one_manager").eq(2).addClass("active");
+        }
+        else {
+            $(".one_manager").eq(1).addClass("active");
+        }
+    }
+
+    
+
+    
 
     // big_slider_object
     var swiper = new Swiper('.big_slider_object', {
