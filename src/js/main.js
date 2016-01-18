@@ -426,7 +426,26 @@ $(document).ready(function () {
 			verticalFit: true
 		},
 		alignTop: false
-	});    
+	});   
+
+
+    $('.gallery-item').magnificPopup({
+        type: 'image',
+        closeBtnInside: false,
+        fixedContentPos: true,
+        mainClass: 'mfp-no-margins mfp-with-zoom dinamic_popup',
+        gallery: {
+          enabled:true
+        },
+        image: {
+            verticalFit: true
+        },
+        alignTop: false
+    });  
+
+    $(".js-open-view").click(function() {
+        $('.gallery-item').magnificPopup('open');
+    });
 
     video_resize();
 
