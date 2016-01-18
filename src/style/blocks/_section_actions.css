@@ -55,12 +55,13 @@
 		transform: skewY(-20deg);
 		display: block;
 		overflow: hidden;	
-		border: 20px solid #e8e8e8;
+		box-shadow: 0 0 0 20px #e8e8e8;
 		box-sizing: content-box;
 		transition: all 0.3s;
-		margin: 20px auto 60px;
+		margin: 30px auto 80px;
 		backface-visibility: hidden;
 		z-index: 100;
+
 
 		@media (--w768) {
 			width: 140px;
@@ -69,7 +70,7 @@
 	}
 
 	&:hover &__block{
-		border: 20px solid yellow;
+		box-shadow: 0 0 0 20px yellow;
 	}
 
 	&__pic {

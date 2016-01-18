@@ -470,6 +470,25 @@
     height: 0;
 }
 
+.irs-from {
+    left: 0 !important;
+    padding: 0;
+    visibility: visible !important;
+}
+
+.irs-to {
+    right: 0 !important;
+    left: auto !important;
+    padding: 0;
+    visibility: visible !important;
+}
+
+.irs-single {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+
 
 /*.floor {
     .irs-line-mid {

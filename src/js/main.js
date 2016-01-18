@@ -170,8 +170,8 @@ $(document).ready(function () {
 	$(".js-floor-slider").ionRangeSlider({
 		type: "double",
 	    hide_min_max: true,
-	    hide_from_to: true
-	    // to_fixed: true
+	    hide_from_to: true,
+	    to_fixed: true
 	    // onChange: function (data) {
     	//     min3 = data.min;
     	//     max3 = data.max;

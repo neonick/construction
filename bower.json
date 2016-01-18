@@ -21,6 +21,7 @@
     "raphael": "~2.1.4",
     "Tabslet": "~1.7.0",
     "jquery.maskedinput": "~1.4.1",
-    "jquery.scrollTo": "~2.1.2"
+    "jquery.scrollTo": "~2.1.2",
+    "Likely": "ilyabirman-likely#~2.0.8"
   }
 }

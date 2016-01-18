@@ -266,3 +266,15 @@
         margin-left: 10px;
     }
 }
+
+
+.apartment_socblock {
+    float: right;
+
+    & > span {
+        margin-bottom: 5px;
+        margin-top: -5px;
+        display: block;
+        color: #c81fca;
+    }
+}
