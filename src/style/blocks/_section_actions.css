@@ -51,7 +51,7 @@
 
 	&__block {
 		width: 168px;
-		height:  190px;
+		height: 255px;
 		transform: skewY(-20deg);
 		display: block;
 		overflow: hidden;	
@@ -64,7 +64,7 @@
 
 		@media (--w768) {
 			width: 168px;
-			height: 190px;
+			height: 255px;
 		}
 	}
 
