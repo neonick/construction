@@ -94,9 +94,13 @@
 	width: 100%;
 	max-width: 250px;
 	/*margin: 0 auto 40px;*/
-	margin: 0 10px 40px;	
+	margin: 0 0 40px;	
 	opacity: 0.9;
 	transition: all 0.3s;
+
+	@media (--w768) {
+		margin: 0 10px 40px;
+	}
 
 	&.wide {
 		width: 100%;

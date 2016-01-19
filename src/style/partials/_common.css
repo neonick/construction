@@ -210,9 +210,14 @@
         padding: 50px 0 50px;
     }
 
-    .secondary_menu + & {
-        padding: 120px 0 50px;
+
+    @media (--w768) {
+        .secondary_menu + & {
+            padding: 120px 0 50px;
+        }
     }
+
+    
 
 
 
@@ -935,7 +940,3 @@ uncomment this part if you haven't added this code anywhere else
 .fotorama__nav__shaft {
     display: none;
 }
-
-/*.object_tizers_small + .alone_text {
-    padding-top: 0;
-}*/

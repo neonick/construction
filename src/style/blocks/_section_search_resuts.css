@@ -2,7 +2,11 @@
 *   search_results
 */
 .search_results {
-    padding: 100px 0 0;
+    padding: 40px 0 0;
+
+     @media (--w768) {
+        padding: 100px 0 0;
+     }
 
     .container {
             max-width: 820px;

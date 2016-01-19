@@ -652,10 +652,14 @@
 		position: absolute;
 		bottom: -170px;
 		right: 0;
-		content: "";
+		
 		height: 340px;
 		width: calc(50% - 33.33333333%);
 		background-color: #77b7a6;
+
+		@media (--w768) {
+			content: "";
+		}
 
 		.cinema & {
 			background: #40635d;

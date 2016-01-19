@@ -76,10 +76,11 @@
 
 .dinamic__item {
     lost-column: 1/2 2 1px no-flex;
-    margin-bottom: 1px;
+    margin-bottom: 2px;
 
     @media (--w768) {
         lost-column: 1/4 4 1px no-flex;
+        margin-bottom: 1px;
     }
 
     @media (--w980) {

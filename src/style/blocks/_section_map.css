@@ -111,11 +111,12 @@
 .map {
   display: block;
   width: 100%;
-  height: 100%;
+  height: 300px;
   position: relative;
 
   @media (--w768) {
     position: fixed;
+    height: 100%;
   }
 }
 
