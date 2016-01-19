@@ -300,4 +300,14 @@
 .action_share {
 	margin-bottom: 20px;
 	margin-top: 10px;
+
+	.ya-share2 {
+		display: inline-block;
+	}
+
+	& > span {
+        margin-top: 4px;
+        display: inline-block;
+        color: #c81fca;
+    }
 }
