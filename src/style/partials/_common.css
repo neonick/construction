@@ -207,8 +207,16 @@
     padding: 30px 0;
 
     @media (--w768) {
+        padding: 50px 0 50px;
+    }
+
+    .secondary_menu + & {
         padding: 120px 0 50px;
     }
+
+
+
+
 
     .container {
         lost-center: 100%;
@@ -928,6 +936,6 @@ uncomment this part if you haven't added this code anywhere else
     display: none;
 }
 
-.object_tizers_small + .alone_text {
+/*.object_tizers_small + .alone_text {
     padding-top: 0;
-}
+}*/
