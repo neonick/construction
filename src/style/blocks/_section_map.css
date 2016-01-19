@@ -128,11 +128,10 @@
   display: inline-block;
   width: 100%;
   background: #272727;
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  
   margin: 0;
   padding: 0;
+
   font-family: sans-serif;
   font-weight: lighter;
   font-size: 14px;
@@ -140,15 +139,29 @@
   color: white;
   overflow: hidden;
   box-sizing: border-box;
+
+  @media (--w768) {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+  }
+
   > .bottom {
     display: none;
-    position: absolute;
-    bottom: 13px;
+    
     height: 29px;
-    left: 20px;
-    right: 0;
+    
     margin: 0;
     padding: 0;
+
+    @media (--w768) {
+      position: absolute;
+      bottom: 13px;
+      left: 20px;
+      right: 0;
+  }
+
+
     &:hover {
       cursor: pointer;
     }
