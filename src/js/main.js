@@ -443,7 +443,8 @@ $(document).ready(function () {
         alignTop: false
     });  
 
-    $(".js-open-view").click(function() {
+    $(".js-open-view").click(function(e) {
+        e.preventDefault();
         $('.gallery-item').magnificPopup('open');
     });
 
