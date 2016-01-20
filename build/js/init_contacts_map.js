@@ -7,9 +7,19 @@ function initialize() {
 
     var centr = new google.maps.LatLng(45.028366, 39.003626);
 
+    var zoomNum;
+
+    if ($(window).width() > 768) {
+        zoomNum = 14;
+    }
+
+    else {
+        zoomNum = 12;
+    }
+
     var mapOptions = {
         center: centr,
-        zoom: 14,
+        zoom: zoomNum,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         mapTypeControlOptions: {
             style: google.maps.MapTypeControlStyle.DROPDOWN_MENU

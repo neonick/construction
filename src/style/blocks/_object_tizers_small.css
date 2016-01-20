@@ -61,16 +61,16 @@
 		&.is_not_availible {
 			
 
-			.one_obj_tizers_s__pic {
-				
+			.skrollr & .one_obj_tizers_s__pic {
+				opacity: 0.5;
 			}
 
-			.one_obj_tizers_s__heading {
-		
+			.skrollr & .one_obj_tizers_s__heading {
+				opacity: 0.5;
 		
 			}
 
-			.one_obj_tizers_s__status {
+			.skrollr & .one_obj_tizers_s__status {
 				color: #7f7f7f;
 
 			}

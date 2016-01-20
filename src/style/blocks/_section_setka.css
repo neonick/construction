@@ -160,6 +160,10 @@
 		h2, p, a, span {
 			color: #272727;
 		}
+
+		.arr_link:before {
+			background-image: svg("arr", "[fill]: #272727");
+		}
 	}
 
 	.row_type1 &.col2 {
@@ -182,6 +186,10 @@
 
 		h2, p, a {
 			color: #272727;
+		}
+
+		.arr_link:before {
+			background-image: svg("arr", "[fill]: #272727");
 		}
 	}
 
@@ -226,7 +234,7 @@
 		}	
 		
 		.arr_link:before {
-			background-image: svg("arr", "[stroke]: #fff");
+			background-image: svg("arr", "[fill]: #fff");
 		}
 	}
 
@@ -287,6 +295,10 @@
 		h2, p, a {
 			color: #272727;
 		}
+
+		.arr_link:before {
+			background-image: svg("arr", "[fill]: #272727");
+		}
 	}
 
 	.row_type2 &.col2 {
@@ -304,6 +316,10 @@
 		h2, p, a {
 			color: #272727;
 			width: 100%;
+		}
+
+		.arr_link:before {
+			background-image: svg("arr", "[fill]: #272727");
 		}
 	}
 
@@ -349,6 +365,10 @@
 
 		h2, p, a {
 			color: #272727;
+		}
+
+		.arr_link:before {
+			background-image: svg("arr", "[fill]: #272727");
 		}
 	}
 
@@ -417,6 +437,10 @@
 			width: 100%;
 			color: #272727;
 		}
+
+		.arr_link:before {
+			background-image: svg("arr", "[fill]: #272727");
+		}
 	}
 
 	.row_type4 &.col2 {
@@ -439,6 +463,10 @@
 		h2, p, a {
 			width: 100%;
 			color: #272727;
+		}
+
+		.arr_link:before {
+			background-image: svg("arr", "[fill]: #272727");
 		}
 	}
 
@@ -536,6 +564,10 @@
 			color: #272727;
 		}
 
+		.arr_link:before {
+			background-image: svg("arr", "[fill]: #272727");
+		}
+
 	}
 
 	.row_type5 &.col2 {
@@ -552,6 +584,10 @@
 		h2, p, a {
 			width: 100%;
 			color: #272727;
+		}
+
+		.arr_link:before {
+			background-image: svg("arr", "[fill]: #272727");
 		}
 
 	}
@@ -605,6 +641,10 @@
 			background: #fbe349;
 		}
 
+		.arr_link:before {
+			background-image: svg("arr", "[fill]: #272727");
+		}
+
 
 		@media (--w768) {
 			width: 33.3333333333333333%;
@@ -638,7 +678,7 @@
 		}
 
 		.arr_link:before {
-			background-image: svg("arr", "[stroke]: #fff");
+			background-image: svg("arr", "[fill]: #fff");
 		}
 	}
 
@@ -685,9 +725,7 @@
 	display: block;
 	
 
-	&.white {
-		color: #fff;
-	}
+
 
 	&:before {
 		content: "";
@@ -697,7 +735,21 @@
 		margin-right: 10px;
 		background-position: center left;
 		background-repeat: no-repeat;
-		background-image: svg("arr", "[stroke]: #ebb240");
+		background-image: svg("arr", "[fill]: #272727");
+	}
+
+	&.white {
+		color: #fff;
+
+		&:before {
+			width: 19px;
+			height: 18px;
+			display: inline-block;
+			margin-right: 10px;
+			background-position: center left;
+			background-repeat: no-repeat;
+			background-image: svg("arr", "[fill]: #fff");
+		}
 	}
 }
 
