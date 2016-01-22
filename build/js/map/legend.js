@@ -52,6 +52,18 @@ $(document).ready(function () {
                 iconImageSize: [32, 37],
                 iconImageOffset: [-16, -37]
             },
+            'bank': {
+                iconLayout: 'default#image',
+                iconImageHref: '/local/templates/.default/markup/build/i/bank.png',
+                iconImageSize: [32, 37],
+                iconImageOffset: [-16, -37]
+            },
+            'hotel': {
+                iconLayout: 'default#image',
+                iconImageHref: '/local/templates/.default/markup/build/i/hotel.png',
+                iconImageSize: [32, 37],
+                iconImageOffset: [-16, -37]
+            },
             'cinema': {
                 iconLayout: 'default#image',
                 iconImageHref: '/local/templates/.default/markup/build/i/cinema.png',
@@ -342,6 +354,7 @@ $(document).ready(function () {
                                     if (!category.items) {
                                         category.items = [];
                                     }
+                                    console.log(item);
                                     var index = category.items.push(item);
                                     var point = createPoint(category.items[index - 1], category);
                                     category.collection.add(point);
