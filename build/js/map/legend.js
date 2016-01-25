@@ -64,6 +64,12 @@ $(document).ready(function () {
                 iconImageSize: [32, 37],
                 iconImageOffset: [-16, -37]
             },
+            'finess': {
+                iconLayout: 'default#image',
+                iconImageHref: '/local/templates/.default/markup/build/i/fitness.png',
+                iconImageSize: [32, 37],
+                iconImageOffset: [-16, -37]
+            },
             'cinema': {
                 iconLayout: 'default#image',
                 iconImageHref: '/local/templates/.default/markup/build/i/cinema.png',
