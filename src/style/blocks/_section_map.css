@@ -364,17 +364,17 @@
   }
   &.-bank {
     background-image: url('../i/bank.png');
-    height: 1px;
-    width: 24px;
+    height: 37px;
+    width: 32px;
   }
   &.-fitness {
     background-image: url('../i/fitness.png');
-    height: 1px;
-    width: 24px;
+    height: 37px;
+    width: 32px;
   }
   &.-hotel {
     background-image: url('../i/hotel.png');
-    height: 1px;
-    width: 24px;
+    height: 37px;
+    width: 32px;
   }
 }

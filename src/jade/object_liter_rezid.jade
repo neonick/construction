@@ -29,7 +29,7 @@ html(lang='ru')
                 img(src="i/liter_3.jpg", alt="")
                 .liter_plan__shadow
 
-                #liter_cinema_svg.svg_holst
+                #liter_eji_svg.svg_holst
 
                 .floor_label
                     p этаж
@@ -44,6 +44,7 @@ html(lang='ru')
                     span 198
                     i квартир 
                     | доступно
+
 
 
             .liter_podbor_block
@@ -79,6 +80,12 @@ html(lang='ru')
 
                 #litertab-1
                 
+                    .mob_floor_selector__item(data-floor="19" data-liter="1") 
+                        | этаж
+                        span 19
+                    .mob_floor_selector__item(data-floor="18" data-liter="1") 
+                        | этаж
+                        span 18
                     .mob_floor_selector__item(data-floor="17" data-liter="1") 
                         | этаж
                         span 17
@@ -133,6 +140,12 @@ html(lang='ru')
 
                 #litertab-2
 
+                    .mob_floor_selector__item(data-floor="19" data-liter="2") 
+                        | этаж
+                        span 19
+                    .mob_floor_selector__item(data-floor="18" data-liter="2") 
+                        | этаж
+                        span 18
                     .mob_floor_selector__item(data-floor="17" data-liter="2") 
                         | этаж
                         span 17
@@ -190,27 +203,7 @@ html(lang='ru')
 
 
         #response_popup.neo_pupup.mfp-hide.zoom-anim-dialog
-            h1 Этаж 15 литера A 
-
-            .tabs(data-toggle="tabslet")
-                ul.horizontal
-                    li
-                        a(href="#eji_liter1_1" class="liter_1_1") 1
-
-                    li
-                        a(href="#eji_liter1_2" class="liter_1_2") 2
-
-                #eji_liter1_1
-
-                    .plan.plan_floor15
-                        img(src="i/plan15_1.jpg", alt="")
-                        #eji_1_1.svg_plan_holst
-
-                 #eji_liter1_2
-
-                    .plan.plan_floor15
-                        img(src="i/plan15_2.jpg", alt="")
-                        #eji_1_2.svg_plan_holst
+            
 
                 
                 
