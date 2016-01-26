@@ -7,7 +7,7 @@ $(function() {
 			'stroke-linejoin' : 'round'
 		}, arr = new Array();
 	
-		eji.setViewBox(0, 0, 1200, 800);
+		eji.setViewBox(0, 0, 1198, 800);
 
 		for (var country in paths) {
 			var obj = eji.path(paths[country].path);
