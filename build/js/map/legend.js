@@ -105,7 +105,7 @@ $(document).ready(function () {
     function initMap() {
         map = new ymaps.Map($map.get(0), {
             center: mainPoint.position,
-            zoom: 14,
+            zoom: 16,
             controls: []
         });
 
