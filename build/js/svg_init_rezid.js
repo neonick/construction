@@ -1,38 +1,39 @@
 $(function() {
 
-	if ($("#liter_cinema_svg") != 0) {
+	if ($("#liter_eji_svg") != 0) {
 
-		var cinema = Raphael('liter_cinema_svg', "100%", "100%"), attributes = {
+		var eji = Raphael('liter_eji_svg', "100%", "100%"), attributes = {
 			'stroke-width' : 0,
 			'stroke-linejoin' : 'round'
 		}, arr = new Array();
 	
-		cinema.setViewBox(0, 0, 1067, 800);
+		eji.setViewBox(0, 0, 1200, 800);
 
-
-		for (var country in pathscinema) {
-			var obj = cinema.path(pathscinema[country].path);
+		for (var country in paths) {
+			var obj = eji.path(paths[country].path);
 			
 			obj.attr(attributes);
 			obj.attr({
-				fill : pathscinema[country].color 
+				fill : paths[country].color 
 			});
 
 			arr[obj.id] = country;
 			
 			/* добавляем data-атрибуты для path, которые потом будем передавать в запросе */
-			$(obj).data("liter", pathscinema[country].liter);
-			$(obj).data("floor", pathscinema[country].floor);
+			$(obj).data("liter", paths[country].liter);
+			$(obj).data("floor", paths[country].floor);
 
 			obj.hover(function() {
 				$(".floor_label").show();
-				$(".floor_label_num").html(pathscinema[arr[this.id]].floor);
+				$(".floor_label_num").html(paths[arr[this.id]].floor);
 			}, function() {
 				$(".floor_label").hide();
 			});
 
 			obj.click(function() {
-				$("#response_popup").load( 'get_flats.html' , function (){ 
+				$("#response_popup").load( 'get_flats_rezid.html' , function (){ 
+					// get_flats_liter2.html
+					// get_flats_cinema.html
 					$(".popup_caller").magnificPopup({
 						type : 'inline',
 						preloader : false,
@@ -68,7 +69,7 @@ $(function() {
 		if ($(".mob_floor_selector") != 0) {
 
 			$(".mob_floor_selector__item").click(function() {
-				$("#response_popup").load( 'get_flats.html' , function (){ 
+				$("#response_popup").load( 'get_flats_rezid.html' , function (){ 
 					$(".popup_caller").magnificPopup({
 						type : 'inline',
 						preloader : false,
