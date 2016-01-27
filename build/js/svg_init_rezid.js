@@ -1,8 +1,8 @@
 $(function() {
 
-	if ($("#liter_eji_svg") != 0) {
+	if ($("#liter_rezid_svg") != 0) {
 
-		var eji = Raphael('liter_eji_svg', "100%", "100%"), attributes = {
+		var eji = Raphael('liter_rezid_svg', "100%", "100%"), attributes = {
 			'stroke-width' : 0,
 			'stroke-linejoin' : 'round'
 		}, arr = new Array();

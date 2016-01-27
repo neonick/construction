@@ -138,6 +138,29 @@
     }
 }
 
+
+#liter_rezid_svg {
+    @media (--w980) {
+        top: 20px;
+    }
+
+    @media (--w1200) {
+        top: 27px;
+    }
+
+    @media (--w1400) {
+        top: 30px;
+    }
+
+    @media (--w1600) {
+        top: 35px;
+    }
+}
+
+
+
+
+
 .floor_label {
     width: 170px;
     height: 40px;

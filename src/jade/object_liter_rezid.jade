@@ -26,10 +26,10 @@ html(lang='ru')
         section.full_block.full_block--liter
             
             .liter_plan
-                img(src="i/liter_3_new.jpg", alt="")
+                img(src="i/liter_3.jpg", alt="")
                 .liter_plan__shadow
 
-                #liter_eji_svg.svg_holst
+                #liter_rezid_svg.svg_holst
 
                 .floor_label
                     p этаж
@@ -79,7 +79,13 @@ html(lang='ru')
                             span Б
 
                 #litertab-1
-                
+
+                    .mob_floor_selector__item(data-floor="21" data-liter="1") 
+                        | этаж
+                        span 21
+                    .mob_floor_selector__item(data-floor="20" data-liter="1") 
+                        | этаж
+                        span 20
                     .mob_floor_selector__item(data-floor="19" data-liter="1") 
                         | этаж
                         span 19
@@ -140,6 +146,12 @@ html(lang='ru')
 
                 #litertab-2
 
+                    .mob_floor_selector__item(data-floor="21" data-liter="1") 
+                        | этаж
+                        span 21
+                    .mob_floor_selector__item(data-floor="20" data-liter="1") 
+                        | этаж
+                        span 20
                     .mob_floor_selector__item(data-floor="19" data-liter="2") 
                         | этаж
                         span 19
