@@ -31,9 +31,12 @@ $(function() {
 			});
 
 			obj.click(function() {
-				$("#response_popup").load( 'get_flats_rezid.html' , function (){ 
-					// get_flats_liter2.html
-					// get_flats_cinema.html
+				$("#response_popup").load( 'get_flats_rezid_3_15.html' , function (){ 
+					// get_flats_rezid_3_15.html
+					// get_flats_rezid_16_19.html
+					// get_flats_rezid_20.html
+					// get_flats_rezid_21.html
+
 					$(".popup_caller").magnificPopup({
 						type : 'inline',
 						preloader : false,
@@ -69,7 +72,7 @@ $(function() {
 		if ($(".mob_floor_selector") != 0) {
 
 			$(".mob_floor_selector__item").click(function() {
-				$("#response_popup").load( 'get_flats_rezid.html' , function (){ 
+				$("#response_popup").load( 'get_flats_rezid_3_15.html' , function (){ 
 					$(".popup_caller").magnificPopup({
 						type : 'inline',
 						preloader : false,
