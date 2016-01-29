@@ -647,12 +647,16 @@
 
     @media (--w768) {
         /*padding: 20px 30px 10px;*/
-        padding: 20px 30px;
+        padding: 20px;
     }
 
     @media (--w1400) {
         max-width: 900px;
-        padding: 30px;
+        padding: 20px;
+    }
+
+    &.rezid {
+        max-width: 610px;
     }
 
 
