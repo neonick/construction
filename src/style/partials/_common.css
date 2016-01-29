@@ -944,3 +944,9 @@ uncomment this part if you haven't added this code anywhere else
 .fotorama__nav__shaft {
     display: none;
 }
+
+
+
+.mfp-wrap {
+     overflow-y: auto !important; 
+}

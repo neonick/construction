@@ -30,6 +30,11 @@ html, body {
   /*height: 100%;*/
 } 
 
+html {
+  overflow: visible !important;
+  margin: 0 !important;
+}
+
 hr {
     border:0;
     border-top: 1px solid #d0d0d0;
