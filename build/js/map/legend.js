@@ -64,7 +64,7 @@ $(document).ready(function () {
                 iconImageSize: [32, 37],
                 iconImageOffset: [-16, -37]
             },
-            'finess': {
+            'fitness': {
                 iconLayout: 'default#image',
                 iconImageHref: '/local/templates/.default/markup/build/i/fitness.png',
                 iconImageSize: [32, 37],
