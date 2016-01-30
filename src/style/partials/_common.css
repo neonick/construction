@@ -7,7 +7,7 @@
 
     &.arrow {
         padding-left: 40px;
-        background: url(../i/green_arr.png) left 14px center no-repeat;
+        background: url(../i/green_arr.png) 14px center no-repeat;
         transition: all 0.3s;
         color: #333;
 
@@ -327,6 +327,14 @@
     }
     &.din {
         background: #c81fca url(../i/pink_icon_din.png) center center no-repeat;
+        width: 80px;
+        height: 80px;
+
+        @media (--w768) {
+            width: 44px;
+            height: 44px;
+        }
+
     }
     &.i-plan {
         width: 80px;

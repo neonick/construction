@@ -97,6 +97,7 @@
 	margin: 0 0 40px;	
 	opacity: 0.9;
 	transition: all 0.3s;
+	text-align: center;
 
 	@media (--w768) {
 		margin: 0 10px 40px;
@@ -110,7 +111,7 @@
 		margin-bottom: 0;
 		
 		.search_form__block {
-			box-shadow: 0px 12px 14px rgba(0,0,0,0.2);
+			box-shadow: 0px 12px 14px #ccc;
 		}
 
 
@@ -134,7 +135,7 @@
 
 		.btn {
 			margin-top: -20px;
-			box-shadow: 0px 12px 14px rgba(0,0,0,0.2);
+			box-shadow: 0px 12px 14px #ccc;
 		}
 	}
 
@@ -162,9 +163,9 @@
 	}
 
 	.btn {
-		display: block;
+		display: block !important;
 		margin: 20px auto;
-		max-width: 200px;
+		width: 200px;
 	}
 }
 
@@ -197,13 +198,11 @@
 	background-repeat: no-repeat;	
 
 	&.eji_logo {
-		background-image: svg("eji_logo", "[fill]: #fff");
-		background-size: auto 60px;
+		background: url(../i/object_logo_eji.png) center center no-repeat;
 	}
 
 	&.cinema_logo {
-		background-image: svg("cinema_logo", "[fill]: #fff");
-		background-size: auto 30px;
+		background: url(../i/object_logo_cinema_white.png) center center no-repeat;
 	}
 
 	&.rezid_logo {

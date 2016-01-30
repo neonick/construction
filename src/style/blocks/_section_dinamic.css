@@ -64,6 +64,7 @@
     lost-center: 100%;
     lost-utility: clearfix;
     margin-bottom: 65px;
+    font-size: 0;
 
     &:last-child {
         margin-bottom: 0;
@@ -75,8 +76,10 @@
 }
 
 .dinamic__item {
-    lost-column: 1/2 2 1px no-flex;
-    margin-bottom: 2px;
+    width: 49%;
+    margin-bottom: 1px;
+    margin-right: 1px;
+    display: inline-block;
 
     @media (--w768) {
         lost-column: 1/4 4 1px no-flex;

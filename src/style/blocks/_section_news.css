@@ -75,10 +75,14 @@
 			color: #fff;
 			font-size: 110px;
 			line-height: 115px;
-			margin-right: 10px;
+			margin-right: 13px;
 			height: 135px;
 			vertical-align: top;
 			letter-spacing: -7px;
+
+			@media (--w768) {
+				margin-right: 10px;
+			}
 		}
 	}
 
@@ -191,8 +195,8 @@
 	}
 
 	li {
-		font-size: 12px;
-		line-height: 12px;
+		font-size: 11px;
+		line-height: 11px;
 		display: inline-block;
 		color: #8d8d8d;
 		text-transform: uppercase;

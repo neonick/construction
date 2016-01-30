@@ -138,8 +138,7 @@
     /*padding-bottom: 90px;*/
     text-align: center;
     position: relative;
-    min-height: 500px;
-    height: 500px;
+    padding-bottom: 20px;
     background: #fff;
     font-size: 0;
     padding-top: 30px;
@@ -160,6 +159,9 @@
         lost-column: 3/5;
         margin-bottom: 0;
         padding-top: 0;
+        min-height: 500px;
+        height: 500px;
+        padding-bottom: 0;
     }
 
     &.nopic {

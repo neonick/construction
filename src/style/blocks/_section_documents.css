@@ -2,7 +2,11 @@
 *   documents
 */
 .documents {
-    padding: 50px 0 100px;
+    padding: 30px 0;
+
+    @media (--w768) {
+        padding: 50px 0 100px;
+    }
 }
 
 
