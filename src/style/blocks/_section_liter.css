@@ -454,13 +454,23 @@
 
 .mob_floor_selector {
     width: 100%;
-    padding: 10px 20px 30px;
+    padding: 10px 20px;
     display: block;
-    
-    background: url(../i/liter_1.jpg) top center no-repeat;
     background-size: cover;
     position: relative;
     z-index: 1;
+
+    .eji + .full_block & {
+        background: url(../i/liter_1.jpg) top center no-repeat;
+    }
+
+    .cinema + .full_block & {
+        background: url(../i/liter_2.jpg) top center no-repeat;
+    }
+
+    .rezid + .full_block & {
+       background: url(../i/liter_3.jpg) top center no-repeat;
+    }
 
     &:before {
         content: "";
