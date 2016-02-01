@@ -73,7 +73,8 @@
 
     &.tip2 {
         top: 550px;
-        left: 47.4%;
+        left: 50%;
+        margin-left: -30px;
     }
 
     &.tip3 {
@@ -86,7 +87,7 @@
         height: 56px;
         border-radius: 50%;
         background-color: #272727;
-        line-height: 64px;
+        line-height: 62px;
         text-align: center;
         font-size: 25px;
         font-family: $custom;

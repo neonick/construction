@@ -187,7 +187,7 @@
 .header_corner_logo {
     width: 160px;
     height: 108px;
-    background: url(../i/header_corner_logo.png)  no-repeat;
+    background: url(../i/header_corner_logo.svg)  no-repeat;
     float: left;
     background-size: 100%;
     transition: all 0.4s;
