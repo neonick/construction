@@ -461,11 +461,11 @@
     z-index: 1;
 
     .eji + .full_block & {
-        background: url(../i/liter_1.jpg) top center no-repeat;
+        background: url(../i/liter_2.jpg) top center no-repeat;
     }
 
     .cinema + .full_block & {
-        background: url(../i/liter_2.jpg) top center no-repeat;
+        background: url(../i/liter_1.jpg) top center no-repeat;
     }
 
     .rezid + .full_block & {
