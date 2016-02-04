@@ -645,3 +645,29 @@
         color: #fff30e;
     }
 }
+
+
+#response_popup {
+     h1 {
+        margin-bottom: 15px;
+    }
+
+    .tabs {
+        margin-bottom: 15px;
+    }
+
+    .tabs li {
+        margin-bottom: 15px;
+    }
+}
+
+.cinema-liter-fix {
+    #eji_liter1_2 {
+        margin-top: -80px;
+    }
+    
+    .horizontal {
+        position: relative;
+        z-index: 1;
+    }
+}

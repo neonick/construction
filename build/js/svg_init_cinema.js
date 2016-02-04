@@ -32,12 +32,12 @@ $(function() {
 			});
 
 			obj.click(function() {
-				$("#response_popup").load( 'get_flats.html' , function (){ 
+				$("#response_popup").load( 'get_flats_liter2.html' , function (){ 
 					$(".popup_caller").magnificPopup({
 						type : 'inline',
 						preloader : false,
 						removalDelay : 300,
-						mainClass : 'my-mfp-zoom-in',
+						mainClass : 'my-mfp-zoom-in cinema-liter-fix',
 						overflowY : "scroll",
                         close: function() {
                             $("#response_popup").empty();
@@ -68,12 +68,12 @@ $(function() {
 		if ($(".mob_floor_selector") != 0) {
 
 			$(".mob_floor_selector__item").click(function() {
-				$("#response_popup").load( 'get_flats.html' , function (){ 
+				$("#response_popup").load( 'get_flats_liter2.html' , function (){ 
 					$(".popup_caller").magnificPopup({
 						type : 'inline',
 						preloader : false,
 						removalDelay : 300,
-						mainClass : 'my-mfp-zoom-in',
+						mainClass : 'my-mfp-zoom-in cinema-liter-fix',
 						overflowY : "scroll",
 	                    close: function() {
 	                        $("#response_popup").empty();
