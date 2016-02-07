@@ -37,7 +37,7 @@ $(function() {
 						type : 'inline',
 						preloader : false,
 						removalDelay : 300,
-						mainClass : 'my-mfp-zoom-in cinema-liter-fix',
+						mainClass : 'my-mfp-zoom-in',
 						overflowY : "scroll",
                         close: function() {
                             $("#response_popup").empty();
