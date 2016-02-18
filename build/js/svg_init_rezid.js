@@ -72,7 +72,7 @@ $(function() {
 		if ($(".mob_floor_selector") != 0) {
 
 			$(".mob_floor_selector__item").click(function() {
-				$("#response_popup").load( 'get_flats_rezid_3_15.html' , function (){ 
+				$("#response_popup").load( 'get_flats_rezid_20.html' , function (){ 
 					$(".popup_caller").magnificPopup({
 						type : 'inline',
 						preloader : false,

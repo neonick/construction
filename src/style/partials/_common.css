@@ -674,7 +674,7 @@
         }
 
         @media (--w1200) {
-            max-width: 1070px;
+            max-width: 1228px;
         }
         
         #eji_liter1_1 {
@@ -699,12 +699,13 @@
 
 
     h1 {
-        font-size: 24px;
+        font-size: 22px;
         line-height: 24px;
         color: #333;
         font-weight: 300;
         margin: 0 0 30px;
         width: 80%;
+
 
         @media (--w768) {
             font-size: 36px;
