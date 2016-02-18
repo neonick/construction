@@ -31,7 +31,7 @@ $(function() {
 			});
 
 			obj.click(function() {
-				$("#response_popup").load( 'get_flats_rezid_3_15.html' , function (){ 
+				$("#response_popup").load( 'get_flats_rezid_20.html' , function (){ 
 					// get_flats_rezid_3_15.html
 					// get_flats_rezid_16_19.html
 					// get_flats_rezid_20.html

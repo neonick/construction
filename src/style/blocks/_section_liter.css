@@ -163,7 +163,7 @@
 
 
 .floor_label {
-    width: 170px;
+    /*width: 170px;*/
     height: 40px;
     border-bottom: 2px solid #fff;
     padding-left: 65px;
@@ -172,6 +172,7 @@
     left: 200px;
     z-index: 10000;
     transition: all 0.1s;
+    text-align: right;
     display: none;
 
     p {

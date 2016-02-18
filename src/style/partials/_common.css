@@ -667,6 +667,36 @@
         max-width: 610px;
     }
 
+    &.rezid.wide {
+
+        @media (--w980) {
+            max-width: 980px;
+        }
+
+        @media (--w1200) {
+            max-width: 1070px;
+        }
+        
+        #eji_liter1_1 {
+            display: inline-block;
+
+            @media (--w980) {
+                width: 48%;
+            }
+        }
+
+        #eji_liter1_2 {
+            margin-top: 5%;
+            display: inline-block;
+
+            @media (--w980) {
+                width: 48%;
+                margin-top: 0;
+                margin-left: 3%;
+            }
+        }
+    }
+
 
     h1 {
         font-size: 24px;
