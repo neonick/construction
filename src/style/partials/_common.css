@@ -749,6 +749,18 @@
     transform: scale(0.8); 
 }
 
+.mfp-ready {
+    /*position: fixed !important;*/
+    /*top: 0 !important;*/
+   /* height: 670px !important;
+*/
+
+    @media (--w980) {
+        /*position: absolute !important;
+        top: auto;*/
+    }
+}
+
 /* animate in */
 .my-mfp-zoom-in.mfp-ready .zoom-anim-dialog {
     opacity: 1;
@@ -985,7 +997,10 @@ uncomment this part if you haven't added this code anywhere else
 }
 
 
-
 .mfp-wrap {
-     overflow-y: auto !important; 
+
+    @media (--w980) {
+         overflow-y: auto !important; 
+   }
+
 }
