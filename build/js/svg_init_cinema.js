@@ -32,7 +32,15 @@ $(function() {
 			});
 
 			obj.click(function() {
-				$("#response_popup").load( 'get_flats_liter2.html' , function (){ 
+				$("#response_popup").load('get_flats_eji2_fl417.html' , function (){ 
+					
+					// get_flats_eji1_fl1.html
+					// get_flats_eji1_fl23.html
+					// get_flats_eji1_fl417.html
+
+					// get_flats_eji2_fl1.html
+					// get_flats_eji2_fl23.html
+
 					$(".popup_caller").magnificPopup({
 						type : 'inline',
 						preloader : false,
@@ -68,7 +76,7 @@ $(function() {
 		if ($(".mob_floor_selector") != 0) {
 
 			$(".mob_floor_selector__item").click(function() {
-				$("#response_popup").load( 'get_flats_liter2.html' , function (){ 
+				$("#response_popup").load( 'get_flats_eji1_fl417.html' , function (){ 
 					$(".popup_caller").magnificPopup({
 						type : 'inline',
 						preloader : false,

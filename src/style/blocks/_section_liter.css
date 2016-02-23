@@ -411,13 +411,17 @@
             background-image: svg("tabs_eji_1_2", "[fill]: #F2F7DF");
         }
         &.liter_2_1 {
-            width: 93px;
-            background-image: svg("tabs_eji_2_1", "[fill]: #F2F7DF");
+            background: url(../i/eji2_tab2.png) 0 0 no-repeat;
+            width: 94px;
+            height: 41px;
+            font-size: 0;
+            margin-top: 15px;
         }
         &.liter_2_2 {
-            width: 65px;
-            margin-top: 15px;
-            background-image: svg("tabs_eji_2_2", "[fill]: #F2F7DF");
+            background: url(../i/eji2_tab1.png) 0 0 no-repeat;
+            width: 66px;
+            height: 43px;
+            font-size: 0;
         }
         &.liter_cinema_tab {
             width: 66px;
@@ -441,10 +445,14 @@
                 background-image: svg("tabs_eji_1_2", "[fill]: #6D8819");
             }
             &.liter_2_1 {
-                background-image: svg("tabs_eji_2_1", "[fill]: #6D8819");
+               background: url(../i/eji2_tab2_active.png) 0 0 no-repeat;
+               width: 94px;
+               height: 41px;
             }
             &.liter_2_2 {
-                background-image: svg("tabs_eji_2_2", "[fill]: #6D8819");
+                background: url(../i/eji2_tab1_active.png) 0 0 no-repeat;
+                width: 66px;
+                height: 43px;
             }
             &.liter_cinema_tab {
                 background-image: svg("tabs_cinema", "[fill]: #F2C26C");
