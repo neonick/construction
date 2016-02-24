@@ -1,0 +1,226 @@
+doctype html
+html(lang='ru')
+    head
+        include parts/_meta.jade
+
+    body
+
+        // header
+        section.header.js-sticky-header.header--mainpage
+
+            a(href="/")
+                .header_corner_logo
+
+            include blocks/block_back_call.jade
+
+            nav.main_menu
+                a(href="#").active Обьекты
+                a(href="#") О компании
+                a(href="#") События
+                a(href="#") Контакты
+
+            a(href="#" class="mobile_menu js-open-mobile-menu") Меню
+
+        include blocks/menu_object.jade
+
+        section.full_block.full_block--liter
+            
+            .liter_plan
+                img(src="i/liter_2.jpg", alt="")
+                .liter_plan__shadow
+
+                #liter_cinema_svg.svg_holst
+
+                .floor_label
+                    p этаж
+                        span.floor_label_num 15
+
+                a(href="#response_popup" class="popup_caller")
+
+                a(href="#").btn.white.tour_btn Виртуальный тур
+                a(href="#").btn.white.podbor_btn.js-open_podbor_block Подобрать по параметрам
+
+                .app_last
+                    span 198
+                    i квартир 
+                    | доступно
+
+
+            .liter_podbor_block
+                form(action="").search_form__item
+
+                    .search_form__block
+                        
+                        .range-slider
+                            h2 Цена
+                            input(type="text" class="js-price-slider" value="")
+                        
+                        .range-slider
+                            h2 Площадь
+                            input(type="text" class="js-square-slider" value="")
+                        
+                        .range-slider.floor
+                            h2 Комнат
+                            input(type="text" class="js-floor-slider" value="")
+
+                    button(class="btn active") Подобрать
+
+            
+            .mob_floor_selector(data-toggle="tabslet")
+
+                ul.liter_tabs
+
+                    li
+                        a(href="#litertab-1") Литер
+                            span А
+                    li
+                        a(href="#litertab-2") Литер
+                            span Б
+
+                #litertab-1
+                
+                    .mob_floor_selector__item(data-floor="17" data-liter="1") 
+                        | этаж
+                        span 17
+                    .mob_floor_selector__item(data-floor="16" data-liter="1") 
+                        | этаж
+                        span 16
+                    .mob_floor_selector__item(data-floor="15" data-liter="1") 
+                        | этаж
+                        span 15
+                    .mob_floor_selector__item(data-floor="14" data-liter="1") 
+                        | этаж
+                        span 14
+                    .mob_floor_selector__item(data-floor="13" data-liter="1") 
+                        | этаж
+                        span 13
+                    .mob_floor_selector__item(data-floor="12" data-liter="1") 
+                        | этаж
+                        span 12
+                    .mob_floor_selector__item(data-floor="11" data-liter="1") 
+                        | этаж
+                        span 11
+                    .mob_floor_selector__item(data-floor="10" data-liter="1") 
+                        | этаж
+                        span 10
+                    .mob_floor_selector__item(data-floor="9" data-liter="1") 
+                        | этаж
+                        span 9
+                    .mob_floor_selector__item(data-floor="8" data-liter="1") 
+                        | этаж
+                        span 8
+                    .mob_floor_selector__item(data-floor="7" data-liter="1") 
+                        | этаж
+                        span 7
+                    .mob_floor_selector__item(data-floor="6" data-liter="1") 
+                        | этаж
+                        span 6
+                    .mob_floor_selector__item(data-floor="5" data-liter="1") 
+                        | этаж
+                        span 5
+                    .mob_floor_selector__item(data-floor="4" data-liter="1") 
+                        | этаж
+                        span 4
+                    .mob_floor_selector__item(data-floor="3" data-liter="1") 
+                        | этаж
+                        span 3
+                    .mob_floor_selector__item(data-floor="2" data-liter="1") 
+                        | этаж
+                        span 2
+                    .mob_floor_selector__item(data-floor="1" data-liter="1") 
+                        | этаж
+                        span 1
+
+                #litertab-2
+
+                    .mob_floor_selector__item(data-floor="17" data-liter="2") 
+                        | этаж
+                        span 17
+                    .mob_floor_selector__item(data-floor="16" data-liter="2") 
+                        | этаж
+                        span 16
+                    .mob_floor_selector__item(data-floor="15" data-liter="2") 
+                        | этаж
+                        span 15
+                    .mob_floor_selector__item(data-floor="14" data-liter="2") 
+                        | этаж
+                        span 14
+                    .mob_floor_selector__item(data-floor="13" data-liter="2") 
+                        | этаж
+                        span 13
+                    .mob_floor_selector__item(data-floor="12" data-liter="2") 
+                        | этаж
+                        span 12
+                    .mob_floor_selector__item(data-floor="11" data-liter="2") 
+                        | этаж
+                        span 11
+                    .mob_floor_selector__item(data-floor="10" data-liter="2") 
+                        | этаж
+                        span 10
+                    .mob_floor_selector__item(data-floor="9" data-liter="2") 
+                        | этаж
+                        span 9
+                    .mob_floor_selector__item(data-floor="8" data-liter="2") 
+                        | этаж
+                        span 8
+                    .mob_floor_selector__item(data-floor="7" data-liter="2") 
+                        | этаж
+                        span 7
+                    .mob_floor_selector__item(data-floor="6" data-liter="2") 
+                        | этаж
+                        span 6
+                    .mob_floor_selector__item(data-floor="5" data-liter="2") 
+                        | этаж
+                        span 5
+                    .mob_floor_selector__item(data-floor="4" data-liter="2") 
+                        | этаж
+                        span 4
+                    .mob_floor_selector__item(data-floor="3" data-liter="2") 
+                        | этаж
+                        span 3
+                    .mob_floor_selector__item(data-floor="2" data-liter="2") 
+                        | этаж
+                        span 2
+                    .mob_floor_selector__item(data-floor="1" data-liter="2") 
+                        | этаж
+                        span 1
+
+             
+
+
+
+        #response_popup.neo_pupup.mfp-hide.zoom-anim-dialog
+            h1 Этаж 15 литера A 
+
+            .tabs(data-toggle="tabslet")
+                ul.horizontal
+                    li
+                        a(href="#eji_liter1_1" class="liter_1_1") 1
+
+                    li
+                        a(href="#eji_liter1_2" class="liter_1_2") 2
+
+                #eji_liter1_1
+
+                    .plan.plan_floor15
+                        img(src="i/plan15_1.jpg", alt="")
+                        #eji_1_1.svg_plan_holst
+
+                 #eji_liter1_2
+
+                    .plan.plan_floor15
+                        img(src="i/plan15_2.jpg", alt="")
+                        #eji_1_2.svg_plan_holst
+
+                
+                
+
+
+   
+
+
+        include parts/_scripts.jade
+
+        <script src="js/svg_paths_cinema.js"></script>
+        <script src="js/svg_init_eji2_f1.js"></script>
+

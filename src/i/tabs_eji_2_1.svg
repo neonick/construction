@@ -1,8 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 19.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="93.036px" height="39.953px" viewBox="0 0 93.036 39.953" enable-background="new 0 0 93.036 39.953" xml:space="preserve">
-<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M1.043,1.544l-0.024,9.408H0.073v3.613h0.922v9.626H0v3.565h1.067
-	v9.214h9.336v1.431l1.867,1.552h24.757l1.722-1.503v-1.431h17.361v1.382l1.795,1.455h24.83l1.77-1.333l0.024-1.65h8.39
-	c0-11.806,0.118-23.361,0.118-35.208L91.169,0H2.862L1.043,1.544z"/>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="93.439" height="41.121" viewBox="0 0 93.439 41.121">
+	 
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M92.264 38.822v-9.158h1.133v-3.872H92.17v-9.536h1.227v-3.493h-1.133V3.51h-9.536V2.092l-1.51-1.51H56.1l-1.32 1.322v1.7H37.124V2.187l-1.133-1.134H10.404l-1.038 1.04v1.7H.49v34.745l1.888 1.888h88z"/>
 </svg>

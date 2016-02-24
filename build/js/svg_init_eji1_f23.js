@@ -32,7 +32,7 @@ $(function() {
 			});
 
 			obj.click(function() {
-				$("#response_popup").load('get_flats_eji2_fl417.html' , function (){ 
+				$("#response_popup").load('get_flats_eji1_fl23.html' , function (){ 
 					
 					// get_flats_eji1_fl1.html
 					// get_flats_eji1_fl23.html
@@ -77,12 +77,12 @@ $(function() {
 		if ($(".mob_floor_selector") != 0) {
 
 			$(".mob_floor_selector__item").click(function() {
-				$("#response_popup").load( 'get_flats_eji1_fl417.html' , function (){ 
+				$("#response_popup").load( 'get_flats_eji1_fl23.html' , function (){ 
 					$(".popup_caller").magnificPopup({
 						type : 'inline',
 						preloader : false,
 						removalDelay : 300,
-						mainClass : 'my-mfp-zoom-in cinema-liter-fix',
+						mainClass : 'my-mfp-zoom-in ',
 						overflowY : "scroll",
 	                    close: function() {
 	                        $("#response_popup").empty();
