@@ -417,7 +417,7 @@
         &.liter_2_1 {
             background-image: svg("tabs_eji_2_1", "[fill]: #F2F7DF");
             width: 93px;
-            margin-top: 15px;
+            margin-top: 10px;
             line-height: 42px;
         }
         &.liter_2_2 {
@@ -655,11 +655,11 @@
 
 #response_popup {
      h1 {
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
 
     .tabs {
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
 
     .tabs li {
