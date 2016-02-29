@@ -1,0 +1,155 @@
+<!--
+
+    тут происходит неизвестно что, чтобы получить данные
+    
+-->
+
+<h1>Этаж 2-3 литер 1 </h1>
+<div data-toggle="tabslet" class="tabs">
+    <ul class="horizontal">
+        <li>
+            <a href="#eji_liter1_1" class="liter_cinema_tab">БС-2</a>
+            <!-- liter_1_1 может меняться -->
+        </li>
+        <li>
+            <a href="#eji_liter1_2" class="liter_cinema_tab">БС-1</a>
+            <!-- liter_1_2 может меняться -->
+        </li>
+    </ul>
+    <div id="eji_liter1_1">
+        <div class="plan">
+            <img src="i/cinema1_fl23_left.jpg" alt="">
+            <div id="eji_1_1" class="svg_plan_holst"></div>
+        </div>
+    </div>
+    <div id="eji_liter1_2">
+        <div class="plan"><img src="i/cinema1_fl23_right.jpg" alt="">
+            <div id="eji_1_2" class="svg_plan_holst"></div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+$('.tabs').tabslet();
+
+var floors = {
+
+    ap1: { 
+        color: "#F29000",
+        link: "http://ya.ru/", 
+        path: "M756.247 55.81V5.26h169.39v50.55h-30.382v18.104h178.264v244.854H756.784V73.914h104.592V55.81z"},
+    
+    ap2: { 
+        color: "#F7B132",
+        link: "http://ya.ru/", 
+        path: "M963.355 690.352V326.655h119.022V73.915h142.966v616.438h-68.294v18.104h49.92v49.473H973.48v-49.473h53.613v-18.104h-63.738zm96.182 18.104h65.068v-18.104H1059.538v18.104z"},
+
+    ap3: { 
+        color: "#FFCB00",
+        link: "http://ya.ru/", 
+        path: "M739.503 763.306v-18.104H693.51v-319.78h260.97v319.78H772.22v18.104h51.423v45.71H690.462v-45.71z"},
+
+    ap4: { 
+        color: "#F29000",
+        link: "http://ya.ru/", 
+        path: "M440.41 763.306v-18.104H423.4v-319.78h260.967v319.78H659.88v18.105h24.846v45.71h-265.11v-45.71h20.793zm186.497-18.104H472.854v18.104h154.054v-18.104z"},
+  
+    ap5: { 
+        color: "#FFCB00",
+        link: "http://ya.ru/", 
+        path: "M152.356 423.898H416.21v334.39H152.357z"},  
+
+    ap6: { 
+        color: "#F7B132",
+        link: "http://ya.ru/", 
+        path: "M187.13 74.675V55.288h-21.15V5.26H312.67V55.29H219.53v19.387h60.765v151.42h-41.362v101.187h40.092v88.73h-65.157v-.09h-69.15v342.365H5.014V74.675z"},
+
+    ap7: { 
+        color: "#EC695A",
+        link: "http://ya.ru/", 
+        path: "M315.83 234.34v25.634h4.124v-30.382h-31.548v-155.5h111.852v-18.91h-81.936V6.157h168.333v49.025h-52.52v18.91h52.52v243.6H402.75v-88.1h-44.795v5.377h39.416v69.1h-22.046v13.622h-60.227v.36H261.16v-22.945h-15.057V234.34zM246.103 297.796h12.727v20.972h-12.727z"}
+
+}
+
+
+var floors2 = {
+
+    ap1: { 
+        color: "#EC695A",
+        link: "http://ya.ru/", 
+        path: "M984.25 234.34v25.634h-4.124V229.59h31.548V74.09H899.822V55.18h81.936V6.157H813.425V55.18h52.52v18.91h-52.52v243.602h83.906v-88.1h44.795v5.376H902.71v69.1h22.046v13.623h60.228v.36h53.936v-22.943h15.057V234.34zM1041.25 297.795h12.727v20.972h-12.727z"},     
+    
+    ap2: { 
+        color: "#F7B132",
+        link: "http://ya.ru/", 
+        path: "M1112.95 74.674V55.287h21.15V5.26H987.41v50.027h93.143v19.387h-60.765v151.422h41.362v101.186h-40.092v88.728h65.157v-.09h69.15v342.366h139.705V74.673z"},
+
+    ap3: { 
+        color: "#FFCB00",
+        link: "http://ya.ru/", 
+        path: "M883.87 423.897h263.854v334.39H883.87z"},
+
+    ap4: { 
+        color: "#F7B132",
+        link: "http://ya.ru/", 
+        path: "M859.67 763.306v-18.104h17.01v-319.78H615.713V745.2H640.2v18.104h-24.847v45.71h265.11v-45.71H859.67zm-186.497-18.104h154.054v18.104H673.173v-18.104z"},
+  
+    ap5: { 
+        color: "#FFCB00",
+        link: "http://ya.ru/", 
+        path: "M560.577 763.306v-18.104h45.994v-319.78H345.6V745.2H527.86v18.104h-51.423v45.708h133.183v-45.708z"},
+
+    ap6: { 
+        color: "#F7B132",
+        link: "http://ya.ru/", 
+        path: "M336.725 690.35V326.655h-119.02V73.914H74.736V690.35h68.294v18.104H93.11v49.473H326.6v-49.474h-53.613v-18.104h63.738zm-96.182 18.106h-65.068v-18.104H240.542v18.104z"},
+
+    ap7: { 
+        color: "#F29000",
+        link: "http://ya.ru/", 
+        path: "M543.833 55.808V5.26h-169.39v50.548h30.382v18.105H226.562v244.854h316.733V73.913H438.703V55.808z"}
+
+}
+
+    var eji_floor = Raphael('eji_1_1', "100%", "100%"), attributes = {
+        'stroke-width' : 0,
+        'stroke-linejoin' : 'round'
+    }, arr_floor = new Array();
+
+    eji_floor.setViewBox(0, 0, 1300, 815);
+
+    for (var floor_num in floors) {
+        var objfloor = eji_floor.path(floors[floor_num].path);
+        objfloor.attr(attributes);
+        objfloor.attr({
+            fill : floors[floor_num].color
+        });
+        arr_floor[objfloor.id] = floor_num;
+
+        objfloor.click(function() {
+            window.open(floors[arr_floor[this.id]].link); // не самый лучший способ, некоторые браузеры могут открыть не во вкладке а в отдельном окне, запустив еще одно окно браузера
+        });
+    }
+
+    var eji_floor2 = Raphael('eji_1_2', "100%", "100%"), attributes = {
+        'stroke-width' : 0,
+        'stroke-linejoin' : 'round'
+    }, arr_floor2 = new Array();
+
+    eji_floor2.setViewBox(0, 0, 1300, 815);
+
+    for (var floor_num in floors2) {
+        var objfloor = eji_floor2.path(floors2[floor_num].path);
+        objfloor.attr(attributes);
+        objfloor.attr({
+            fill : floors2[floor_num].color
+        });
+        arr_floor2[objfloor.id] = floor_num;
+
+        objfloor.click(function() {
+            window.open(floors2[arr_floor2[this.id]].link);
+        });
+    }
+</script>
