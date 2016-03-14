@@ -2,7 +2,11 @@
 *   dinamic
 */
 .dinamic {
-    padding: 50px 0;
+    padding: 100px 0 0 25px;
+
+    @media (--w768) {
+        padding: 50px 0;
+    }
 
     .container {
         max-width: 800px;

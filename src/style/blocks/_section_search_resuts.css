@@ -2,7 +2,7 @@
 *   search_results
 */
 .search_results {
-    padding: 40px 0 0;
+    padding: 100px 0 0 25px;
 
      @media (--w768) {
         padding: 100px 0 0;

@@ -5,17 +5,15 @@
     transition: all 0.4s;
     position: relative;
     position: relative;
-    padding-top: 120px;
+    padding-top: 60px;
     width: 100%;  
     backface-visibility: hidden; 
     transform: translateZ(0);
-
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
-    padding-top: 150px;
-    z-index: 100;
+    z-index: 100000000;
 
 
 
@@ -29,16 +27,23 @@
         width: 173px;
     }
 
-    &:before {
+    .object_menu_btn {
         content: "";
         position: absolute;
-        top: 100px;
-        left: 5px;
-        width: 15px;
-        height: 15px;
-        background: url(../i/mobile_menu.svg) 0 0 no-repeat;
-        background-size: 100%;
-        /*opacity: 0;*/
+        top: 10px;
+        right: 10px;
+        width: 40px;
+        height: 40px;
+        
+        background-size: 37.5%;
+        cursor: pointer;
+        font-family: Geometria,Arial,sans-serif;
+        font-weight: 300;
+        font-size: 50px;
+        line-height: 40px;
+        text-align: center;
+        color: #fff;
+        transition: none;
     }
 
 
@@ -55,10 +60,10 @@
 
 
     &.eji {
-        background-color: rgba(108, 136, 25, 0.8);
+        background-color: rgba(108, 136, 25, 0.95);
 
         &.is-hidden {
-            background-color: rgba(108, 136, 25, 0.8);
+            background-color: rgba(108, 136, 25, 0.95);
         }
         
         a {
@@ -67,10 +72,10 @@
     }
 
     &.cinema {
-        background-color: rgba(243, 210, 0, 0.8);
+        background-color: rgba(243, 210, 0, 0.95);
 
         &.is-hidden {
-            background-color: rgba(243, 210, 0, 0.8);
+            background-color: rgba(243, 210, 0, 0.95);
         }
         
         a {
@@ -84,10 +89,10 @@
 
 
     &.rezid {
-        background-color: rgba(49, 184, 255, 0.8);
+        background-color: rgba(49, 184, 255, 0.95);
 
         &.is-hidden {
-            background-color: rgba(49, 184, 255, 0.8);
+            background-color: rgba(49, 184, 255, 0.95);
         }
         
         a {
@@ -103,36 +108,28 @@
 
     &.is-hidden {
         width: 25px;
-        background-color: rgba(39, 39, 39, 0.8);
+        background-color: rgba(39, 39, 39, 0.95);
+        z-index: 100;
 
         .object_menu__content {
             visibility: hidden;
-            opacity: 0;
+            
             transform: translateX(-10px);
-            transition: all .5s;
+            transition: width .3s, background .3s;
         }
 
-        &:before {
+        .object_menu_btn {
             opacity: 1;
             transition: all 0.4s;
-        }
-    }
-
-    
-
-    &.is-hidden {
-        width: 25px;
-
-        .object_menu__content {
-            visibility: hidden;
-            opacity: 0;
-            transform: translateX(-10px);
-            transition: all .5s;
-        }
-
-        &:before {
-            opacity: 1;
-            transition: all 0.4s;
+            top: 100px;
+            left: 0px;
+            width: 25px;
+            height: 25px;
+            
+            background: url(../i/mobile_menu.svg) center center no-repeat;
+            background-size: 60%;
+            font-size: 0;
+            transition: none;
         }
     }
 

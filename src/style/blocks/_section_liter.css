@@ -461,22 +461,25 @@
 
 .mob_floor_selector {
     width: 100%;
-    padding: 10px 20px;
+    padding: 100px 20px 10px;
     display: block;
-    background-size: cover;
+    
     position: relative;
     z-index: 1;
 
     .eji + .full_block & {
         background: url(../i/liter_2.jpg) top center no-repeat;
+        background-size: cover;
     }
 
     .cinema + .full_block & {
         background: url(../i/liter_1.jpg) top center no-repeat;
+        background-size: cover;
     }
 
     .rezid + .full_block & {
        background: url(../i/liter_3.jpg) top center no-repeat;
+       background-size: cover;
     }
 
     &:before {

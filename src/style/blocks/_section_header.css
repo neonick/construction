@@ -191,6 +191,7 @@
     float: left;
     background-size: 100%;
     transition: all 0.4s;
+    margin-left: -1px;
    
 
     @media (--w768) {
