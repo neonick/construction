@@ -2,7 +2,6 @@
 *   object_menu
 */
 .object_menu {
-    width: 173px;
     transition: all 0.4s;
     position: relative;
     position: relative;
@@ -10,6 +9,15 @@
     width: 100%;  
     backface-visibility: hidden; 
     transform: translateZ(0);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding-top: 150px;
+    z-index: 100;
+
+
 
     @media (--w768) {
         position: fixed;
@@ -30,7 +38,7 @@
         height: 15px;
         background: url(../i/mobile_menu.svg) 0 0 no-repeat;
         background-size: 100%;
-        opacity: 0;
+        /*opacity: 0;*/
     }
 
 
