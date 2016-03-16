@@ -173,7 +173,7 @@
             background: url(../i/contact_icon1.png) left center no-repeat;
         }
 
-        &.icon_phone:before {
+        &.phone:before {
             background: url(../i/contact_icon2.png) left center no-repeat;
         }
 

@@ -186,13 +186,12 @@
 
 .header_corner_logo {
     width: 160px;
-    height: 94px;
+    height: 108px;
     background: url(../i/header_corner_logo.svg)  no-repeat;
     float: left;
     background-size: 100%;
     transition: all 0.4s;
-    margin-left: -1px;
-   
+    margin-left: 10px;
 
     @media (--w768) {
         margin-left: 25px;

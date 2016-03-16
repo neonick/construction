@@ -2,20 +2,14 @@
 *   object_menu
 */
 .object_menu {
+    width: 173px;
     transition: all 0.4s;
     position: relative;
     position: relative;
-    padding-top: 60px;
+    padding-top: 120px;
     width: 100%;  
     backface-visibility: hidden; 
     transform: translateZ(0);
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    z-index: 100000000;
-
-
 
     @media (--w768) {
         position: fixed;
@@ -27,23 +21,16 @@
         width: 173px;
     }
 
-    .object_menu_btn {
+    &:before {
         content: "";
         position: absolute;
-        top: 10px;
-        right: 10px;
-        width: 40px;
-        height: 40px;
-        
-        background-size: 37.5%;
-        cursor: pointer;
-        font-family: Geometria,Arial,sans-serif;
-        font-weight: 300;
-        font-size: 50px;
-        line-height: 40px;
-        text-align: center;
-        color: #fff;
-        transition: none;
+        top: 100px;
+        left: 5px;
+        width: 15px;
+        height: 15px;
+        background: url(../i/mobile_menu.svg) 0 0 no-repeat;
+        background-size: 100%;
+        opacity: 0;
     }
 
 
@@ -60,10 +47,10 @@
 
 
     &.eji {
-        background-color: rgba(108, 136, 25, 0.95);
+        background-color: rgba(108, 136, 25, 0.8);
 
         &.is-hidden {
-            background-color: rgba(108, 136, 25, 0.95);
+            background-color: rgba(108, 136, 25, 0.8);
         }
         
         a {
@@ -72,10 +59,10 @@
     }
 
     &.cinema {
-        background-color: rgba(243, 210, 0, 0.95);
+        background-color: rgba(243, 210, 0, 0.8);
 
         &.is-hidden {
-            background-color: rgba(243, 210, 0, 0.95);
+            background-color: rgba(243, 210, 0, 0.8);
         }
         
         a {
@@ -89,10 +76,10 @@
 
 
     &.rezid {
-        background-color: rgba(49, 184, 255, 0.95);
+        background-color: rgba(49, 184, 255, 0.8);
 
         &.is-hidden {
-            background-color: rgba(49, 184, 255, 0.95);
+            background-color: rgba(49, 184, 255, 0.8);
         }
         
         a {
@@ -108,28 +95,36 @@
 
     &.is-hidden {
         width: 25px;
-        background-color: rgba(39, 39, 39, 0.95);
-        z-index: 100;
+        background-color: rgba(39, 39, 39, 0.8);
 
         .object_menu__content {
             visibility: hidden;
-            
+            opacity: 0;
             transform: translateX(-10px);
-            transition: width .3s, background .3s;
+            transition: all .5s;
         }
 
-        .object_menu_btn {
+        &:before {
             opacity: 1;
             transition: all 0.4s;
-            top: 100px;
-            left: 0px;
-            width: 25px;
-            height: 25px;
-            
-            background: url(../i/mobile_menu.svg) center center no-repeat;
-            background-size: 60%;
-            font-size: 0;
-            transition: none;
+        }
+    }
+
+    
+
+    &.is-hidden {
+        width: 25px;
+
+        .object_menu__content {
+            visibility: hidden;
+            opacity: 0;
+            transform: translateX(-10px);
+            transition: all .5s;
+        }
+
+        &:before {
+            opacity: 1;
+            transition: all 0.4s;
         }
     }
 

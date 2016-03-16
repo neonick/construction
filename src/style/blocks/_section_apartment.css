@@ -2,7 +2,7 @@
 *   apartment
 */
 .apartment {
-    padding: 120px 0 30px 25px;
+    padding: 30px 0;
 
     @media (--w768) {
         
