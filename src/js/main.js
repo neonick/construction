@@ -413,7 +413,7 @@ $(document).ready(function () {
 
     video_resize();
 
-    //= parts/_init_gmaps.js
+    
 
 });
 

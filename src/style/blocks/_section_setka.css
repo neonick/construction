@@ -867,15 +867,15 @@
 	background-size: cover;
 
 	&.cinema_map {
-		background: url(../i/cinema_map.jpg) center center no-repeat;
+		background: url(../i/cinema_map.png) center center no-repeat;
 	}
 
 	&.eji_map {
-		background: url(../i/eji_map.jpg) center center no-repeat;
+		background: url(../i/eji_map.png) center center no-repeat;
 	}
-	
+
 	&.rezid_map {
-		background: url(../i/rezid_map.jpg) center center no-repeat;
+		background: url(../i/rezid_map.png) center center no-repeat;
 	}
 
 	
